@@ -1,0 +1,758 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/countdown-timer",
+  "version": "1.0.0",
+  "title": "Countdown Timer",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "countdown",
+    "deadline",
+    "timer"
+  ],
+  "description": "Countdown timer block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "style": {
+      "type": "string",
+      "default": "style1"
+    },
+    "date": {
+      "type": "string",
+      "default": "2025-09-19T16:03:03"
+    },
+    "dayLabel": {
+      "type": "string",
+      "default": "Days"
+    },
+    "hourLabel": {
+      "type": "string",
+      "default": "Hours"
+    },
+    "minuteLabel": {
+      "type": "string",
+      "default": "Minutes"
+    },
+    "secondLabel": {
+      "type": "string",
+      "default": "Seconds"
+    },
+    "weekLabel": {
+      "type": "string",
+      "default": "Weeks"
+    },
+    "widthDesktop": {
+      "type": "object"
+    },
+    "heightDesktop": {
+      "type": "object"
+    },
+    "lineHeightDesktop": {
+      "type": "object"
+    },
+    "widthTablet": {
+      "type": "object"
+    },
+    "heightTablet": {
+      "type": "object"
+    },
+    "lineHeightTablet": {
+      "type": "object"
+    },
+    "widthMobile": {
+      "type": "object"
+    },
+    "widthTabletLandscape": {
+      "type": "object"
+    },
+    "widthMobileLandscape": {
+      "type": "object"
+    },
+    "widthLaptop": {
+      "type": "object"
+    },
+    "widthWideScreen": {
+      "type": "object"
+    },
+    "heightMobile": {
+      "type": "object"
+    },
+    "heightTabletLandscape": {
+      "type": "object"
+    },
+    "heightMobileLandscape": {
+      "type": "object"
+    },
+    "heightLaptop": {
+      "type": "object"
+    },
+    "heightWideScreen": {
+      "type": "object"
+    },
+    "lineHeightMobile": {
+      "type": "object"
+    },
+    "lineHeightTabletLandscape": {
+      "type": "object"
+    },
+    "lineHeightMobileLandscape": {
+      "type": "object"
+    },
+    "lineHeightLaptop": {
+      "type": "object"
+    },
+    "lineHeightWideScreen": {
+      "type": "object"
+    },
+    "columnGapDesktop": {
+      "type": "object"
+    },
+    "columnGapTablet": {
+      "type": "object"
+    },
+    "columnGapMobile": {
+      "type": "object"
+    },
+    "columnGapTabletLandscape": {
+      "type": "object"
+    },
+    "columnGapMobileLandscape": {
+      "type": "object"
+    },
+    "columnGapLaptop": {
+      "type": "object"
+    },
+    "columnGapWideScreen": {
+      "type": "object"
+    },
+    "rowGapDesktop": {
+      "type": "object"
+    },
+    "rowGapTablet": {
+      "type": "object"
+    },
+    "rowGapMobile": {
+      "type": "object"
+    },
+    "rowGapTabletLandscape": {
+      "type": "object"
+    },
+    "rowGapMobileLandscape": {
+      "type": "object"
+    },
+    "rowGapLaptop": {
+      "type": "object"
+    },
+    "rowGapWideScreen": {
+      "type": "object"
+    },
+    "daysColor": {
+      "type": "string"
+    },
+    "daysTypography": {
+      "type": "object"
+    },
+    "daysMarginBottomDesktop": {
+      "type": "object"
+    },
+    "daysMarginBottomTablet": {
+      "type": "object"
+    },
+    "daysMarginBottomMobile": {
+      "type": "object"
+    },
+    "daysMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "daysMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "daysMarginBottomLaptop": {
+      "type": "object"
+    },
+    "daysMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "daysLabelColor": {
+      "type": "string"
+    },
+    "daysLabelBackground": {
+      "type": "object"
+    },
+    "daysLabelTypography": {
+      "type": "object"
+    },
+    "daysLabelBorder": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusTablet": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusMobile": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "daysLabelBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "daysLabelMarginDesktop": {
+      "type": "object"
+    },
+    "daysLabelMarginTablet": {
+      "type": "object"
+    },
+    "daysLabelMarginMobile": {
+      "type": "object"
+    },
+    "daysLabelMarginTabletLandscape": {
+      "type": "object"
+    },
+    "daysLabelMarginMobileLandscape": {
+      "type": "object"
+    },
+    "daysLabelMarginLaptop": {
+      "type": "object"
+    },
+    "daysLabelMarginWideScreen": {
+      "type": "object"
+    },
+    "daysBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "daysBorder": {
+      "type": "object"
+    },
+    "daysBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "daysBorderRadiusTablet": {
+      "type": "object"
+    },
+    "daysBorderRadiusMobile": {
+      "type": "object"
+    },
+    "daysBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "daysBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "daysBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "daysBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "daysShadow": {
+      "type": "object"
+    },
+    "weeksColor": {
+      "type": "string"
+    },
+    "weeksTypography": {
+      "type": "object"
+    },
+    "weeksMarginBottomDesktop": {
+      "type": "object"
+    },
+    "weeksMarginBottomTablet": {
+      "type": "object"
+    },
+    "weeksMarginBottomMobile": {
+      "type": "object"
+    },
+    "weeksMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "weeksMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "weeksMarginBottomLaptop": {
+      "type": "object"
+    },
+    "weeksMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "weeksLabelColor": {
+      "type": "string"
+    },
+    "weeksLabelBackground": {
+      "type": "object"
+    },
+    "weeksLabelTypography": {
+      "type": "object"
+    },
+    "weeksLabelBorder": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusTablet": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusMobile": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "weeksLabelBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "weeksLabelMarginDesktop": {
+      "type": "object"
+    },
+    "weeksLabelMarginTablet": {
+      "type": "object"
+    },
+    "weeksLabelMarginMobile": {
+      "type": "object"
+    },
+    "weeksLabelMarginTabletLandscape": {
+      "type": "object"
+    },
+    "weeksLabelMarginMobileLandscape": {
+      "type": "object"
+    },
+    "weeksLabelMarginLaptop": {
+      "type": "object"
+    },
+    "weeksLabelMarginWideScreen": {
+      "type": "object"
+    },
+    "weeksBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "weeksBorder": {
+      "type": "object"
+    },
+    "weeksBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "weeksBorderRadiusTablet": {
+      "type": "object"
+    },
+    "weeksBorderRadiusMobile": {
+      "type": "object"
+    },
+    "weeksBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "weeksBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "weeksBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "weeksBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "weeksShadow": {
+      "type": "object"
+    },
+    "hoursColor": {
+      "type": "string"
+    },
+    "hoursTypography": {
+      "type": "object"
+    },
+    "hoursMarginBottomDesktop": {
+      "type": "object"
+    },
+    "hoursMarginBottomTablet": {
+      "type": "object"
+    },
+    "hoursMarginBottomMobile": {
+      "type": "object"
+    },
+    "hoursMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "hoursMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "hoursMarginBottomLaptop": {
+      "type": "object"
+    },
+    "hoursMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "hoursLabelColor": {
+      "type": "string"
+    },
+    "hoursLabelBackground": {
+      "type": "object"
+    },
+    "hoursLabelTypography": {
+      "type": "object"
+    },
+    "hoursLabelBorder": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusTablet": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusMobile": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "hoursLabelBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "hoursLabelMarginDesktop": {
+      "type": "object"
+    },
+    "hoursLabelMarginTablet": {
+      "type": "object"
+    },
+    "hoursLabelMarginMobile": {
+      "type": "object"
+    },
+    "hoursLabelMarginTabletLandscape": {
+      "type": "object"
+    },
+    "hoursLabelMarginMobileLandscape": {
+      "type": "object"
+    },
+    "hoursLabelMarginLaptop": {
+      "type": "object"
+    },
+    "hoursLabelMarginWideScreen": {
+      "type": "object"
+    },
+    "hoursBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "hoursBorder": {
+      "type": "object"
+    },
+    "hoursBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "hoursBorderRadiusTablet": {
+      "type": "object"
+    },
+    "hoursBorderRadiusMobile": {
+      "type": "object"
+    },
+    "hoursBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "hoursBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "hoursBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "hoursBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "hoursShadow": {
+      "type": "object"
+    },
+    "minutesColor": {
+      "type": "string"
+    },
+    "minutesTypography": {
+      "type": "object"
+    },
+    "minutesMarginBottomDesktop": {
+      "type": "object"
+    },
+    "minutesMarginBottomTablet": {
+      "type": "object"
+    },
+    "minutesMarginBottomMobile": {
+      "type": "object"
+    },
+    "minutesMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "minutesMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "minutesMarginBottomLaptop": {
+      "type": "object"
+    },
+    "minutesMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "minutesLabelColor": {
+      "type": "string"
+    },
+    "minutesLabelBackground": {
+      "type": "object"
+    },
+    "minutesLabelTypography": {
+      "type": "object"
+    },
+    "minutesLabelBorder": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusTablet": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusMobile": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "minutesLabelBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "minutesLabelMarginDesktop": {
+      "type": "object"
+    },
+    "minutesLabelMarginTablet": {
+      "type": "object"
+    },
+    "minutesLabelMarginMobile": {
+      "type": "object"
+    },
+    "minutesLabelMarginTabletLandscape": {
+      "type": "object"
+    },
+    "minutesLabelMarginMobileLandscape": {
+      "type": "object"
+    },
+    "minutesLabelMarginLaptop": {
+      "type": "object"
+    },
+    "minutesLabelMarginWideScreen": {
+      "type": "object"
+    },
+    "minutesBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "minutesBorder": {
+      "type": "object"
+    },
+    "minutesBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "minutesBorderRadiusTablet": {
+      "type": "object"
+    },
+    "minutesBorderRadiusMobile": {
+      "type": "object"
+    },
+    "minutesBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "minutesBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "minutesBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "minutesBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "minutesShadow": {
+      "type": "object"
+    },
+    "secondsColor": {
+      "type": "string"
+    },
+    "secondsTypography": {
+      "type": "object"
+    },
+    "secondsMarginBottomDesktop": {
+      "type": "object"
+    },
+    "secondsMarginBottomTablet": {
+      "type": "object"
+    },
+    "secondsMarginBottomMobile": {
+      "type": "object"
+    },
+    "secondsMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "secondsMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "secondsMarginBottomLaptop": {
+      "type": "object"
+    },
+    "secondsMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "secondsLabelColor": {
+      "type": "string"
+    },
+    "secondsLabelBackground": {
+      "type": "object"
+    },
+    "secondsLabelTypography": {
+      "type": "object"
+    },
+    "secondsLabelBorder": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusTablet": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusMobile": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "secondsLabelBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "secondsLabelMarginDesktop": {
+      "type": "object"
+    },
+    "secondsLabelMarginTablet": {
+      "type": "object"
+    },
+    "secondsLabelMarginMobile": {
+      "type": "object"
+    },
+    "secondsLabelMarginTabletLandscape": {
+      "type": "object"
+    },
+    "secondsLabelMarginMobileLandscape": {
+      "type": "object"
+    },
+    "secondsLabelMarginLaptop": {
+      "type": "object"
+    },
+    "secondsLabelMarginWideScreen": {
+      "type": "object"
+    },
+    "secondsBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "secondsBorder": {
+      "type": "object"
+    },
+    "secondsBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "secondsBorderRadiusTablet": {
+      "type": "object"
+    },
+    "secondsBorderRadiusMobile": {
+      "type": "object"
+    },
+    "secondsBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "secondsBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "secondsBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "secondsBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "secondsShadow": {
+      "type": "object"
+    },
+    "outerBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "outerEdgeColor": {
+      "type": "string"
+    },
+    "innerBackground": {
+      "type": "object",
+      "selector": "{{WRAPPER}}"
+    },
+    "expireLabel": {
+      "type": "string",
+      "default": "Countdown is finished!"
+    },
+    "expireDescription": {
+      "type": "string",
+      "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s"
+    },
+    "isExpired": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js"
+}

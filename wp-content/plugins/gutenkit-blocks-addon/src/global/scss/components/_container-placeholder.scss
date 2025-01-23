@@ -1,0 +1,49 @@
+.gkit-placeholder {
+    position: relative;
+    &-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 6px;
+        background: #fff;
+        border-radius: 0 0 0 4px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:focus{
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        svg{
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover{
+            color: #397fe9;
+        }
+    }
+    .components-placeholder {
+        box-shadow: none;
+        outline: none;
+        text-align: center;
+        align-items: center;
+
+        .block-editor-block-variation-picker__variations{
+            justify-content: center;
+            li{
+                margin: 8px 15px 0 0;
+            }
+        }
+    }
+    .block-editor-block-variation-picker__variation {
+        box-shadow: inset 0 0 0 1px #397fe9 !important;
+        svg {
+            width: 48px;
+            height: 48px;
+            color: #397fe9;
+        }
+    }
+}

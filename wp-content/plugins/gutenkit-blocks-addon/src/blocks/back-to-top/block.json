@@ -1,0 +1,194 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenkit/back-to-top",
+	"version": "1.0.0",
+	"title": "Back To Top",
+	"category": "gutenkit",
+	"icon": "menu-alt3",
+	"keywords": ["gkit", "back to top", "scroll", "scroll to top", "back", "top"],
+	"description": "Back to top block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"btnAppearance": {
+			"type": "string",
+			"default": "icon-only",
+			"excludeCopy": true
+		},
+		"btnIcon": {
+			"type": "object",
+			"default": {
+				"title": "arrow-up",
+				"src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 384 512\"><path d=\"M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z\"/></svg>"
+			},
+			"excludeCopy": true
+		},
+		"btnText": {
+			"type": "string",
+			"default": "Top"
+		},
+		"alignDesktop": {
+			"type": "string",
+			"default": "left"
+		},
+		"alignTablet": {
+			"type": "string"
+		},
+		"alignMobile": {
+			"type": "string"
+		},
+		"offsetTop": {
+			"type": "number",
+			"default": 0,
+			"excludeCopy": true
+		},
+		"showBtnOnScroll": {
+			"type": "boolean",
+			"default": false,
+			"excludeCopy": true
+		},
+		"scrolledValue": {
+			"type": "number",
+			"default": 400,
+			"excludeCopy": true
+		},
+		"typography": {
+			"type": "object",
+			"default": {
+				"fontSize": {
+					"Desktop": {
+						"size": 16,
+						"unit": "px"
+					}
+				}
+			}
+		},
+		"iconSizeDesktop": {
+			"type": "object",
+			"default": {
+				"size": 16,
+				"unit": "px"
+			}
+		},
+		"iconSizeTablet": {
+			"type": "object"
+		},
+		"iconSizeMobile": {
+			"type": "object"
+		},
+		"widthDesktop": {
+			"type": "object",
+			"default": {
+				"size": 50,
+				"unit": "px"
+			}
+		},
+		"widthTablet": {
+			"type": "object"
+		},
+		"widthMobile": {
+			"type": "object"
+		},
+		"heightDesktop": {
+			"type": "object",
+			"default": {
+				"size": 50,
+				"unit": "px"
+			}
+		},
+		"heightTablet": {
+			"type": "object"
+		},
+		"heightMobile": {
+			"type": "object"
+		},
+		"lineFgColor": {
+			"type": "string",
+			"default": "#FF5050"
+		},
+		"lineBgColor": {
+			"type": "string",
+			"default": "#EEEEEE"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"bgColor": {
+			"type": "object"
+		},
+		"boxShadow": {
+			"type": "object"
+		},
+		"borderDesktop": {
+			"type": "object"
+		},
+		"borderTablet": {
+			"type": "object"
+		},
+		"borderMobile": {
+			"type": "object"
+		},
+		"borderRadiusDesktop": {
+			"type": "object",
+			"default": {
+				"top": "50px",
+				"right": "50px",
+				"bottom": "50px",
+				"left": "50px"
+			}
+		},
+		"borderRadiusTablet": {
+			"type": "object"
+		},
+		"borderRadiusMobile": {
+			"type": "object"
+		},
+		"hoverColor": {
+			"type": "string"
+		},
+		"bgHoverColor": {
+			"type": "object"
+		},
+		"hoverBoxShadow": {
+			"type": "object"
+		},
+		"hoverBorderDesktop": {
+			"type": "object"
+		},
+		"hoverBorderTablet": {
+			"type": "object"
+		},
+		"hoverBorderMobile": {
+			"type": "object"
+		},
+		"hoverBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"hoverBorderRadiusTablet": {
+			"type": "object"
+		},
+		"hoverBorderRadiusMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./frontend.js"
+}

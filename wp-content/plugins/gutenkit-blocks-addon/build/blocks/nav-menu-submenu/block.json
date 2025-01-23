@@ -1,0 +1,201 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/nav-menu-submenu",
+  "version": "1.0.0",
+  "title": "Nav Menu Submenu",
+  "category": "gutenkit",
+  "description": "Nav menu submenu block for gutenberg.",
+  "allowedBlocks": [
+    "gutenkit/nav-menu-item"
+  ],
+  "parent": [
+    "gutenkit/nav-menu-item"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthDesktop": {
+      "type": "object",
+      "default": {
+        "size": 200,
+        "unit": "px"
+      }
+    },
+    "gkitSubMenuContainerWidthTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuContainerWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuAlignmentDesktop": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentTablet": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentMobile": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentLaptop": {
+      "type": "string"
+    },
+    "gkitSubMenuAlignmentWideScreen": {
+      "type": "string"
+    },
+    "gkitSubMenuItemSpaceBetweenDesktop": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuItemSpaceBetweenWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuItemTypography": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBackgroundNormal": {
+      "type": "object"
+    },
+    "gkitSubMenuItemTextColorNormal": {
+      "type": "string"
+    },
+    "gkitSubMenuItemMobileTextColorNormal": {
+      "type": "string"
+    },
+    "gkitSubMenuItemMobileTextColorHover": {
+      "type": "string"
+    },
+    "gkitSubMenuItemMobileTextColorActive": {
+      "type": "string"
+    },
+    "gkitSubMenuItemBorderNormal": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBackgroundHover": {
+      "type": "object"
+    },
+    "gkitSubMenuItemTextColorHover": {
+      "type": "string"
+    },
+    "gkitSubMenuItemBorderColorHover": {
+      "type": "string"
+    },
+    "gkitSubMenuItemBackgroundActive": {
+      "type": "object"
+    },
+    "gkitSubMenuItemTextColorActive": {
+      "type": "string"
+    },
+    "gkitSubMenuItemBorderColorActive": {
+      "type": "string"
+    },
+    "gkitSubMenuItemPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "right": "10px",
+        "bottom": "0px",
+        "left": "10px"
+      }
+    },
+    "gkitSubMenuItemPaddingTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuItemPaddingMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuItemPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuItemPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorder": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuItemBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuBreakPoint": {
+      "type": "string",
+      "default": "1024"
+    },
+    "gkitSubMenuCustomMenuBreakPoint": {
+      "type": "number",
+      "default": 1024
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

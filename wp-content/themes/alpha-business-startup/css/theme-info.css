@@ -1,0 +1,136 @@
+/* Theme Info */
+/* styles for admin page */
+
+.alpha-business-startup--about-page--wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+}
+.alpha-business-startup--about-page--wrapper .feature-list {
+  display: block;
+}
+.alpha-business-startup--about-page--wrapper .alpha-business-startup-header-left > .fs-notice {
+  display: none !important;
+}
+.alpha-business-startup-header-left h2 {
+  color: #18191c !important;
+}
+.alpha-business-startup--about-page--wrapper .alpha-business-startup-admin-card-header {
+  text-align: center;
+  max-width: 100%;
+  background: #F6F6F6;
+  box-shadow: 1px 1px 10px -7px black;
+  padding: 40px;
+  border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+.alpha-business-startup-admin-card-header {
+  color: #18191c;
+}
+.alpha-business-startup--about-page--wrapper .alpha-business-startup-admin-card-header h2 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.alpha-business-startup--about-page--wrapper .alpha-business-startup-admin-card-header p {
+  color: #18191c;
+}
+#alpha-business-startup-admin-about-page p,
+#alpha-business-startup-admin-about-page {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+.alpha-business-startup-admin-button {
+  padding: 15px 30px;
+  text-decoration: inherit;
+  background: #fec63f;
+  color: #18191c;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.75;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.alpha-business-startup-admin-button.premium-button {
+  margin-left: 5px;
+  color: #18191c;
+}
+.alpha-business-startup-admin-button:hover {
+  background: #18191c;
+  color: #fff;
+}
+.alpha-business-startup-about-side {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 30px 0;
+  box-shadow: 1px 1px 10px -7px black;
+}
+.alpha-business-startup-about-side .alpha-business-startup-admin-card {
+  background: rgb(248, 248, 248);
+  padding: 50px;
+  border-radius: 5px;
+  color: #18191c;
+  text-align: center;
+}
+.alpha-business-startup-about-side .alpha-business-startup-admin-card h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+  color: #18191c;
+}
+.alpha-business-startup-about-side .alpha-business-startup-admin-card p,
+.alpha-business-startup-about-side .alpha-business-startup-admin-card h4 {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 15px;
+}
+.alpha-business-startup-card-header-button-group {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.alpha-business-startup-compare-table table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 2em;
+  width: 100%;
+  color: #000;
+  box-shadow: 0 0 33px #0000001a;
+}
+.alpha-business-startup-compare-table table th {
+  border-bottom: 1px solid #ffffff;
+  padding: 15px;
+  color: #18191c;
+}
+.alpha-business-startup-compare-table table td {
+  padding: 1em;
+  text-align: center;
+  color: #18191c;
+}
+.alpha-business-startup-compare-table table td span {
+  font-size: 30px;
+  border-radius: 100%;
+  padding: 5px;
+  color: #d72b2b;
+}
+.alpha-business-startup-compare-table table td span.dashicons.dashicons-yes {
+  text-align: center;
+  color: #4caf50;
+}
+.alpha-business-startup-compare-table table tr:nth-child(2n) td {
+  background: rgb(255 180 0 / 25%);
+}
+.alpha-business-startup-compare-table thead {
+  background: #fec63f;
+  padding: 40px;
+}

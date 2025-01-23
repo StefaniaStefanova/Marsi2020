@@ -1,0 +1,43 @@
+.gkit-tabs-container {
+    .gkit-date-time-picker {
+        .components-base-control {
+            margin-bottom: 0px;
+        }
+        .components-datetime {
+            &__date {
+                h3 {
+                    margin-bottom: 2px;
+                }
+                button[aria-label*="Selected"] {
+                    background: $primary-color;
+                }
+                .components-button {
+                    svg {
+                        fill: $primary-color;
+                    }
+                    &:focus:not(:disabled) {
+                        box-shadow: 0 0 0 2px $primary-color;
+                    }
+                } 
+            }
+            &__time {
+                .components-button {
+                    &.is-primary {
+                        background: $primary-color;
+                    }
+                    &.is-secondary {
+                        color: $primary-color;
+                        box-shadow: inset 0 0 0 1px $primary-color;
+                    }
+                }
+            }
+            &__timezone {
+                display: none;
+            }
+        }
+
+        &-help {
+            color: rgb(117, 117, 117);
+        }
+    }
+}

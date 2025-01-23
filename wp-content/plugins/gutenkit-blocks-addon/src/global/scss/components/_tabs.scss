@@ -1,0 +1,117 @@
+.gkit-tabs {
+   &.gkit-tabs-normal {
+        .components-tab-panel__tabs{
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: none;
+            border: 1px solid #ebebeb;
+            margin-bottom: 16px;
+            &-item {
+                flex: 1;
+                background-color: #ffffff;
+                outline: none;
+                display: block;
+                text-align: center;
+                height: 35px;
+                &:focus{
+                    box-shadow: none !important;
+                }
+
+                &.gkit-tabs__button--active {
+                    border: none;
+                    background-color: #F2F7FF;
+                    color: #397FE9;
+
+                    &::before {
+                        background-color: unset;
+                    }
+                }
+            }
+        }
+    }
+    
+   .gkit-tabs__button {
+        position: relative;
+        padding-top: 48px;
+        padding-bottom: 22px;
+        border-width: 1px 1px 0px 1px;
+        border-style: solid;
+        border-color: #ebebeb;
+        flex:1;
+        justify-content: center;
+        &:focus {
+            box-shadow:none !important;
+        }
+        &:hover {
+            color: $primary-color;
+            &::before {
+                background-color: $primary-color;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            left: 34px;
+            margin-bottom: 44px;
+            background-color: #292D32;
+        }
+        &--active {
+            border-width: 1px 1px 0px 1px;
+            border-style: solid;
+            border-color: $primary-color;
+            color: $primary-color;
+            &::before {
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .tab-content {
+        &::before {  
+            mask: url(../icons/pencil.svg) no-repeat 50% 50%;
+        }
+    }
+
+    .tab-layout {
+        &::before {  
+            mask: url(../icons/eraser.svg) no-repeat 50% 50%;
+        }
+    }
+
+    .tab-style {
+        &::before {
+            mask: url(../icons/pen-tool.svg) no-repeat 50% 50%;
+        }
+    }
+
+    .tab-advanced {
+        &::before {
+            mask: url(../icons/setting-2.svg) no-repeat 50% 50%;
+            
+        }
+    }
+
+    .components-button {
+        &:not([aria-disabled=true]){
+            &:active {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.components-panel[data-gkit-tab] {
+    &:not([data-gkit-tab="advanced"]) {
+        .block-editor-block-inspector {
+            &> div {
+                &> .block-editor-block-inspector__advanced {
+                    display: none;
+                }
+            }
+        }
+    }
+}

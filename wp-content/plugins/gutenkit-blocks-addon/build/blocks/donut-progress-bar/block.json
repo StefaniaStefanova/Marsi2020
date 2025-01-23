@@ -1,0 +1,367 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/donut-progress-bar",
+  "version": "1.0.0",
+  "title": "Donut progress bar",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "gutenkit",
+    "pie",
+    "chart",
+    "donut progress bar"
+  ],
+  "description": "Donut progress bar block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitPiechartStyle": {
+      "type": "string",
+      "default": "simple",
+      "excludeCopy": true
+    },
+    "gkitPiechartContent": {
+      "type": "string",
+      "default": "percentage",
+      "excludeCopy": true
+    },
+    "gkitPiechartPercentage": {
+      "type": "number",
+      "default": 80,
+      "excludeCopy": true
+    },
+    "gkitPiechartIconType": {
+      "type": "string",
+      "default": "icon",
+      "excludeCopy": true
+    },
+    "gkitPiechartIcon": {
+      "type": "object",
+      "default": {
+        "title": "apartment",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>apartment</title>\n<path d=\"M31.493 30.923h-2.154c0-0.19 0.063-0.38 0.063-0.507 0-1.521-0.887-2.788-2.154-3.358v-17.996c0-0.317-0.19-0.507-0.507-0.507h-8.048v-8.048c0-0.317-0.19-0.507-0.507-0.507h-14.448c-0.317 0-0.507 0.19-0.507 0.507v30.416h-2.661c-0.317 0-0.507 0.19-0.507 0.507s0.19 0.507 0.507 0.507h30.986c0.317 0 0.507-0.19 0.507-0.507s-0.253-0.507-0.57-0.507zM26.107 26.677c-0.19 0-0.38-0.063-0.507-0.063-0.38 0-0.824 0.063-1.141 0.19-0.063-0.127-0.253-0.19-0.444-0.19-0.317 0-0.507 0.19-0.507 0.507v0.19c-0.19 0.127-0.38 0.317-0.57 0.507 0 0-0.063 0.063-0.063 0.063-0.444-0.57-1.014-0.951-1.648-1.141-0.063-0.063-0.19-0.127-0.38-0.127-0.063 0-0.127 0-0.19 0-0.127 0-0.253 0-0.38 0-0.317 0-0.697 0.063-1.014 0.19-0.063 0-0.063 0-0.127 0.063-0.38-0.317-0.824-0.507-1.267-0.634 0 0 0 0 0 0-0.063 0-0.063 0-0.127 0s-0.063 0-0.127 0c0 0 0 0-0.063 0s-0.063 0-0.127 0c0 0 0 0-0.063 0s-0.063 0-0.127 0c0 0-0.063 0-0.063 0s-0.063 0-0.063 0-0.127 0-0.127 0-0.063 0-0.127 0c0 0-0.063 0-0.063 0s0 0 0 0c-0.507 0.063-0.95 0.19-1.394 0.444v-17.109h10.646l0.063 17.109zM4.246 1.077h13.307v7.477h-2.661c-0.317 0-0.507 0.19-0.507 0.507v16.602c-0.253-0.253-0.57-0.507-0.95-0.697 0 0-0.063-0.063-0.063-0.063s0 0-0.063 0c-0.38-0.19-0.824-0.317-1.204-0.38 0 0 0 0 0 0-0.063 0-0.127 0-0.127 0s0 0-0.063 0-0.127 0-0.19 0c-0.824 0-1.521 0.253-2.154 0.697v-0.19c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.063 0 0.127 0.063 0.19-0.253 0.444-0.444 0.887-0.507 1.457-0.634 0.063-1.204 0.317-1.648 0.634v-0.127c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.063 0 0.127 0 0.19-0.38 0.38-0.507 0.887-0.634 1.394h-0.57v-29.846zM8.301 28.832c0 0 0 0 0 0 0.063 0 0.063 0 0.127 0s0.063 0 0.127 0c0.317 0 0.507-0.19 0.507-0.507 0-1.521 1.204-2.661 2.661-2.661 1.331 0 2.471 0.951 2.598 2.281 0.063 0.127 0.127 0.253 0.253 0.317 0 0 0 0 0 0s0 0 0 0 0.063 0 0.063 0c0 0 0 0 0 0s0.063 0 0.063 0c0 0 0 0 0 0 0.063 0 0.063 0 0.127 0 0.19 0 0.317-0.063 0.444-0.253 0 0 0 0 0 0v0l0.063-0.063c0.444-0.507 1.014-0.824 1.711-0.824 0.38 0 0.697 0.127 1.014 0.317-0.634 0.57-1.014 1.394-1.014 2.218 0 0.063 0 0.127 0 0.19 0 0.38 0.063 0.697 0.19 1.077h-11.343c0.253-1.141 1.204-2.028 2.408-2.091zM18.503 30.923c-0.19-0.317-0.317-0.76-0.317-1.141 0-0.57 0.253-1.141 0.634-1.521 0.063-0.063 0.127-0.127 0.253-0.19 0.063 0 0.19 0 0.253-0.063 1.204-0.634 2.535-0.063 2.978 1.141 0.063 0.19 0.19 0.317 0.507 0.317 0.063 0 0.127 0 0.19-0.063 0.127 0 0.253-0.127 0.317-0.253 0.19-0.444 0.507-0.76 0.887-1.014 0.063 0 0.127-0.063 0.19-0.127 0.38-0.19 0.76-0.253 1.204-0.253 1.521 0 2.661 1.204 2.661 2.661 0 0.19 0 0.38-0.063 0.507h-9.695z\"></path>\n<path d=\"M17.616 13.877c-0.317 0-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507s0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507z\"></path>\n<path d=\"M17.616 23.446c-0.317 0-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507s0.507-0.19 0.507-0.507v-1.077c0-0.253-0.19-0.507-0.507-0.507z\"></path>\n<path d=\"M17.616 17.046c-0.317 0-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507s0.507-0.19 0.507-0.507v-1.077c0-0.253-0.19-0.507-0.507-0.507z\"></path>\n<path d=\"M17.616 20.277c-0.317 0-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507s0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507z\"></path>\n<path d=\"M17.616 10.646c-0.317 0-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507s0.507-0.19 0.507-0.507v-1.077c0-0.253-0.19-0.507-0.507-0.507z\"></path>\n<path d=\"M20.784 15.968c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M20.784 12.8c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M20.784 19.2c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M20.784 22.368c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M20.784 25.6c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M24.016 19.2c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M24.016 15.968c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M24.016 25.6c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M24.016 22.368c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M24.016 12.8c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 20.277c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 23.446c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 26.677c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 4.246c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 7.477c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 10.646c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M5.893 13.877c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.014c-0.063 0.317 0.19 0.57 0.507 0.57z\"></path>\n<path d=\"M5.893 17.046c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 7.477c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 4.246c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 13.877c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.014c0 0.317 0.19 0.57 0.507 0.57z\"></path>\n<path d=\"M9.061 10.646c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 17.046c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 20.277c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M9.061 23.446c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 10.646c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 7.477c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 4.246c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 23.446c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 20.277c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 17.046c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c-0.063 0.317 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M12.293 13.877c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.014c-0.063 0.317 0.19 0.57 0.507 0.57z\"></path>\n<path d=\"M15.461 7.477c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.253 0.19 0.507 0.507 0.507z\"></path>\n<path d=\"M15.461 4.246c0.317 0 0.507-0.19 0.507-0.507v-1.077c0-0.317-0.19-0.507-0.507-0.507s-0.507 0.19-0.507 0.507v1.077c0 0.317 0.19 0.507 0.507 0.507z\"></path>\n</svg>\n"
+      },
+      "excludeCopy": true
+    },
+    "gkitPiechartIconImage": {
+      "type": "object",
+      "default": {
+        "type": "image"
+      },
+      "excludeCopy": true
+    },
+    "gkitPiechartTitle": {
+      "type": "string",
+      "default": "Default title",
+      "source": "html",
+      "selector": ".gkit-piechart-title",
+      "excludeCopy": true
+    },
+    "gkitPiechartItemDescription": {
+      "type": "string",
+      "source": "html",
+      "selector": ".gkit-piechart-description",
+      "default": "Default description",
+      "excludeCopy": true
+    },
+    "gkitPiechartContentStyle": {
+      "type": "string",
+      "default": "default",
+      "excludeCopy": true
+    },
+    "gkitPiechartTitleColor": {
+      "type": "string",
+      "default": "#f5f5f5"
+    },
+    "gkitPiechartTitleTypographyGroup": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginDesktop": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "20px",
+        "left": "0px"
+      }
+    },
+    "gkitPiechartTitleMarginTablet": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginMobile": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartTitleMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartContentColor": {
+      "type": "string"
+    },
+    "gkitPiechartContentTypographyGroup": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginDesktop": {
+      "type": "object",
+      "default": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
+    },
+    "gkitPiechartContentMarginTablet": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginMobile": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartContentMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartContentAlignDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "gkitPiechartContentAlignTablet": {
+      "type": "string"
+    },
+    "gkitPiechartContentAlignMobile": {
+      "type": "string"
+    },
+    "gkitPiechartContentAlignTabletLandscape": {
+      "type": "string"
+    },
+    "gkitPiechartContentAlignMobileLandscape": {
+      "type": "string"
+    },
+    "gkitPiechartContentAlignLaptop": {
+      "type": "string"
+    },
+    "gkitPiechartContentAlignWideScreen": {
+      "type": "string"
+    },
+    "gkitPiechartSlideElementHeightDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 250
+      }
+    },
+    "gkitPiechartSlideElementHeightTablet": {
+      "type": "object"
+    },
+    "gkitPiechartSlideElementHeightMobile": {
+      "type": "object"
+    },
+    "gkitPiechartSlideElementHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSlideElementHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSlideElementHeightLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartSlideElementHeightWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackgroundGroup": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingTablet": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingMobile": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartSlideBackPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartSizeDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 150
+      }
+    },
+    "gkitPiechartSizeTablet": {
+      "type": "object"
+    },
+    "gkitPiechartSizeMobile": {
+      "type": "object"
+    },
+    "gkitPiechartSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartSizeLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartLineCap": {
+      "type": "string",
+      "default": "round"
+    },
+    "gkitPiechartBorderSize": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 5
+      }
+    },
+    "gkitPiechartIconSizeDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 30
+      }
+    },
+    "gkitPiechartIconSizeTablet": {
+      "type": "object"
+    },
+    "gkitPiechartIconSizeMobile": {
+      "type": "object"
+    },
+    "gkitPiechartIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartIconSizeLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartIconSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 80
+      }
+    },
+    "gkitPiechartImageSizeTablet": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeMobile": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeLaptop": {
+      "type": "object"
+    },
+    "gkitPiechartImageSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitPiechartLineColor": {
+      "type": "string"
+    },
+    "gkitPiechartBarColor": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic",
+        "backgroundColor": "#72e9cd"
+      }
+    },
+    "gkitPiechartIocnColor": {
+      "type": "string"
+    },
+    "gkitPiechartContentColorNumber": {
+      "type": "string"
+    },
+    "gkitPiechartNumberTypographyGroup": {
+      "type": "object"
+    },
+    "gkitPiechartWrapperPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "60px",
+        "right": 0,
+        "bottom": "60px",
+        "left": 0
+      }
+    },
+    "gkitPiechartWrapperBoxShadowGroup": {
+      "type": "object"
+    },
+    "gkitPiechartBackgroundNormal": {
+      "type": "object"
+    },
+    "gkitPiechartBackgroundHover": {
+      "type": "object"
+    },
+    "gkitPiechartBgHoverAnimation": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": [
+    "file:./index.js",
+    "easy-piechart"
+  ],
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": [
+    "file:./frontend.js",
+    "easy-piechart"
+  ]
+}

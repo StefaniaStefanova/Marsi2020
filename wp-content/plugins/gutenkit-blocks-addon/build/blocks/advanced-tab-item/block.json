@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/advanced-tab-item",
+  "version": "1.0.0",
+  "title": "Advanced Tab Item",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "gutenkit"
+  ],
+  "description": "Advanced tab block for gutenberg.",
+  "parent": [
+    "gutenkit/advanced-tab"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "dummyBlockID": {
+      "type": "string"
+    }
+  },
+  "usesContext": [
+    "gutenkit/tab-activeIndex"
+  ],
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js"
+}

@@ -1,0 +1,19 @@
+a.button.button-primary.get,a.button.button-primary.get:active,a.button.button-primary.get:focus,a.button.button-primary.get:hover,a.button.button-primary.get:visited{
+	background:#e74c3c !important;
+}
+a.button.button-primary.get:hover{
+	background: #132a36 !important;
+	color: #e74c3c !important;
+}
+
+thead.table-book {
+    background: #e74c3c !important;
+}
+a.button.button-primary.get.prem {
+    background: #24b751 !important;
+    color: #fff;
+}
+a.button.button-primary.get.prem:hover{
+    background: #24b751 !important;
+    color: #fff !important;
+}

@@ -1,0 +1,76 @@
+.gutenkit-range {
+    position: relative;
+    .gutenkit-range__slider {
+        flex:1;
+        margin-bottom: 0;
+        label {
+            @include gutenkit-control-title;
+        }
+        &>.components-base-control__field {
+            margin-bottom: 0px !important;
+        }
+        .components-range-control__root {
+            .e1epgpqk10 {
+                height: 8px;
+                background-color: $gkit-background-primary;
+            }
+            .components-range-control__track {
+                height: 8px;
+                color: $primary-color;
+            }
+
+            & > span.e1epgpqk0{
+                display: none;
+            }
+        }
+        .components-input-control  {
+            width: 58px !important;
+            &__input {
+                padding-right: 5px !important;
+            }
+        }
+        .e1epgpqk5 {
+            height: 16px;
+            width: 16px;
+            border: 1px solid #fff;
+            box-shadow: 2px 1px 4px 0px #88888840;
+            .e1epgpqk4 {
+                background-color: $primary-color;
+                &::before {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+    &__unit {
+        position: absolute !important;
+        top: 0px;
+        right: 0px;
+        height: 20px !important;
+        .components-select-control__input {
+            font-size: 10px !important;
+            padding: 0px 12px 0px 4px !important;
+            font-weight: 500;
+            min-height: 20px !important;
+            height: 20px !important;
+
+            background-color: transparent;
+        }
+        .components-input-control {
+            &__suffix {
+                svg {
+                    width: 15px;
+                    display: block;
+                }
+            }
+            &-suffix-wrapper {
+                padding-right: 4px !important;
+            }
+
+            &__backdrop {
+                border: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}

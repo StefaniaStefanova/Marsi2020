@@ -1,0 +1,298 @@
+@import "../../styles/mixin";
+
+.gkit-single-pricing {
+
+	@include transition;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 2px 0px;
+
+	&.flex-column {
+		flex-direction: column;
+	}
+
+	.pricing-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		z-index: -1;
+		height: 100%;
+
+		@include transition;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.gkit-pricing {
+
+		&-title {
+			font-size: 22px;
+			margin-bottom: 0;
+
+			@include transition;
+		}
+
+		&-subtitle {
+			color: #5a5a5a;
+
+			@include transition;
+		}
+
+		&-header {
+			margin-bottom: 25px;
+
+			svg {
+				max-width: 40px;
+				height: auto;
+				vertical-align: middle;
+			}
+
+			>i {
+				font-size: 40px;
+				margin-bottom: 12px;
+			}
+
+			>p {
+				margin-top: 7px;
+			}
+
+			>hr {
+				border-top: 2px solid #fff;
+				width: 30px;
+			}
+		}
+	}
+
+	.gkit-pricing-price-wraper {
+		position: relative;
+		margin-bottom: 15px;
+		line-height: initial;
+
+		.gkit-pricing-price {
+			position: relative;
+			z-index: 2;
+			font-size: 48px;
+			font-weight: 700;
+			letter-spacing: -0.4px;
+
+			@include transition;
+
+			>sup,
+			>sub {
+				font-size: 18px;
+
+				@include transition;
+			}
+
+			>sup {
+				top: 0;
+				left: 5px;
+			}
+
+			.currency {
+				margin-right: 10px;
+			}
+
+			.price {
+				margin-right: 10px;
+				@include transition;
+			}
+
+			.period {
+				vertical-align: super;
+			}
+		}
+
+
+		.gkit-pricing-tag {
+			position: absolute;
+			height: 100%;
+			width: calc(100% + 30px);
+			background-color: rgb(102, 102, 102);
+			top: 0;
+			right: -30px;
+			border-radius: 48px 0 0 48px;
+
+			@include transition;
+
+			+.gkit-pricing-price {
+				color: #fff;
+			}
+		}
+	}
+
+	.gkit-pricing-content {
+		-webkit-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		margin: 0 0 50px 0;
+
+
+		p {
+
+			@include transition;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: inline-flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			li {
+				list-style: none;
+				color: #565656;
+				font-size: 15px;
+				-webkit-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&:not(:last-child) {
+					margin-bottom: 3px;
+				}
+			}
+
+		}
+
+		&-icon {
+			fill: #55b559;
+		}
+	}
+
+}
+
+.gkit-pricing-btn-wraper {
+
+	@include transition;
+
+	.gkit-pricing-btn {
+		color: #fff;
+		background-color: #666;
+		border-radius: 25px;
+		border-color: currentcolor;
+		font-size: 14px;
+		font-weight: 700;
+		padding: 11px 41px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+
+		@include transition;
+
+		&.style-2 {
+			border-color: #e7e7e7;
+			color: #000;
+		}
+
+		svg {
+			height: auto;
+			vertical-align: middle;
+			fill: #fff;
+		}
+
+		span {
+			color: #fff;
+			margin: 0 10px;
+
+			@include transition;
+		}
+	}
+
+	.gkit-pricing-btn-icon-pos-right {
+		display: inline-flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+// Info button and text
+.gkit-tooltip {
+
+	&-container {
+		display: inline-block;
+		position: relative;
+		color: #afb1b9;
+		border-radius: 50%;
+		font-size: 15px;
+		font-style: normal;
+		cursor: help;
+		margin-left: 5px;
+
+		@include transition;
+
+		.gkit-tooltip {
+
+			&-trigger {
+				position: relative;
+				top: 3px;
+				left: 0;
+				border-style: solid;
+				border-width: 0;
+				border-color: #021343 transparent transparent;
+			}
+
+			&-content {
+				display: none;
+				padding: 11px 20px 13px;
+				border-radius: 6px;
+				max-width: 280px;
+				width: max-content;
+				z-index: 999;
+				background-color: #021343;
+				box-shadow: 0 20px 20px rgba(0, 10, 38, 0.16);
+				color: #fff;
+				text-align: center;
+				position: absolute;
+				bottom: 100%;
+				transform: translateX(-8%);
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+			}
+		}
+
+		.gkit-info {
+
+			&-icon {
+				fill: #afb1b9;
+
+				&:hover {
+					fill: #666;
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+}
+
+.gkit-tooltip-container .gkit-tooltip-content::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	margin-bottom: -25px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #000 transparent transparent transparent;
+	box-sizing: border-box;
+
+}
+
+.is-active-gkit-tooltip:hover .gkit-tooltip-content {
+	display: block;
+}
+
+

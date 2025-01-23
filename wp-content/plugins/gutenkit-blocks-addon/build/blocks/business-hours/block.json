@@ -1,0 +1,269 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/business-hours",
+  "version": "1.0.0",
+  "title": "Business Hours",
+  "category": "gutenkit",
+  "allowedBlocks": [
+    "gutenkit/business-hours-item"
+  ],
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "business hours",
+    "opening hours",
+    "hours",
+    "opening times",
+    "times",
+    "currently open",
+    "watch"
+  ],
+  "description": "Business hours block for gutenkit.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitBusinessOpendayList": {
+      "type": "array",
+      "default": [
+        {
+          "gkitBusinessDay": "Saturday",
+          "gkitBusinessTime": "Close",
+          "gkitHighlightThisDay": true,
+          "gkitSingleBusinessDayColor": "#fa2d2d",
+          "gkitSingleBusinessTimeColor": "#fa2d2d"
+        },
+        {
+          "gkitBusinessDay": "Sunday",
+          "gkitBusinessTime": "Close",
+          "gkitHighlightThisDay": true,
+          "gkitSingleBusinessDayColor": "#fa2d2d",
+          "gkitSingleBusinessTimeColor": "#fa2d2d"
+        },
+        {
+          "gkitBusinessDay": "Monday",
+          "gkitBusinessTime": "10:00 AM to 7:00 PM",
+          "gkitHighlightThisDay": false
+        },
+        {
+          "gkitBusinessDay": "Tuesday",
+          "gkitBusinessTime": "10:00 AM to 7:00 PM",
+          "gkitHighlightThisDay": false
+        },
+        {
+          "gkitBusinessDay": "Wednesday",
+          "gkitBusinessTime": "10:00 AM to 7:00 PM",
+          "gkitHighlightThisDay": false
+        },
+        {
+          "gkitBusinessDay": "Thursday",
+          "gkitBusinessTime": "10:00 AM to 7:00 PM",
+          "gkitHighlightThisDay": false
+        },
+        {
+          "gkitBusinessDay": "Friday",
+          "gkitBusinessTime": "10:00 AM to 7:00 PM",
+          "gkitHighlightThisDay": false
+        }
+      ],
+      "excludeCopy": true
+    },
+    "gkitBusinessItemMarginDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessItemBackground": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemItemRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessItemBorder": {
+      "type": "object"
+    },
+    "gkitLastChildBorder": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitBusinessDayColor": {
+      "type": "string"
+    },
+    "gkitBusinessDayTypography": {
+      "type": "object"
+    },
+    "gkitBusinessDayBackground": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemDayPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessTimeColor": {
+      "type": "string"
+    },
+    "gkitBusinessTimeTypography": {
+      "type": "object"
+    },
+    "gkitBusinessTimeBackground": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimeRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingDesktop": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingTablet": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingMobile": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBusinessItemTimePaddingWideScreen": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

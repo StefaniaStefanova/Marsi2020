@@ -1,0 +1,344 @@
+/*common default
+*************************************************************************************/
+.bew-elements-widgets ins {
+	text-decoration: none;
+}
+
+/*Display Flex css 
+*************************************************************************************/
+.bew-display-flex {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+/*Display Grid css
+************************************************************************************/
+.bew-display-grid {
+	display: -ms-grid;
+	display: grid;
+}
+
+/*Grid Column for Desktop*/
+.bew-display-grid[desktop-col="1"] {
+	width: 100%;
+}
+.bew-display-grid[desktop-col="2"] {
+	grid-template-columns: repeat(2, 1fr);
+}
+.bew-display-grid[desktop-col="3"] {
+	grid-template-columns: repeat(3, 1fr);
+}
+.bew-display-grid[desktop-col="4"] {
+	grid-template-columns: repeat(4, 1fr);
+}
+.bew-display-grid[desktop-col="5"] {
+	grid-template-columns: repeat(5, 1fr);
+}
+.bew-display-grid[desktop-col="6"] {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+/*Grid Column for Tablet*/
+@media screen and (max-width: 1023px) {
+	.bew-display-grid[tablet-col="1"] {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.bew-display-grid[tablet-col="2"] {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.bew-display-grid[tablet-col="3"] {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.bew-display-grid[tablet-col="4"] {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.bew-display-grid[tablet-col="5"] {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.bew-display-grid[tablet-col="6"] {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+/*Grid Column for Mobile*/
+@media screen and (max-width: 575px) {
+	.bew-display-grid[mobile-col="1"] {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.bew-display-grid[mobile-col="2"] {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.bew-display-grid[mobile-col="3"] {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.bew-display-grid[mobile-col="4"] {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.bew-display-grid[mobile-col="5"] {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.bew-display-grid[mobile-col="6"] {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+/*Slick Slider 
+************************************************************************************/
+
+/*arrow*/
+.bew-elements-widgets .owl-nav button {
+	position: absolute;
+	background-color: transparent;
+	border-radius: 0;
+	border: none;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.bew-elements-widgets .owl-nav .nav-btn {
+	background-color: #ffffff;
+	border: 1px solid #e6e6e6;
+	border-radius: 50%;
+	padding: 7px 14px;
+}
+.bew-elements-widgets .owl-nav button.owl-prev {
+	left: -20px;
+}
+.bew-elements-widgets .owl-nav button.owl-next {
+	right: -20px;
+}
+.bew-elements-widgets .owl-nav button i {
+	font-size: 14px;
+}
+@media screen and (max-width: 1199px) {
+	.bew-elements-widgets .owl-nav button.owl-prev {
+		left: -10px;
+	}
+	.bew-elements-widgets .owl-nav button.owl-next {
+		right: -10px;
+	}
+}
+/*dots*/
+.bew-elements-widgets .owl-dots button {
+	background-color: #E9E9E9;
+    border-radius: 100%;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+.bew-elements-widgets .owl-dots button:hover,
+.bew-elements-widgets .owl-dots button:focus {
+	background-color: #030303;
+}
+.bew-elements-widgets .owl-dots button.active {
+	background-color: #030303;
+}
+
+/*Bew Woo-Commerce Default Style  
+************************************************************************************/
+
+/*product default*/
+.bew-woo-product a {
+	text-decoration: none;
+}
+.bew-woo-product .woocommerce-LoopProduct-link {
+	color: inherit;
+}
+.bew-woo-product .woocommerce-loop-product__title {
+	color: #030303;
+	margin-bottom: 10px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.bew-woo-product .woocommerce-product-details__short-description p {
+	margin-bottom: 10px;
+}
+.bew-woo-product figure .onsale {
+	background-color: #313131;
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	left: initial;
+	top: 10px;
+	right: 10px;
+	padding: 5px 10px;
+	line-height: 1.2;
+	z-index: 9;
+}
+.bew-woo-product .price {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.bew-woo-product .button {
+	background-color: #313131;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+}
+
+/*star rating*/
+.bew-woo-product .star-rating {
+	color: #FEBF00;
+	display: inline-block;
+	font-family: WooCommerce;
+	position: relative;
+	line-height: 1;
+	overflow: hidden;
+	font-size: 14px;
+}
+.bew-woo-product .star-rating:before {
+	content: "sssss";
+	position: relative;
+}
+.bew-woo-product .star-rating span:before {
+	content: "SSSSS";
+    top: 0;
+    position: relative;
+    left: 0;
+    display: inline-block;
+} 
+.bew-woo-product .star-rating span {
+	overflow: hidden;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*remove default list style for woocommerce product*/
+.bew-woo-product ul {
+	margin: 0;
+	padding: 0;
+}
+.bew-woo-product ul li {
+	list-style: none;
+}
+
+/*Pagination
+************************************************************************************/
+
+.bew-pagination {
+	margin-top: 40px;
+}
+.bew-pagination ul {
+	margin: 0;
+	padding: 0;
+}
+.bew-pagination li {
+	list-style: none;
+	display: inline-block;
+}
+
+/*Categories List
+************************************************************************************/
+.bew-elements-product-categories-list {
+    row-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+}
+.bew-elements-product-categories-list .product-wrapper a {
+    display: block;
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #eaebed;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.bew-elements-product-categories-list .products-cat-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bew-elements-product-categories-list .products-cat-wrap .products-cat-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.bew-elements-product-categories-list .products-cat-wrap .categoryimage {
+    max-width: 45px;
+    margin: 0px;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.bew-elements-product-categories-list .products-cat-wrap .woocommerce-loop-category__title {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 15px;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+}
+.bew-elements-product-categories-list .products-cat-wrap .count {
+    background-color: #ebebeb;
+    color: #313131;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    border-radius: 50%;
+    min-width: 45px;
+    min-height: 45px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.bew-elements-product-categories-list .product-wrapper a:hover {
+    background-color: #E9E9E9;
+}
+.bew-elements-product-categories-list .product-wrapper a:hover .woocommerce-loop-category__title {
+    color: #555555;
+}
+.bew-elements-product-categories-list .product-wrapper a:hover .count {
+    background-color: #ffffff;
+    color: #1b1b1b;
+}

@@ -1,0 +1,21 @@
+.gutenkit-switcher {
+    label {
+        @include gutenkit-control-title;
+    }
+    div[data-wp-component="HStack"] {
+        flex-direction: row-reverse !important;
+        justify-content: space-between;
+    }
+    .components-form-toggle {
+        &.is-checked {
+            .components-form-toggle__track {
+                background-color: $primary-color !important;
+            }
+        }
+        .components-form-toggle__input {
+            &:focus + .components-form-toggle__track {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 3px #bfbfbf;
+            }
+        }
+    }
+}

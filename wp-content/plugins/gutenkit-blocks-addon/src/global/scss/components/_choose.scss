@@ -1,0 +1,75 @@
+.gutenkit-choose {
+    .components-base-control__label {
+        @include gutenkit-control-title;
+    }
+    &__inner {
+        border: none !important;
+        &:focus-within{
+            box-shadow: none !important;
+        }
+        &.column {
+            .components-toggle-group-control-option-base{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        &.row-reverse {
+            .components-toggle-group-control-option-base{
+                svg{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &.column-reverse {
+            .components-toggle-group-control-option-base{
+                svg{
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        &.row-align {
+            .components-toggle-group-control-option-base{
+                svg{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        button[aria-checked="true"] {
+            color: $primary-color;
+            background: #F2F7FF;
+            svg{
+                fill: $primary-color;
+            }
+        }
+        button[aria-checked="false"] {
+            color: $gkit-font-color;
+        }
+        .et6ln9s1 {
+            &:last-child {
+                border-right-width: 1px;
+            }
+            border-color: $gkit-border-color;
+            border-top-width: 1px;
+            border-left-width: 1px;
+            border-bottom-width: 1px;
+            border-style: solid;
+            border-right-width: 0px;
+        }
+        button {
+            width: 100%;
+            white-space: nowrap;
+        }
+        div[role="presentation"] {
+            background: none;
+        }
+        .components-toggle-group-control-option-base{
+            svg{
+                width: 18px;
+                display: block;
+                fill: $gkit-font-color;
+                transition: 0.3s all;
+            }
+        }
+    }  
+}

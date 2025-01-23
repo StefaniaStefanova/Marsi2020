@@ -1,0 +1,255 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "gutenkit/post-tab",
+    "version": "1.0.0",
+    "title": "Post Tab",
+    "category": "gutenkit",
+    "icon": "menu-alt3",
+    "keywords": [
+        "gkit",
+        "gutenkit",
+        "post-tab",
+        "post tab"
+    ],
+    "description": "Post tab block for gutenberg.",
+    "example": {
+        "preview": true
+    },
+    "attributes": {
+        "blockID": {
+            "type": "string"
+        },
+        "blockClass": {
+            "type": "string"
+        },
+        "blocksCSS": {
+            "type": "object"
+        },
+        "selectedCatagories": {
+            "type": "array",
+            "default": []
+        },
+        "postCount": {
+            "type": "number",
+            "default": 3
+        },
+        "posts": {
+            "type": "array",
+            "default": []
+        },
+        "enableCropTitle": {
+            "type": "boolean",
+            "default": false
+        },
+        "numberOfWordsTitle": {
+            "type": "number",
+            "default": 5
+        },
+        
+        "selectColumnDesktop": {
+            "type": "string",
+            "default": "33.33%"
+        },
+        "selectColumnTablet": {
+            "type": "string",
+            "default": "50%"
+        },
+        "selectColumnMobile": {
+            "type": "string",
+            "default": "50%"
+        },
+        "eventType": {
+            "type": "string",
+            "default": "mouseenter"
+        },
+        "tabPositionDesktop": {
+            "type": "string",
+            "default": "vertical"
+        },
+        "tabPositionTablet": {
+            "type": "string",
+            "default": "vertical"
+        },
+        "tabPositionMobile": {
+            "type": "string",
+            "default": "horizontal"
+        },
+        "tabAlignmentDesktop": {
+            "type": "string"
+        },
+        "tabAlignmenTablet": {
+            "type": "string"
+        },
+        "tabAlignmentMobile": {
+            "type": "string"
+        },
+        "tabJustifyDesktop": {
+            "type": "string"
+        },
+        "tabJustifyablet": {
+            "type": "string"
+        },
+        "tabJustifyMobile": {
+            "type": "string"
+        },
+        "linkArchive": {
+            "type": "boolean",
+            "default": false
+        },
+        "tabContainerBorder": {
+            "type": "object"
+        },
+        "tabContainerBackground": {
+            "type": "object"
+        },
+        "tabContainerPaddingDesktop": {
+            "type": "object"
+        },
+        "tabContainerPaddingTablet": {
+            "type": "object"
+        },
+        "tabContainerPaddingMobile": {
+            "type": "object"
+        },
+        "tabContainerMarginDesktop": {
+            "type": "object"
+        },
+        "tabContainerMarginTablet": {
+            "type": "object"
+        },
+        "tabContainerMarginMobile": {
+            "type": "object"
+        },
+        "itemTypography": {
+            "type": "object"
+        },
+        "itemPaddingDesktop": {
+            "type": "object"
+        },
+        "itemPaddingTablet": {
+            "type": "object"
+        },
+        "itemPaddingMobile": {
+            "type": "object"
+        },
+        "itemMarginDesktop": {
+            "type": "object"
+        },
+        "itemMarginTablet": {
+            "type": "object"
+        },
+        "itemMarginMobile": {
+            "type": "object"
+        },
+        "itemTextColor": {
+            "type": "string"
+        },
+        "itemBgColor": {
+            "type": "object"
+        },
+        "itemBorder": {
+            "type": "object"
+        },
+        "itemBorderRadiusDesktop": {
+            "type": "object"
+        },
+        "itemBorderRadiusTablet": {
+            "type": "object"
+        },
+        "itemBorderRadiusMobile": {
+            "type": "object"
+        },
+        "itemShadow": {
+            "type": "object"
+        },
+        "itemHoverColor": {
+            "type": "string"
+        },
+        "itemHoverBgColor": {
+            "type": "object"
+        },
+        "itemHoverBorder": {
+            "type": "object"
+        },
+        "itemHoverBorderRadiusDesktop": {
+            "type": "object"
+        },
+        "itemHoverBorderRadiusTablet": {
+            "type": "object"
+        },
+        "itemHoverBorderRadiusMobile": {
+            "type": "object"
+        },
+        "itemHoverShadow": {
+            "type": "object"
+        },
+        "itemActiveColor": {
+            "type": "string"
+        },
+        "itemActiveBgColor": {
+            "type": "object"
+        },
+        "itemActiveBorder": {
+            "type": "object"
+        },
+        "itemActiveBorderRadiusDesktop": {
+            "type": "object"
+        },
+        "itemActiveBorderRadiusTablet": {
+            "type": "object"
+        },
+        "itemActiveBorderRadiusMobile": {
+            "type": "object"
+        },
+        "itemActiveShadow": {
+            "type": "object"
+        },
+        "disableHoverEffect": {
+            "type": "boolean",
+            "default": false
+        },
+        "imageWidth": {
+            "type": "object"
+        },
+        "imageHeight": {
+            "type": "object"
+        },
+        "titleTypography": {
+            "type": "object"
+        },
+        "titleColor": {
+            "type": "string"
+        },
+        "titleHoverColor": {
+            "type": "string"
+        },
+        "titleMarginDesktop": {
+            "type": "object"
+        },
+        "titleMarginTablet": {
+            "type": "object"
+        },
+        "titleMarginMobile": {
+            "type": "object"
+        },
+        "contentAlignmentDesktop": {
+            "type": "object"
+        },
+        "contentAlignmentTablet": {
+            "type": "object"
+        },
+        "contentAlignmentMobile": {
+            "type": "object"
+        }
+    },
+    "supports": {
+        "html": false,
+        "anchor": true
+    },
+    "textdomain": "gutenkit",
+    "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./frontend.js"
+}

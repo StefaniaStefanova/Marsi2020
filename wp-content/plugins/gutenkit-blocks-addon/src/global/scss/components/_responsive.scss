@@ -1,0 +1,50 @@
+.gutenkit-responsive-dropdown {
+    position: relative;
+    &-menu {
+        position: absolute;
+        top: -1px;
+        .components-button {
+            padding: 0px;
+            min-width: auto;
+            height: 18px;
+            z-index: 3;
+            position: absolute;
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+            span {
+                font-size: 12px;
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+}
+
+.gutenkit-responsive-dropdown-popover  {
+    .components-popover__content {
+        padding: 0px;
+        .components-button {
+            padding: 0px;
+            min-width: 18px;
+            height: 18px;
+            &:focus:not(:disabled) {
+                box-shadow: none;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
+
+.components-base-control label{
+	width: fit-content;
+}

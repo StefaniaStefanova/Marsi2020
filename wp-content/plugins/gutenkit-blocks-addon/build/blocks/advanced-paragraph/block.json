@@ -1,0 +1,351 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/advanced-paragraph",
+  "version": "1.0.0",
+  "title": "Advanced Paragraph",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "gutenkit",
+    "text",
+    "para",
+    "paragraph",
+    "advanced paragraph",
+    "advanced"
+  ],
+  "description": "Advanced Paragraph block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "paragraphColumnDesktop": {
+      "type": "object"
+    },
+    "paragraphColumnTablet": {
+      "type": "object"
+    },
+    "paragraphColumnMobile": {
+      "type": "object"
+    },
+    "paragraphColumnTabletLandscape": {
+      "type": "object"
+    },
+    "paragraphColumnMobileLandscape": {
+      "type": "object"
+    },
+    "paragraphColumnLaptop": {
+      "type": "object"
+    },
+    "paragraphColumnWideScreen": {
+      "type": "object"
+    },
+    "dropCapSwitcher": {
+      "type": "boolean",
+      "default": false
+    },
+    "paragraphColumnSpacingDesktop": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingTablet": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingMobile": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingLaptop": {
+      "type": "object"
+    },
+    "paragraphColumnSpacingWideScreen": {
+      "type": "object"
+    },
+    "paragraphTextAlignmentDesktop": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentTablet": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentMobile": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentLaptop": {
+      "type": "string"
+    },
+    "paragraphTextAlignmentWideScreen": {
+      "type": "string"
+    },
+    "textTypography": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "textColorHover": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "textShadow": {
+      "type": "object"
+    },
+    "textShadowHover": {
+      "type": "object",
+      "default": "0 0 0 #fff"
+    },
+    "paragraphLinkTypography": {
+      "type": "object"
+    },
+    "paragraphLinkColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paragraphLinkBgColor": {
+      "type": "object"
+    },
+    "paragraphLinkColorHover": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paragraphLinkBgColorHover": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusTablet": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusMobile": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "textLinkBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "textLinkPaddingDesktop": {
+      "type": "object"
+    },
+    "textLinkPaddingTablet": {
+      "type": "object"
+    },
+    "textLinkPaddingMobile": {
+      "type": "object"
+    },
+    "textLinkPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "textLinkPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "textLinkPaddingLaptop": {
+      "type": "object"
+    },
+    "textLinkPaddingWideScreen": {
+      "type": "object"
+    },
+    "focusedTextColor": {
+      "type": "string"
+    },
+    "focusedTextHoverColor": {
+      "type": "string"
+    },
+    "focusedTextTypography": {
+      "type": "object"
+    },
+    "focusedTextDecorationColor": {
+      "type": "string"
+    },
+    "focusedTextShadow": {
+      "type": "object"
+    },
+    "focusedTextPaddingDesktop": {
+      "type": "object"
+    },
+    "focusedTextPaddingTablet": {
+      "type": "object"
+    },
+    "focusedTextPaddingMobile": {
+      "type": "object"
+    },
+    "focusedTextPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "focusedTextPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "focusedTextPaddingLaptop": {
+      "type": "object"
+    },
+    "focusedTextPaddingWideScreen": {
+      "type": "object"
+    },
+    "focusedTextUseBackground": {
+      "type": "boolean",
+      "default": false
+    },
+    "focusedTextBackgroundColor": {
+      "type": "object"
+    },
+    "focusedTextBorderRadius": {
+      "type": "object"
+    },
+    "focusedTextUseTextFill": {
+      "type": "boolean",
+      "default": false
+    },
+    "focusedTextFillBackground": {
+      "type": "object"
+    },
+    "dropCapTypography": {
+      "type": "object"
+    },
+    "dropCapColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "dropCaptextShadow": {
+      "type": "object"
+    },
+    "dropCapBgColor": {
+      "type": "object"
+    },
+    "dropCapBorderDesktop": {
+      "type": "object"
+    },
+    "dropCapBorderTablet": {
+      "type": "object"
+    },
+    "dropCapBorderMobile": {
+      "type": "object"
+    },
+    "dropCapBorderTabletLandscape": {
+      "type": "object"
+    },
+    "dropCapBorderMobileLandscape": {
+      "type": "object"
+    },
+    "dropCapBorderLaptop": {
+      "type": "object"
+    },
+    "dropCapBorderWideScreen": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusTablet": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusMobile": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "dropCapBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "dropCapPaddingDesktop": {
+      "type": "object"
+    },
+    "dropCapPaddingTablet": {
+      "type": "object"
+    },
+    "dropCapPaddingMobile": {
+      "type": "object"
+    },
+    "dropCapPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "dropCapPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "dropCapPaddingLaptop": {
+      "type": "object"
+    },
+    "dropCapPaddingWideScreen": {
+      "type": "object"
+    },
+    "dropCapMarginDesktop": {
+      "type": "object"
+    },
+    "dropCapMarginTablet": {
+      "type": "object"
+    },
+    "dropCapMarginMobile": {
+      "type": "object"
+    },
+    "dropCapMarginTabletLandscape": {
+      "type": "object"
+    },
+    "dropCapMarginMobileLandscape": {
+      "type": "object"
+    },
+    "dropCapMarginLaptop": {
+      "type": "object"
+    },
+    "dropCapMarginWideScreen": {
+      "type": "object"
+    },
+    "description": {
+      "type": "string",
+      "default": "Hello Gutenkit!"
+    },
+    "dropCap": {
+      "type": "boolean",
+      "default": false
+    },
+    "content": {
+      "type": "string",
+      "default": "GutenKit Block Addon is a powerful WordPress block plugin that enhances the block editor experience. Packed with dynamic and customizable blocks, it offers endless possibilities for building visually stunning pages and posts. From advanced grid layouts to dynamic pricing tables, the GutenKit Block Addon is designed to elevate your website design effortlessly, making it a must-have tool for WordPress developers and designers alike."
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "__experimentalSlashInserter": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

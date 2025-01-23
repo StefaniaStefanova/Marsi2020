@@ -1,0 +1,10 @@
+.components-dropdown-menu__menu {
+    .components-menu-item__button {
+        &.gutenkit-paste-button {
+            &.disabled {
+                pointer-events: none;
+                opacity: .5;
+            }
+        }
+    }
+}

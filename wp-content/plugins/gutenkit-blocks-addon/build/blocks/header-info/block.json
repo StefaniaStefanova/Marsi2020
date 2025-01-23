@@ -1,0 +1,171 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/header-info",
+  "version": "1.0.0",
+  "title": "Header Info",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "header-info",
+    "info-list",
+    "info",
+    "list"
+  ],
+  "description": "Header info block for gutenberg",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitHeaderInfoItems": {
+      "type": "array",
+      "default": [
+        {
+          "headerTitle": "463 7th Ave, NY 10018, USA",
+          "headerIconAlign": "row",
+          "headerIcon": {
+            "title": "map",
+            "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><path d=\"M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456V120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5V421.2l120-45.7V90.8L48 136.5zM360 422.7V137.3l-144-48V374.7l144 48zm48-1.5l120-45.7V90.8L408 136.5V421.2z\"/></svg>"
+          },
+          "headerLink": "#"
+        }
+      ],
+      "excludeCopy": true
+    },
+    "headerInfoLayOutDesktop": {
+      "type": "string",
+      "default": "row"
+    },
+    "headerInfoLayOutTablet": {
+      "type": "string"
+    },
+    "headerInfoLayOutMobile": {
+      "type": "string"
+    },
+    "headerInfoLayOutTabletLandscape": {
+      "type": "string"
+    },
+    "headerInfoLayOutMobileLandscape": {
+      "type": "string"
+    },
+    "headerInfoLayOutLaptop": {
+      "type": "string"
+    },
+    "headerInfoLayOutWideScreen": {
+      "type": "string"
+    },
+    "gapBetweenDesktop": {
+      "type": "object"
+    },
+    "gapBetweenTablet": {
+      "type": "object"
+    },
+    "gapBetweenMobile": {
+      "type": "object"
+    },
+    "gapBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "gapBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "gapBetweenLaptop": {
+      "type": "object"
+    },
+    "gapBetweenWideScreen": {
+      "type": "object"
+    },
+    "headerPaddingDesktop": {
+      "type": "object"
+    },
+    "headerPaddingTablet": {
+      "type": "object"
+    },
+    "headerPaddingMobile": {
+      "type": "object"
+    },
+    "headerPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "headerPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "headerPaddingLaptop": {
+      "type": "object"
+    },
+    "headerPaddingWideScreen": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "background": {
+      "type": "object"
+    },
+    "textHoverColor": {
+      "type": "string"
+    },
+    "backgroundHover": {
+      "type": "object"
+    },
+    "headerTypography": {
+      "type": "object"
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "iconHoverColor": {
+      "type": "string"
+    },
+    "iconSizeDesktop": {
+      "type": "object"
+    },
+    "iconSizeTablet": {
+      "type": "object"
+    },
+    "iconSizeMobile": {
+      "type": "object"
+    },
+    "iconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "iconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "iconSizeLaptop": {
+      "type": "object"
+    },
+    "iconSizeWideScreen": {
+      "type": "object"
+    },
+    "iconSpacing": {
+      "type": "object",
+      "default": {
+        "size": 10,
+        "unit": "px"
+      }
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

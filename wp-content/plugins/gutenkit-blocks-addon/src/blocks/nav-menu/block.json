@@ -1,0 +1,542 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gutenkit/nav-menu",
+	"version": "1.0.0",
+	"title": "Nav Menu",
+	"category": "gutenkit",
+	"description": "Nav nenu block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"gkitMenuBreakPoint": {
+			"type": "string",
+			"default": "1024"
+		},
+		"gkitMenuCustomMenuBreakPoint": {
+			"type": "number",
+			"default": 1024
+		},
+		"gkitMenuJustifyContentDesktop": {
+			"type": "string",
+			"default": "flex-start"
+		},
+		"gkitMenuJustifyContentTablet": {
+			"type": "string",
+			"default": "flex-start"
+		},
+		"gkitMenuJustifyContentMobile": {
+			"type": "string",
+			"default": "flex-start"
+		},
+		"gkitMenuAlignItemsDesktop": {
+			"type": "string",
+			"default": "center"
+		},
+		"gkitMenuAlignItemsTablet": {
+			"type": "string",
+			"default": "stretch"
+		},
+		"gkitMenuAlignItemsMobile": {
+			"type": "string",
+			"default": "stretch"
+		},
+		"gkitMenuMobileLogo": {
+			"type": "object",
+			"default": {}
+		},
+		"gkitMenuMobileLogoLinkType": {
+			"type": "string"
+		},
+		"gkitMenuMobileLogoCustomLink": {
+			"type": "object"
+		},
+		"gkitMenuMobileHumbergerIcon": {
+			"type": "object"
+		},
+		"gkitMenuWrapperBackground": {
+			"type": "object"
+		},
+		"gkitMobileWrapperBackground": {
+			"type": "object"
+		},
+		"gkitMenuPaddingDesktop": {
+			"type": "object"
+		},
+		"gkitMenuPaddingTablet": {
+			"type": "object"
+		},
+		"gkitMenuPaddingMobile": {
+			"type": "object"
+		},
+		"gkitMenuBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitMenuBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitMenuBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitMenuItemSpacingDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 15
+			}
+		},
+		"gkitMenuItemSpacingTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 12
+			}
+		},
+		"gkitMenuItemSpacingMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 10
+			}
+		},
+		"gkitMenuItemTypography": {
+			"type": "object"
+		},
+		"gkitMenuItemBackground": {
+			"type": "object"
+		},
+		"gkitMenuItemTextColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"gkitMenuItemBorder": {
+			"type": "object"
+		},
+		"gkitMenuItemBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitMenuItemBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitMenuItemBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitMenuItemHoverBackground": {
+			"type": "object"
+		},
+		"gkitMenuItemHoverTextColor": {
+			"type": "string"
+		},
+		"gkitMenuItemHoverBorderColor": {
+			"type": "string"
+		},
+		"gkitMenuItemHoverBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitMenuItemHoverBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitMenuItemHoverBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitMenuItemActiveBackground": {
+			"type": "object"
+		},
+		"gkitMenuItemActiveTextColor": {
+			"type": "string",
+			"default": "#707070"
+		},
+		"gkitMenuItemActiveBorderColor": {
+			"type": "string"
+		},
+		"gkitMenuItemActiveBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitMenuItemActiveBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitMenuItemActiveBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitMenuItemPaddingDesktop": {
+			"type": "object"
+		},
+		"gkitMenuItemPaddingTablet": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "10px",
+				"bottom": "0px",
+				"left": "10px"
+			}
+		},
+		"gkitMenuItemPaddingMobile": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "10px",
+				"bottom": "0px",
+				"left": "10px"
+			}
+		},
+		"gkitMenuItemMarginDesktop": {
+			"type": "object"
+		},
+		"gkitMenuItemMarginTablet": {
+			"type": "object"
+		},
+		"gkitMenuItemMarginMobile": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerIconPosition": {
+			"type": "string",
+			"default": "right"
+		},
+		"gkitMenuHamburgerIconSizeDesktop": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerIconSizeTablet": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerIconSizeMobile": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerBtnWidthDesktop": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnWidthTablet": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnWidthMobile": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnHeightDesktop": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnHeightTablet": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnHeightMobile": {
+			"type": "object",
+			"default": {
+				"size": 45,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnBorderRadiusDesktop": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnBorderRadiusTablet": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnBorderRadiusMobile": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuHamburgerBtnBackgroundNormal": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerBtnBackgroundHover": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerBtnBorderNormal": {
+			"type": "object"
+		},
+		"gkitMenuHamburgerIconColorNormal": {
+			"type": "string"
+		},
+		"gkitMenuHamburgerBtnBorderColorHover": {
+			"type": "string"
+		},
+		"gkitMenuHamburgerIconColorHover": {
+			"type": "string"
+		},
+		"gkitMenuCloseBtnIconSizeDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 16
+			}
+		},
+		"gkitMenuCloseBtnIconSizeTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 16
+			}
+		},
+		"gkitMenuCloseBtnIconSizeMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 16
+			}
+		},
+		"gkitMenuCloseBtnMarginDesktop": {
+			"type": "object",
+			"default": {
+				"top": "12px",
+				"right": "12px",
+				"bottom": "12px",
+				"left": "12px"
+			}
+		},
+		"gkitMenuCloseBtnMarginTablet": {
+			"type": "object",
+			"default": {
+				"top": "12px",
+				"right": "12px",
+				"bottom": "12px",
+				"left": "12px"
+			}
+		},
+		"gkitMenuCloseBtnMarginMobile": {
+			"type": "object",
+			"default": {
+				"top": "12px",
+				"right": "12px",
+				"bottom": "12px",
+				"left": "12px"
+			}
+		},
+		"gkitMenuCloseBtnWidthDesktop": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnWidthTablet": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnWidthMobile": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnHeightDesktop": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnHeightTablet": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnHeightMobile": {
+			"type": "object",
+			"default": {
+				"size": 40,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnBorderRadiusDesktop": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnBorderRadiusTablet": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnBorderRadiusMobile": {
+			"type": "object",
+			"default": {
+				"size": 3,
+				"unit": "px"
+			}
+		},
+		"gkitMenuCloseBtnBackgroundNormal": {
+			"type": "object"
+		},
+		"gkitMenuCloseBtnBackgroundHover": {
+			"type": "object"
+		},
+		"gkitMenuCloseBtnBorderNormal": {
+			"type": "object"
+		},
+		"gkitMenuCloseIconColorNormal": {
+			"type": "string"
+		},
+		"gkitMenuCloseBtnBorderColorHover": {
+			"type": "string"
+		},
+		"gkitMenuCloseIconColorHover": {
+			"type": "string"
+		},
+		"gkitMobileMenuLogoWidthDesktop": {
+			"type": "object",
+			"default": {
+				"size": 160,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoWidthTablet": {
+			"type": "object",
+			"default": {
+				"size": 160,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoWidthMobile": {
+			"type": "object",
+			"default": {
+				"size": 160,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoHeightDesktop": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoHeightTablet": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoHeightMobile": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "px"
+			}
+		},
+		"gkitMobileMenuLogoPaddingDesktop": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "5px",
+				"bottom": "5px",
+				"left": "5px"
+			}
+		},
+		"gkitMobileMenuLogoPaddingTablet": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "5px",
+				"bottom": "5px",
+				"left": "5px"
+			}
+		},
+		"gkitMobileMenuLogoPaddingMobile": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "5px",
+				"bottom": "5px",
+				"left": "5px"
+			}
+		},
+		"gkitMobileMenuLogoMarginDesktop": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "0",
+				"bottom": "5px",
+				"left": "0"
+			}
+		},
+		"gkitMobileMenuLogoMarginTablet": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "0",
+				"bottom": "5px",
+				"left": "0"
+			}
+		},
+		"gkitMobileMenuLogoMarginMobile": {
+			"type": "object",
+			"default": {
+				"top": "5px",
+				"right": "0",
+				"bottom": "5px",
+				"left": "0"
+			}
+		},
+		"gkitMenuScrollLockOnOffCanvas": {
+			"type": "boolean",
+			"default": false
+		},
+		"gkitMenuSidebarContentAlignmentDesktop": {
+			"type": "string"
+		},
+		"gkitMenuSidebarContentAlignmentTablet": {
+			"type": "string"
+		},
+		"gkitMenuSidebarContentAlignmentMobile": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./frontend.js"
+}

@@ -1,0 +1,968 @@
+# Copyright (C) 2024 TheMagnifico52
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Computer Repair Services 2.3.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/computer-repair-services\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-21T00:52:39+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: computer-repair-services\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Computer Repair Services"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.themagnifico.net/products/free-computer-repair-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Computer Repair Services is an elegant solution for websites made for niches like computer repair, Laptop repair services, PC repair, electronics repair, it service, mac repair, mobile repair, service centre, tech support and many more businesses. This theme has a professional layout simplifying the need to optimize the landing page for better conversion. You can also collect leads by integrating contact form 7 with the theme. This theme is compatible with major plugins like Woocommerce, Bookly form plugin, smash ballon and many more plugins required to create a  beautiful website for your business. The theme is brimming with features like retina-ready design, user-friendly interface, responsive, optimized codes and multiple personalization options like custom fonts, custom logos, shortcodes etc. This theme is specifically built by keeping in mind the latest SEO trends. So, it is lightweight and well-structured. The theme is fairly easy to set up, all you need to do is follow the steps from the documentation and you are good to go."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "TheMagnifico52"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.themagnifico.net/"
+msgstr ""
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:32
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:53
+#: comments.php:67
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:55
+#: comments.php:69
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:56
+#: comments.php:70
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:80
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:79
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. translators: 1: Theme name,
+#: footer.php:87
+msgid " %1$s "
+msgstr ""
+
+#. translators: 1: Theme author.
+#: footer.php:92
+msgid "by %1$s."
+msgstr ""
+
+#: footer.php:104
+msgid "TOP"
+msgstr ""
+
+#: functions.php:64
+msgid "Primary"
+msgstr ""
+
+#: functions.php:65
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:126
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:128
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:136
+#: inc/customizer.php:342
+msgid "Woocommerce Shop Page Sidebar"
+msgstr ""
+
+#: functions.php:146
+#: inc/customizer.php:368
+msgid "Woocommerce Single Product Page Sidebar"
+msgstr ""
+
+#: functions.php:156
+msgid "Footer Column 1"
+msgstr ""
+
+#: functions.php:166
+msgid "Footer Column 2"
+msgstr ""
+
+#: functions.php:176
+msgid "Footer Column 3"
+msgstr ""
+
+#: functions.php:401
+msgid "https://wordpress.org/support/theme/computer-repair-services"
+msgstr ""
+
+#: functions.php:404
+msgid "https://wordpress.org/support/theme/computer-repair-services/reviews/#new-post"
+msgstr ""
+
+#: functions.php:407
+msgid "https://demo.themagnifico.net/computer-repair-services/"
+msgstr ""
+
+#: functions.php:410
+msgid "https://www.themagnifico.net/products/computer-wordpress-theme"
+msgstr ""
+
+#: functions.php:413
+msgid "https://demo.themagnifico.net/eard/wathiqa/computer-repair-services-pro-doc/"
+msgstr ""
+
+#: functions.php:416
+msgid "https://demo.themagnifico.net/eard/wathiqa/computer-repair-services-free-doc/"
+msgstr ""
+
+#: functions.php:424
+msgid "Theme Options"
+msgstr ""
+
+#: functions.php:434
+msgid "Welcome To "
+msgstr ""
+
+#: functions.php:439
+#: functions.php:442
+msgid "Contact Support"
+msgstr ""
+
+#: functions.php:440
+msgid "Thank you for trying Computer Repair Services , feel free to contact us for any support regarding our theme."
+msgstr ""
+
+#: functions.php:448
+msgid "Checkout Premium"
+msgstr ""
+
+#: functions.php:449
+msgid "Our premium theme comes with extended features like demo content import , responsive layouts etc."
+msgstr ""
+
+#: functions.php:451
+msgid "Get Premium"
+msgstr ""
+
+#: functions.php:457
+#: functions.php:460
+msgid "Review"
+msgstr ""
+
+#: functions.php:458
+msgid "If You love Computer Repair Services theme then we would appreciate your review about our theme."
+msgstr ""
+
+#: functions.php:466
+#: functions.php:469
+msgid "Free Documentation"
+msgstr ""
+
+#: functions.php:467
+msgid "Our guide is available if you require any help configuring and setting up the theme. Easy and quick way to setup the theme."
+msgstr ""
+
+#: functions.php:477
+msgid "Free Vs Premium"
+msgstr ""
+
+#: functions.php:480
+msgid "Checkout Documentation"
+msgstr ""
+
+#: functions.php:483
+msgid "View Theme Demo"
+msgstr ""
+
+#: functions.php:490
+msgid "Theme Feature"
+msgstr ""
+
+#: functions.php:491
+msgid "Basic Version"
+msgstr ""
+
+#: functions.php:492
+msgid "Premium Version"
+msgstr ""
+
+#: functions.php:498
+msgid "Header Background Color"
+msgstr ""
+
+#: functions.php:503
+msgid "Custom Navigation Logo Or Text"
+msgstr ""
+
+#: functions.php:508
+msgid "Hide Logo Text"
+msgstr ""
+
+#: functions.php:514
+msgid "Premium Support"
+msgstr ""
+
+#: functions.php:519
+msgid "Fully SEO Optimized"
+msgstr ""
+
+#: functions.php:524
+msgid "Recent Posts Widget"
+msgstr ""
+
+#: functions.php:530
+msgid "Easy Google Fonts"
+msgstr ""
+
+#: functions.php:535
+msgid "Pagespeed Plugin"
+msgstr ""
+
+#: functions.php:540
+msgid "Only Show Header Image On Front Page"
+msgstr ""
+
+#: functions.php:545
+msgid "Show Header Everywhere"
+msgstr ""
+
+#: functions.php:550
+msgid "Custom Text On Header Image"
+msgstr ""
+
+#: functions.php:555
+msgid "Full Width (Hide Sidebar)"
+msgstr ""
+
+#: functions.php:560
+msgid "Only Show Upper Widgets On Front Page"
+msgstr ""
+
+#: functions.php:565
+msgid "Replace Copyright Text"
+msgstr ""
+
+#: functions.php:570
+msgid "Customize Upper Widgets Colors"
+msgstr ""
+
+#: functions.php:575
+msgid "Customize Navigation Color"
+msgstr ""
+
+#: functions.php:580
+msgid "Customize Post/Page Color"
+msgstr ""
+
+#: functions.php:585
+msgid "Customize Blog Feed Color"
+msgstr ""
+
+#: functions.php:590
+msgid "Customize Footer Color"
+msgstr ""
+
+#: functions.php:595
+msgid "Customize Sidebar Color"
+msgstr ""
+
+#: functions.php:600
+msgid "Customize Background Color"
+msgstr ""
+
+#: functions.php:605
+msgid "Importable Demo Content"
+msgstr ""
+
+#: functions.php:613
+msgid "Go Premium"
+msgstr ""
+
+#: functions.php:637
+msgid "Thank You For Choosing "
+msgstr ""
+
+#: functions.php:638
+msgid "Get Started With Theme By Clicking On Getting Started."
+msgstr ""
+
+#: functions.php:639
+msgid "Get started"
+msgstr ""
+
+#: functions.php:640
+msgid "Documentation"
+msgstr ""
+
+#: functions.php:643
+msgid "View Demo"
+msgstr ""
+
+#: header.php:34
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:15
+msgid "Computer Repair Pro"
+msgstr ""
+
+#: inc/customizer.php:18
+msgid "Buy Computer Repair Pro"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "GET PREMIUM"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Logo Width"
+msgstr ""
+
+#: inc/customizer.php:103
+msgid "Enable Disable Title"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Enable Disable Tagline"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Site Tagline Color"
+msgstr ""
+
+#: inc/customizer.php:145
+#: inc/customizer.php:447
+#: inc/customizer.php:497
+#: inc/customizer.php:569
+#: inc/customizer.php:704
+#: inc/customizer.php:765
+#: inc/customizer.php:901
+#: inc/customizer.php:1124
+#: inc/customizer.php:1164
+msgid "Customizer Options"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Site Width Layout"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Full Width"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Wide Width"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid "Container Width"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Show Theme Preloader"
+msgstr ""
+
+#: inc/customizer.php:187
+msgid "Preloader Background Color"
+msgstr ""
+
+#: inc/customizer.php:197
+msgid "Preloader First Dot Color"
+msgstr ""
+
+#: inc/customizer.php:207
+msgid "Preloader Second Dot Color"
+msgstr ""
+
+#: inc/customizer.php:217
+msgid "Show Theme Scroll To Top"
+msgstr ""
+
+#: inc/customizer.php:228
+msgid "Scroll To Top Positions"
+msgstr ""
+
+#: inc/customizer.php:232
+#: inc/customizer.php:418
+#: inc/customizer.php:830
+#: inc/customizer.php:846
+#: inc/customizer.php:881
+msgid "Right"
+msgstr ""
+
+#: inc/customizer.php:233
+#: inc/customizer.php:419
+#: inc/customizer.php:828
+#: inc/customizer.php:844
+#: inc/customizer.php:879
+msgid "Left"
+msgstr ""
+
+#: inc/customizer.php:234
+#: inc/customizer.php:420
+#: inc/customizer.php:829
+#: inc/customizer.php:845
+#: inc/customizer.php:880
+msgid "Center"
+msgstr ""
+
+#: inc/customizer.php:243
+msgid "Scroll Top Background Color"
+msgstr ""
+
+#: inc/customizer.php:253
+msgid "Scroll Top Color"
+msgstr ""
+
+#: inc/customizer.php:263
+msgid "Scroll Top Font Size"
+msgstr ""
+
+#: inc/customizer.php:264
+msgid "Put in px"
+msgstr ""
+
+#: inc/customizer.php:275
+msgid "Scroll To Top Border Radius"
+msgstr ""
+
+#: inc/customizer.php:290
+msgid "Show Sticky Header"
+msgstr ""
+
+#: inc/customizer.php:304
+msgid "Product per row"
+msgstr ""
+
+#: inc/customizer.php:319
+msgid "Product per page"
+msgstr ""
+
+#: inc/customizer.php:330
+msgid "Hide Shop Page Sidebar"
+msgstr ""
+
+#. Template Name of the theme
+#: inc/customizer.php:345
+#: inc/customizer.php:371
+msgid "Left Sidebar"
+msgstr ""
+
+#. Template Name of the theme
+#: inc/customizer.php:346
+#: inc/customizer.php:372
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:356
+msgid "Hide Single Product Page Sidebar"
+msgstr ""
+
+#: inc/customizer.php:383
+msgid "Product Border Radius"
+msgstr ""
+
+#: inc/customizer.php:399
+msgid "Product Image Box Shadow"
+msgstr ""
+
+#: inc/customizer.php:414
+msgid "Woocommerce Product Sale Positions"
+msgstr ""
+
+#: inc/customizer.php:430
+msgid "Woocommerce Product Sale Border Radius"
+msgstr ""
+
+#: inc/customizer.php:454
+msgid "Header Option"
+msgstr ""
+
+#: inc/customizer.php:462
+msgid "Address"
+msgstr ""
+
+#: inc/customizer.php:473
+msgid "Email Address"
+msgstr ""
+
+#: inc/customizer.php:484
+msgid "Phone Number"
+msgstr ""
+
+#: inc/customizer.php:504
+msgid "Social Media Option"
+msgstr ""
+
+#: inc/customizer.php:512
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Instagram URL"
+msgstr ""
+
+#: inc/customizer.php:534
+msgid "Linkdin URL"
+msgstr ""
+
+#: inc/customizer.php:545
+msgid "Youtube URL"
+msgstr ""
+
+#: inc/customizer.php:556
+msgid "Whatsapp URL"
+msgstr ""
+
+#: inc/customizer.php:576
+msgid "Slider Option"
+msgstr ""
+
+#: inc/customizer.php:584
+msgid "Enable Disable Slider"
+msgstr ""
+
+#: inc/customizer.php:595
+msgid "Enable Disable Slider Loop"
+msgstr ""
+
+#: inc/customizer.php:606
+msgid "Enable Disable Slider Title"
+msgstr ""
+
+#: inc/customizer.php:617
+msgid "Enable Disable Slider Content"
+msgstr ""
+
+#: inc/customizer.php:628
+msgid "Enable Disable Slider Button"
+msgstr ""
+
+#: inc/customizer.php:640
+msgid "Select Slide Page"
+msgstr ""
+
+#: inc/customizer.php:641
+msgid "Slider image size (1400 x 550)"
+msgstr ""
+
+#: inc/customizer.php:653
+msgid "Slider Button Text"
+msgstr ""
+
+#: inc/customizer.php:665
+msgid "Slider Image Opacity"
+msgstr ""
+
+#: inc/customizer.php:688
+msgid "Slider Height"
+msgstr ""
+
+#: inc/customizer.php:689
+msgid "Add the slider height in px(eg. 500px)."
+msgstr ""
+
+#: inc/customizer.php:691
+msgid "500px"
+msgstr ""
+
+#: inc/customizer.php:711
+msgid "About Us"
+msgstr ""
+
+#: inc/customizer.php:712
+msgid "Here you have to select about page which will display perticular about section in the home page."
+msgstr ""
+
+#: inc/customizer.php:720
+msgid "Select About Page"
+msgstr ""
+
+#: inc/customizer.php:730
+msgid "About Text"
+msgstr ""
+
+#: inc/customizer.php:741
+msgid "Support Text"
+msgstr ""
+
+#: inc/customizer.php:752
+msgid "Team Text"
+msgstr ""
+
+#: inc/customizer.php:772
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:781
+msgid "Show / Hide Footer"
+msgstr ""
+
+#: inc/customizer.php:791
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/customizer.php:800
+msgid "Footer Background Image"
+msgstr ""
+
+#: inc/customizer.php:810
+msgid "Footer Background Image Position"
+msgstr ""
+
+#: inc/customizer.php:812
+msgid "fixed"
+msgstr ""
+
+#: inc/customizer.php:813
+msgid "scroll"
+msgstr ""
+
+#: inc/customizer.php:825
+msgid "Footer Widget Heading Alignment"
+msgstr ""
+
+#: inc/customizer.php:841
+msgid "Footer Widget Content Alignment"
+msgstr ""
+
+#: inc/customizer.php:856
+msgid "Show / Hide Copyright"
+msgstr ""
+
+#: inc/customizer.php:864
+msgid "Replace the footer text"
+msgstr ""
+
+#: inc/customizer.php:876
+msgid "Copyright Content Alignment"
+msgstr ""
+
+#: inc/customizer.php:890
+msgid "Copyright Background Color"
+msgstr ""
+
+#: inc/customizer.php:908
+msgid "Post Settings"
+msgstr ""
+
+#: inc/customizer.php:918
+msgid "Enable Post Page Title"
+msgstr ""
+
+#: inc/customizer.php:920
+msgid "Check this box to enable title on post page."
+msgstr ""
+
+#: inc/customizer.php:929
+msgid "Enable Post Page Meta"
+msgstr ""
+
+#: inc/customizer.php:931
+msgid "Check this box to enable meta on post page."
+msgstr ""
+
+#: inc/customizer.php:940
+msgid "Enable Post Page Thumbnail"
+msgstr ""
+
+#: inc/customizer.php:942
+msgid "Check this box to enable thumbnail on post page."
+msgstr ""
+
+#: inc/customizer.php:951
+msgid "Post Page Image Box Shadow"
+msgstr ""
+
+#: inc/customizer.php:967
+msgid "Enable Post Page Content"
+msgstr ""
+
+#: inc/customizer.php:969
+msgid "Check this box to enable content on post page."
+msgstr ""
+
+#: inc/customizer.php:977
+msgid "Post Page Excerpt Length"
+msgstr ""
+
+#: inc/customizer.php:993
+msgid "Post Page Excerpt Suffix"
+msgstr ""
+
+#: inc/customizer.php:995
+msgid "For Ex. [...], etc"
+msgstr ""
+
+#: inc/customizer.php:1004
+msgid "Enable Post Page Button"
+msgstr ""
+
+#: inc/customizer.php:1006
+msgid "Check this box to enable button on post page."
+msgstr ""
+
+#: inc/customizer.php:1015
+msgid "Enable Post Page Pagination"
+msgstr ""
+
+#: inc/customizer.php:1017
+msgid "Check this box to enable pagination on post page."
+msgstr ""
+
+#: inc/customizer.php:1026
+msgid "Enable Single Post Thumbnail"
+msgstr ""
+
+#: inc/customizer.php:1028
+msgid "Check this box to enable post thumbnail on single post."
+msgstr ""
+
+#: inc/customizer.php:1037
+msgid "Single Post Page Image Border Radius"
+msgstr ""
+
+#: inc/customizer.php:1053
+msgid "Single Post Page Image Box Shadow"
+msgstr ""
+
+#: inc/customizer.php:1069
+msgid "Enable Single Post Meta"
+msgstr ""
+
+#: inc/customizer.php:1071
+msgid "Check this box to enable single post meta such as post date, author, category, comment etc."
+msgstr ""
+
+#: inc/customizer.php:1080
+msgid "Enable Single Post Title"
+msgstr ""
+
+#: inc/customizer.php:1082
+msgid "Check this box to enable title on single post."
+msgstr ""
+
+#: inc/customizer.php:1091
+msgid "Enable Single Post Page Content"
+msgstr ""
+
+#: inc/customizer.php:1093
+msgid "Check this box to enable content on single post page."
+msgstr ""
+
+#: inc/customizer.php:1102
+msgid "Enable Single Post Tags"
+msgstr ""
+
+#: inc/customizer.php:1104
+msgid "Check this box to enable tags on single post."
+msgstr ""
+
+#: inc/customizer.php:1113
+msgid "Show / Hide Post Navigation"
+msgstr ""
+
+#: inc/customizer.php:1131
+msgid "Page Settings"
+msgstr ""
+
+#: inc/customizer.php:1141
+msgid "Enable Single Page Title"
+msgstr ""
+
+#: inc/customizer.php:1143
+msgid "Check this box to enable title on single page."
+msgstr ""
+
+#: inc/customizer.php:1152
+msgid "Enable Single Page Thumbnail"
+msgstr ""
+
+#: inc/customizer.php:1154
+msgid "Check this box to enable page thumbnail on single page."
+msgstr ""
+
+#. translators: %s: post date
+#. translators: %s: post author
+#: inc/template-tags.php:27
+#: inc/template-tags.php:33
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:42
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:141
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:142
+#: inc/template-tags.php:162
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:167
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Home Template"
+msgstr ""
+
+#: page-template/home-template.php:93
+msgid "Call Us Now:- "
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-audio.php:43
+#: template-parts/content-gallery.php:31
+#: template-parts/content-image.php:26
+#: template-parts/content-search.php:15
+#: template-parts/content-single.php:30
+#: template-parts/content-video.php:42
+#: template-parts/content.php:29
+msgid "BY"
+msgstr ""
+
+#: template-parts/content-audio.php:55
+#: template-parts/content-gallery.php:43
+#: template-parts/content-image.php:38
+#: template-parts/content-search.php:21
+#: template-parts/content-video.php:54
+#: template-parts/content.php:41
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:31
+#: template-parts/content-single.php:51
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:44
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/navigation/nav.php:23
+msgid "Top Menu"
+msgstr ""
+
+#: template-parts/navigation/nav.php:40
+msgid "Call Us for Enquiry:- "
+msgstr ""
+
+#: template-parts/topheader/top-header.php:41
+msgid "Address:- "
+msgstr ""
+
+#: template-parts/topheader/top-header.php:46
+msgid "Mail Us:- "
+msgstr ""
+
+#: template-parts/topheader/top-header.php:52
+msgid "Contact With Us:- "
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:51
+msgid "Your order"
+msgstr ""

@@ -1,0 +1,61 @@
+// Controls common styles
+.gkit-tabs-top-level {
+	.gkit-control {
+		position: relative;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		.components-base-control {
+			width: 100%;
+			margin: 0;
+
+			// control label
+			&__label {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 15px;
+				display: inline-block;
+				color: $control-label-color;
+				text-transform: capitalize;
+				margin-bottom: calc(8px);
+			}
+
+			.components-button {
+				outline: none;
+				box-shadow: none;
+
+				&:hover,
+				:focus {
+					color: $primary-color;
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+
+		// if label inline
+		&-label-inline {
+			.components-base-control {
+				&__field {
+					display: flex;
+					align-items: center;
+					align-content: center;
+					justify-content: space-between;
+
+					input {
+						margin-left: auto;
+						max-width: 400px;
+						width: 52%;
+					}
+				}
+
+				&__label {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

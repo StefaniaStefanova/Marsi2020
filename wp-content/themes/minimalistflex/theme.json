@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+    "settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#00aaff",
+					"name": "MinimalistFlex Primary",
+					"slug": "minimalistflex-primary"
+				},
+				{
+					"color": "#666666",
+					"name": "MinimalistFlex Secondary",
+					"slug": "minimalistflex-secondary"
+				},
+				{
+					"color": "#00dc37",
+					"name": "MinimalistFlex Success",
+					"slug": "minimalistflex-success"
+				},
+                {
+                    "color": "#ebb400",
+                    "name": "MinimalistFlex Warning",
+                    "slug": "minimalistflex-warning"
+                },
+                {
+                    "color": "#ff5500",
+                    "name": "MinimalistFlex Danger",
+                    "slug": "minimalistflex-danger"
+                },
+                {
+                    "color": "#ffd900",
+                    "name": "MinimalistFlex Tint",
+                    "slug": "minimalistflex-tint"
+                },
+                {
+                    "color": "#5b9cff",
+                    "name": "MinimalistFlex Tint Alt",
+                    "slug": "minimalistflex-tint-alt"
+                },
+                {
+                    "color": "#000000",
+                    "name": "MinimalistFlex Default",
+                    "slug": "minimalistflex-default"
+                },
+                {
+                    "color": "#333333",
+                    "name": "MinimalistFlex Dark Background",
+                    "slug": "minimalistflex-dark-bg"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "MinimalistFlex White",
+                    "slug": "minimalistflex-white"
+                }
+			]
+		}
+	}
+}

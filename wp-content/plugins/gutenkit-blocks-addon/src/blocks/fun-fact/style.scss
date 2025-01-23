@@ -1,0 +1,128 @@
+.gkit-funfact {
+	transition: all 0.4s ease;
+	backface-visibility: hidden;
+	position: relative;
+	z-index: 2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.funfact-icon {
+		font-size: 40px;
+
+		svg {
+			transition: all 0.4s ease;
+			margin-bottom: 10px;
+		}
+	}
+
+	.funfact-content {
+		line-height: 1;
+
+		.number-percentage-wraper {
+			font-size: 28px;
+			font-weight: 700;
+			color: #333;
+			display: flex;
+			justify-content: center;
+
+			.number-percentage {
+				order: 2;
+			}
+		}
+	}
+
+	&-icon {
+		display: inline-block;
+	}
+
+	.funfact-title {
+		color: color-mix(#fff, #000, 50%);
+		font-size: 15px;
+		margin: 0;
+		font-weight: 400;
+
+		&.black-v {
+			color: #000;
+		}
+	}
+
+	.super {
+		font-size: 22px;
+		color: #2575fc;
+		vertical-align: super;
+		position: relative;
+		top: -5px;
+		left: 5px;
+		order: 4;
+	}
+
+	.suffix {
+		margin-left: 5px;
+		order: 3;
+	}
+
+	.prefix {
+		margin-right: 5px;
+		order: 1;
+	}
+
+	.vertical-bar {
+		width: 3px;
+		height: 20px;
+		background-color: #2575fc;
+		display: inline-block;
+	}
+
+	&.style-border-bottom {
+
+		&.gkit-funfact {
+
+			&::before {
+				position: absolute;
+				content: "";
+				bottom: -15px;
+				left: 0;
+				height: 5px;
+				width: 100%;
+				z-index: 1;
+				background-color: #53f995;
+				transform-origin: 100% 100%;
+				transform: scaleX(1);
+				transition: transform 300ms ease;
+			}
+
+			&:hover {
+
+				&::before {
+					transform: scaleX(0);
+					transform-origin: 0% 50%;
+				}
+			}
+
+			&.hover_from_left {
+
+				&::before {
+					transform-origin: left center;
+				}
+
+				&:hover {
+
+					&::before {
+						transform-origin: right center;
+					}
+				}
+			}
+		}
+	}
+}
+

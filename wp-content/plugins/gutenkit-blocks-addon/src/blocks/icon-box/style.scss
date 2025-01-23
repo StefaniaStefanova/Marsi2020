@@ -1,0 +1,110 @@
+.gkit-icon-box {
+	padding: 50px 40px;
+	transition: all 0.4s ease;
+	background-color: #fff;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none !important;
+	border-radius: 5px;
+	border: 1px solid #f5f5f5;
+
+	&:hover {
+		.gkit-icon-box-watermark {
+			opacity: 1;
+			bottom: 0;
+		}
+
+		.gkit-icon-box-button-wrapper.gkit-icon-box-button-hover {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	&.gkit-icon-box-hover-background-animation {
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transition: all .5s ease;
+		}
+	}
+
+	&-header {
+		position: relative;
+		margin-bottom: 13px;
+
+		&-icon {
+			display: inline-block;
+			text-align: center;
+		}
+	}
+
+	&-body {
+		position: relative;
+		z-index: 2;
+
+		>.gkit-icon-box-button-wrapper{
+
+			>.gkit-icon-box-button {
+				display: inline-flex !important;
+				justify-content: center;
+			}
+		}
+	}
+
+	&-title {
+		font-size: 23px;
+		transition: all 0.4s ease;
+		margin-top: 0;
+	}
+
+	&-description {
+		transition: all 0.4s ease;
+	}
+
+	&-button {
+
+		&-wrapper {
+			position: relative;
+			z-index: 2;
+
+			&.gkit-icon-box-button-hover {
+				opacity: 0;
+				transition: all 0.4s ease;
+				visibility: hidden;
+			}
+		}
+	}
+
+	&-watermark {
+		position: absolute;
+		bottom: -50px;
+		right: 0;
+		opacity: 0;
+		transition: all 0.4s ease;
+		z-index: 1;
+	}
+
+	&-badge {
+		position: absolute;
+		line-height: 1;
+		z-index: 2;
+		left: 0;
+		top: 0;
+
+		.gkit-icon-box-badge-text {
+			background-color: #ff057c;
+			font-size: 0.70588rem;
+			color: #fff;
+			font-weight: 500;
+			padding: 1px 6px;
+			border-radius: 0.29412rem 0 0.29412rem 0;
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.gkit-sort-ordering{
+    .gkit-sort-order__item__panel{
+        border: 1px solid #d1d1d1;
+        margin-bottom: 7px;
+        box-shadow: none;
+        color: #000;
+        font-weight: 500;
+        height: auto;
+        outline: none;
+        padding: 10px 16px;
+        position: relative;
+        text-align: left;
+        transition: background 1s ease;
+        width: 100%;
+        cursor: move;
+        text-transform: capitalize;
+
+        &:hover{
+            background-color:#ededed;
+        }
+    }
+}

@@ -1,0 +1,362 @@
+.gkit-icon-picker {
+	margin-bottom: 16px;
+
+	&-area {
+		background-image: linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd), linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
+		background-size: 16px 16px;
+		background-position: 0 0, calc(16px / 2) calc(16px / 2);
+		background-color: #f6f6f6;
+		aspect-ratio: 30/10;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+
+		&:hover {
+			.gkit-icon-picker-dynamic-switcher-wrapper {
+				bottom: 0px;
+				visibility: visible;
+			}
+		}
+	}
+
+	&-preview {
+		height: 100%;
+		position: relative;
+
+		&-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 30px;
+			z-index: 1;
+			cursor: default;
+			border: none;
+			background: transparent;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+				box-shadow: none !important;
+			}
+
+			&:hover {
+				color: #1e1e1e;
+			}
+
+			svg {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		&-add {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #ffffff;
+			font-size: 20px;
+			cursor: pointer;
+			border: none;
+
+			&:focus {
+				outline: none !important;
+				box-shadow: none !important;
+			}
+
+			&:hover {
+				color: #397FE9;
+			}
+		}
+	}
+
+	&-control {
+		position: relative;
+	}
+
+	&-remove-icon {
+		position: absolute;
+		right: 0;
+		top: 36px;
+		color: #ffffff;
+		background-color: rgba(130, 133, 136, 0.85);
+		border-radius: 3px;
+		box-shadow: 0 0 7px 0 rgb(0 0 0 / 10%);
+		transition: background 0.3s;
+		z-index: 9999;
+
+		&.has-icon {
+			min-width: 24px;
+			height: 24px;
+			padding: 0;
+
+			&:hover {
+				background-color: rgba(130, 133, 136, 0.85);
+			}
+
+			&:focus {
+				box-shadow: none !important;
+				outline: none !important;
+			}
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			color: #e6e6e6;
+		}
+	}
+
+	&-modal {
+		width: 100%;
+		padding: 2.2rem !important;
+		max-height: 65vh;
+		overflow: hidden !important;
+		max-width: 70vw !important;
+
+		&-wrapper {
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+			gap: 1rem;
+		}
+
+		.react-responsive-modal-closeButton {
+			top: 8px !important;
+			right: 8px !important;
+			width: 18px;
+		}
+
+		&-content {
+			overflow: hidden;
+			max-height: 60vh;
+			min-height: 60vh;
+			grid-column: span 7;
+			position: relative;
+
+			@media (max-width: 900px) {
+				grid-column: span 8;
+			}
+		}
+
+		&-footer {
+			box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 10px 0;
+			z-index: 999999;
+			background-color: rgb(240, 240, 240);
+			text-align: right;
+		}
+	}
+
+	&-search-control {
+		position: absolute;
+		z-index: 99999;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		.components-search-control__input {
+			border: 1px solid transparent !important;
+			z-index: 9999;
+
+			&:focus {
+				outline: none !important;
+				box-shadow: none !important;
+				border: 1px solid #e6e6e6 !important;
+			}
+		}
+	}
+
+	&-icons {
+		display: grid;
+		grid-template-columns: repeat(11, minmax(0, 1fr));
+		text-align: center;
+		gap: 20px;
+		padding: 3px;
+		margin-top: 4rem;
+		height: 50vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+		margin-bottom: 3rem;
+		align-content: baseline;
+
+		@media (max-width: 900px) {
+			grid-template-columns: repeat(8, minmax(0, 1fr));
+		}
+
+		&::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 4px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+		}
+	}
+
+	&-icon {
+		position: relative;
+		background-color: #fff;
+		border: 1px solid #80808052;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: all 0.3s;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			box-shadow: 0 5px 12px rgb(0 0 0 / 10%);
+		}
+
+		&-content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 10px;
+
+			&>svg {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		&-name {
+			margin: 0;
+		}
+	}
+
+	&-selected {
+		outline: 1px solid #397FE9 !important;
+	}
+
+	&-tab {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		@media (max-width: 900px) {
+			display: none;
+		}
+
+		&-item {
+			border: 1px solid #e6e6e6;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: all 0.3s;
+			width: 165px;
+
+			&-active {
+				color: #397FE9;
+				border-color: #397FE9;
+			}
+
+			&:focus {
+				outline: none !important;
+				box-shadow: none !important;
+			}
+
+			&:hover {
+				color: #397FE9;
+				border-color: #397FE9;
+			}
+		}
+	}
+
+
+	&-insert-btn {
+		margin: 0 2.2rem;
+		border: 1px solid #397FE9;
+		padding: 0 2.2rem;
+		color: #397FE9;
+
+		&:focus {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+	}
+
+	&-dynamic-switcher-wrapper {
+		display: flex;
+		position: absolute;
+		bottom: -30px;
+		left: 0;
+		right: 0;
+		transition: all 0.2s ease-in-out;
+		visibility: hidden;
+
+		button {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+    		background: rgba(130, 133, 136);
+			height: 27px;
+			border: none;
+			cursor: pointer;
+
+			&:last-child {
+				border-left: 1px solid #e6e6e6;
+			}
+		}
+	}
+
+	&__dropdown {
+		flex: 1;
+		display: flex;
+
+		&-content {
+			left: -377px !important;
+			
+			&-wrapper {
+				width: 280px;
+			}
+			.components-popover__content {
+				padding: 8px 14px;
+			}
+		}
+		&-buttons {
+			display: flex;
+			justify-content: flex-end;
+			
+			button {
+				border-radius: 4px;
+				padding: 0 7px;
+				height: 24px;
+
+				&:focus:not(:disabled) {
+					box-shadow: none;
+				}
+			}
+			.is-primary {
+				margin-left: 5px;
+				background: $primary-color;
+				&:hover:not(:disabled) {
+					background: #3171d2;
+				}
+			}
+			.is-secondary {
+				box-shadow: none;
+				color: $primary-color;
+				border: 1px solid $primary-color;
+
+				&:hover:not(:disabled) {
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}

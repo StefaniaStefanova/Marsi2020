@@ -1,0 +1,58 @@
+.gkit-css-filters-wrapper {
+    .gutenkit-range__slider {
+        .components-range-control__root {
+            .components-range-control__track {
+                color: transparent;
+            }
+
+            .e1epgpqk10{
+                height: 6px;
+                box-shadow: 0 0 1px 1px inset rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .e1epgpqk5 {
+            background-color: unset;
+            border: none;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+
+            .e1epgpqk4 {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .gkit-css-filters-blur {
+        @include gkit-css-filter-range-style() {
+            background: url(../icons/blur.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .gkit-css-filters-brightness {
+        @include gkit-css-filter-range-style() {
+            background-image: linear-gradient(to right, black, white);
+        }
+    }
+
+    .gkit-css-filters-contrast {
+        @include gkit-css-filter-range-style() {
+            background: url(../icons/contrast.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    .gkit-css-filters-saturation {
+        @include gkit-css-filter-range-style() {
+            background-image: linear-gradient(to right, gray, red);
+        }
+    }
+
+    .gkit-css-filters-hue {
+        @include gkit-css-filter-range-style() {
+            background-image: linear-gradient(to right, red, orange, yellow, greenyellow, limegreen, deepskyblue, blue, darkviolet 95%);
+        }
+    }
+        
+}

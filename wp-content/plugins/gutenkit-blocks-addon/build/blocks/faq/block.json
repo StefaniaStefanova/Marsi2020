@@ -1,0 +1,223 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/faq",
+  "version": "1.0.0",
+  "title": "FAQ",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "faq",
+    "faq schema"
+  ],
+  "allowedBlocks": [
+    "gutenkit/faq-item"
+  ],
+  "description": "Faq block for gutenkit.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitFaqContents": {
+      "type": "array",
+      "default": [
+        {
+          "gkitFaqTitle": "How to Change my Photo from Admin Dashboard?",
+          "gkitFaqContent": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
+        },
+        {
+          "gkitFaqTitle": "How long do I get support?",
+          "gkitFaqContent": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line"
+        },
+        {
+          "gkitFaqTitle": "Do I need to renew my license?",
+          "gkitFaqContent": "Marks and devious Semikoli but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+        }
+      ],
+      "excludeCopy": true
+    },
+    "gkitFaqTitleColor": {
+      "type": "string"
+    },
+    "gkitFaqTitleTypographyGroup": {
+      "type": "object"
+    },
+    "gkitFaqTitleBackgroundGroup": {
+      "type": "object"
+    },
+    "gkitFaqTitleBorderGroup": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitFaqBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "21px",
+        "right": "40px",
+        "bottom": "21px",
+        "left": "40px"
+      }
+    },
+    "gkitFaqTitlePaddingTablet": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingMobile": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingLaptop": {
+      "type": "object"
+    },
+    "gkitFaqTitlePaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginDesktop": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginTablet": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginMobile": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginLaptop": {
+      "type": "object"
+    },
+    "gkitFaqTitleMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitFaqContentColor": {
+      "type": "string"
+    },
+    "gkitFaqContentTypographyGroup": {
+      "type": "object"
+    },
+    "gkitFaqContentBackgroundGroup": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderGroup": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitFaqContentBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "30px",
+        "right": "40px",
+        "bottom": "30px",
+        "left": "40px"
+      }
+    },
+    "gkitFaqContentPaddingTablet": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingMobile": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitFaqContentPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginDesktop": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginTablet": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginMobile": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginLaptop": {
+      "type": "object"
+    },
+    "gkitFaqContentMarginWideScreen": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

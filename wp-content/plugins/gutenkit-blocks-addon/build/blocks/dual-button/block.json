@@ -1,0 +1,624 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/dual-button",
+  "version": "1.0.0",
+  "title": "Dual Button",
+  "category": "gutenkit",
+  "keywords": [
+    "ekit",
+    "button",
+    "btn",
+    "dual",
+    "advance",
+    "link"
+  ],
+  "description": "Dual button block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitShowButtonMiddleText": {
+      "type": "boolean",
+      "default": true,
+      "excludeCopy": true
+    },
+    "gkitButtonMiddleText": {
+      "type": "string",
+      "default": "Or",
+      "excludeCopy": true
+    },
+    "gkitDoubleButtonAlignDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "gkitDoubleButtonAlignTablet": {
+      "type": "string"
+    },
+    "gkitDoubleButtonAlignMobile": {
+      "type": "string"
+    },
+    "gkitDoubleButtonAlignTabletLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonAlignMobileLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonAlignLaptop": {
+      "type": "string"
+    },
+    "gkitDoubleButtonAlignWideScreen": {
+      "type": "string"
+    },
+    "gkitDualButtonWidthDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 40
+      }
+    },
+    "gkitDualButtonWidthTablet": {
+      "type": "object"
+    },
+    "gkitDualButtonWidthMobile": {
+      "type": "object"
+    },
+    "gkitDualButtonWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDualButtonWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDualButtonWidthLaptop": {
+      "type": "object"
+    },
+    "gkitDualButtonWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitDualButtonGapDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 5
+      }
+    },
+    "gkitDualButtonGapTablet": {
+      "type": "object"
+    },
+    "gkitDualButtonGapMobile": {
+      "type": "object"
+    },
+    "gkitDualButtonGapTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDualButtonGapMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDualButtonGapLaptop": {
+      "type": "object"
+    },
+    "gkitDualButtonGapWideScreen": {
+      "type": "object"
+    },
+    "gkitButtonOneText": {
+      "type": "string",
+      "default": "Button",
+      "excludeCopy": true
+    },
+    "gkitButtonOneLink": {
+      "type": "object",
+      "excludeCopy": true
+    },
+    "gkitButtonOneIconsShow": {
+      "type": "boolean",
+      "default": false,
+      "excludeCopy": true
+    },
+    "gkitButtonOneIcons": {
+      "type": "object",
+      "excludeCopy": true
+    },
+    "gkitDoubleButtonOneIconPosition": {
+      "type": "string",
+      "default": "before"
+    },
+    "gkitDoubleButtonOneIconSpecingDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 8
+      }
+    },
+    "gkitDoubleButtonOneIconSpecingTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneIconSpecingMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneIconSpecingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneIconSpecingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneIconSpecingLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneIconSpecingWideScreen": {
+      "type": "object"
+    },
+    "gkitButtonTwoText": {
+      "type": "string",
+      "default": "Button",
+      "excludeCopy": true
+    },
+    "gkitButtonTwoLink": {
+      "type": "object",
+      "excludeCopy": true
+    },
+    "gkitButtonTwoIconsShow": {
+      "type": "boolean",
+      "default": false,
+      "excludeCopy": true
+    },
+    "gkitButtonTwoIcons": {
+      "type": "object",
+      "excludeCopy": true
+    },
+    "gkitDoubleButtonTwoIconPosition": {
+      "type": "string",
+      "default": "before"
+    },
+    "gkitDoubleButtonTwoIconSpecingDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 8
+      }
+    },
+    "gkitDoubleButtonTwoIconSpecingTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoIconSpecingMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoIconSpecingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoIconSpecingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoIconSpecingLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoIconSpecingWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "gkitDoubleButtonOneTypography": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorder": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBackground": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneBoxShadow": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOnePaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneAlignDesktop": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignTablet": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignMobile": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignTabletLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignMobileLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignLaptop": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneAlignWideScreen": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneHoverColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "gkitDoubleButtonOneHoverBorderColor": {
+      "type": "string"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBackground": {
+      "type": "object"
+    },
+    "gkitDoubleButtonOneHoverBoxShadow": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "gkitDoubleButtonTwoTypography": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorder": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBackground": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoBoxShadow": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoAlignDesktop": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignTablet": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignMobile": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignTabletLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignMobileLandscape": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignLaptop": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoAlignWideScreen": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoHoverColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "gkitDoubleButtonTwoHoverBorderColor": {
+      "type": "string"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBackground": {
+      "type": "object"
+    },
+    "gkitDoubleButtonTwoHoverBoxShadow": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "gkitDoubleButtonMiddletextTypography": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorder": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBackground": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextBoxShadow": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 40
+      }
+    },
+    "gkitDoubleButtonMiddletextWidthTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 40
+      }
+    },
+    "gkitDoubleButtonMiddletextHeightTablet": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightMobile": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightLaptop": {
+      "type": "object"
+    },
+    "gkitDoubleButtonMiddletextHeightWideScreen": {
+      "type": "object"
+    },
+    "iconFontSizeDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 16
+      }
+    },
+    "iconFontSizeTablet": {
+      "type": "object"
+    },
+    "iconFontSizeMobile": {
+      "type": "object"
+    },
+    "iconFontSizeTabletLandscape": {
+      "type": "object"
+    },
+    "iconFontSizeMobileLandscape": {
+      "type": "object"
+    },
+    "iconFontSizeLaptop": {
+      "type": "object"
+    },
+    "iconFontSizeWideScreen": {
+      "type": "object"
+    },
+    "verticalAlignIconDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 0
+      }
+    },
+    "verticalAlignIconTablet": {
+      "type": "object"
+    },
+    "verticalAlignIconMobile": {
+      "type": "object"
+    },
+    "verticalAlignIconTabletLandscape": {
+      "type": "object"
+    },
+    "verticalAlignIconMobileLandscape": {
+      "type": "object"
+    },
+    "verticalAlignIconLaptop": {
+      "type": "object"
+    },
+    "verticalAlignIconWideScreen": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

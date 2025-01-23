@@ -1,0 +1,79 @@
+.block-editor-block-list__layout {
+    [class*='wp-block-gutenkit-'] {
+        box-sizing: border-box;
+        
+        img:not([draggable]) {
+            max-width: 100%;
+            height: auto;
+        }
+
+        & * {
+            box-sizing: border-box;
+        }
+
+        .gkit-btn {
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 15px 30px;
+            display: inline-block;
+            color: #fff;
+			fill: #fff;
+            position: relative;
+            line-height: 1;
+            user-select: none;
+            white-space: nowrap;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #2575fc;
+            transition: all 0.4s ease;
+			text-decoration: none;
+		}
+
+		.gkit-icon {
+			width: 1em;
+			height: 1em;
+		}
+
+		&:not(.wp-block-gutenkit-container, .wp-block-gutenkit-nav-menu-item, .wp-block-gutenkit-nav-menu-submenu){
+			width: 100%;
+		}
+	}
+
+	a:where(:not(.wp-element-button)):focus {
+		text-decoration: none !important;
+	}
+}
+
+.block-editor-block-inspector {
+	.gkit-tabs-container {
+		.components-base-control{
+			margin-bottom: 8px;
+			&:last-child{
+				margin-bottom: 0;	
+			}
+		}
+	}
+}
+
+.block-editor-block-list__block {
+	&.gkit-hide-desktop {
+		@include gkit-hidden;
+		&:before {
+			@include gkit-hidden-before;
+		}
+	}
+
+	&.gkit-hide-tablet {
+		@include gkit-hidden;
+		&:before {
+			@include gkit-hidden-before;
+		}
+	}
+
+	&.gkit-hide-mobile {
+		@include gkit-hidden;
+		&:before {
+			@include gkit-hidden-before;
+		}
+	}
+}

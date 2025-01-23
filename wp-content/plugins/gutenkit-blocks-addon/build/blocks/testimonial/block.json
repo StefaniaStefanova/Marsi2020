@@ -1,0 +1,1146 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/testimonial",
+  "version": "1.0.0",
+  "title": "Testimonial",
+  "category": "gutenkit",
+  "description": "Testimonial block for gutenberg.",
+  "keywords": [
+    "gkit",
+    "slider",
+    "testimonial"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitTestimonialStyle": {
+      "type": "string",
+      "default": "primary-style"
+    },
+    "gkitTestimonialRatingStar": {
+      "type": "object",
+      "default": {
+        "title": "star",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\" className=\"gkit-icon\" aria-hidden=\"true\" focusable=\"false\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.6 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z\"></path></svg>"
+      }
+    },
+    "gkitTestimonialRatingStarActive": {
+      "type": "object",
+      "default": {
+        "title": "star",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><path d=\"M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z\"/></svg>"
+      }
+    },
+    "gkitTestimonials": {
+      "type": "array",
+      "default": [
+        {
+          "gkitTestimonialClientName": "Testimonial #1",
+          "gkitTestimonialClientDesignation": "Designation",
+          "gkitTestimonialReviewText": "Review Text",
+          "gkitTestimonialRatingStars": 5,
+          "gkitTestimonialLink": {
+            "url": ""
+          },
+          "gkitTestimonialClientAvatar": {
+            "alt": "Testimonial Client Avatar",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialLogo": {
+            "alt": "Testimonial Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialHoverLogo": {
+            "alt": "Testimonial Hover Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialDifferentLogoOnHover": false,
+          "gkitActiveTestimonial": false,
+          "gkitIndividualBackground": {
+            "type": "object"
+          },
+          "gkitTestimonialReviewLabel": "Very Professional"
+        },
+        {
+          "gkitTestimonialClientName": "Testimonial #2",
+          "gkitTestimonialClientDesignation": "Designation",
+          "gkitTestimonialReviewText": "Review Text",
+          "gkitTestimonialRatingStars": 5,
+          "gkitTestimonialLink": {
+            "url": ""
+          },
+          "gkitTestimonialClientAvatar": {
+            "alt": "Testimonial Client Avatar",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialLogo": {
+            "alt": "Testimonial Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialHoverLogo": {
+            "alt": "Testimonial Hover Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialDifferentLogoOnHover": false,
+          "gkitActiveTestimonial": false,
+          "gkitIndividualBackground": {
+            "type": "object"
+          },
+          "gkitTestimonialReviewLabel": "Very Professional"
+        },
+        {
+          "gkitTestimonialClientName": "Testimonial #3",
+          "gkitTestimonialClientDesignation": "Designation",
+          "gkitTestimonialReviewText": "Review Text",
+          "gkitTestimonialRatingStars": 5,
+          "gkitTestimonialLink": {
+            "url": ""
+          },
+          "gkitTestimonialClientAvatar": {
+            "alt": "Testimonial Client Avatar",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialLogo": {
+            "alt": "Testimonial Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialHoverLogo": {
+            "alt": "Testimonial Hover Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialDifferentLogoOnHover": false,
+          "gkitActiveTestimonial": false,
+          "gkitIndividualBackground": {
+            "type": "object"
+          },
+          "gkitTestimonialReviewLabel": "Very Professional"
+        },
+        {
+          "gkitTestimonialClientName": "Testimonial #4",
+          "gkitTestimonialClientDesignation": "Designation",
+          "gkitTestimonialReviewText": "Review Text",
+          "gkitTestimonialRatingStars": 5,
+          "gkitTestimonialLink": {
+            "url": ""
+          },
+          "gkitTestimonialClientAvatar": {
+            "alt": "Testimonial Client Avatar",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialLogo": {
+            "alt": "Testimonial Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialHoverLogo": {
+            "alt": "Testimonial Hover Logo",
+            "type": "object",
+            "url": "placeholder"
+          },
+          "gkitTestimonialDifferentLogoOnHover": false,
+          "gkitActiveTestimonial": false,
+          "gkitIndividualBackground": {
+            "type": "object"
+          },
+          "gkitTestimonialReviewLabel": "Very Professional"
+        }
+      ],
+      "excludeCopy": true
+    },
+    "gkitEnableQuoteIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitTestimonialQuoteIcon": {
+      "type": "object",
+      "default": {
+        "title": "quote",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><path d=\"M15.301 10.724c0-4.183-3.402-7.584-7.584-7.584s-7.591 3.408-7.591 7.591 3.402 7.591 7.591 7.591c0.504 0 1.014-0.050 1.518-0.157-0.876 3.968-2.759 7.257-3.811 9.077-0.277 0.479-0.491 0.863-0.636 1.153-0.126 0.265-0.397 0.819 0.013 1.184 0.132 0.12 0.283 0.17 0.435 0.17 0.328 0 0.687-0.233 0.989-0.422 0.409-0.258 0.989-0.674 1.997-1.417l0.044-0.038c1.764-1.581 3.232-3.433 4.353-5.499 0.907-1.669 1.606-3.49 2.066-5.411 0.743-3.093 0.661-5.55 0.617-6.236v0zM13.569 16.69c-0.983 4.113-3.017 7.578-6.041 10.293-0.258 0.189-0.661 0.479-1.052 0.762 1.165-2.035 3.295-5.764 4.088-10.293l0.17-0.97-0.932 0.321c-0.68 0.239-1.38 0.353-2.079 0.353-3.54 0-6.425-2.879-6.425-6.425s2.872-6.431 6.419-6.431c3.54 0 6.425 2.872 6.425 6.419v0.044c0 0.006 0 0.025 0 0.044 0.050 0.643 0.126 2.954-0.573 5.883zM31.968 10.737v0c0-4.189-3.402-7.591-7.584-7.591s-7.584 3.402-7.584 7.584 3.402 7.584 7.584 7.584c0.504 0 1.014-0.050 1.518-0.157-0.876 3.968-2.759 7.257-3.811 9.077-0.277 0.479-0.491 0.863-0.636 1.153-0.126 0.265-0.397 0.819 0.013 1.184 0.132 0.12 0.283 0.17 0.435 0.17 0.328 0 0.687-0.233 0.995-0.416 0.409-0.258 0.989-0.674 1.997-1.417l0.044-0.038c1.764-1.581 3.232-3.433 4.353-5.499 0.907-1.669 1.606-3.49 2.066-5.411 0.743-3.087 0.661-5.543 0.611-6.224zM30.23 16.69c-0.983 4.12-3.017 7.578-6.041 10.299-0.258 0.189-0.661 0.479-1.052 0.762 1.165-2.035 3.294-5.764 4.088-10.293l0.17-0.97-0.926 0.315c-0.68 0.239-1.38 0.353-2.079 0.353-3.54 0-6.425-2.879-6.425-6.425 0-3.54 2.879-6.425 6.425-6.425 3.54 0 6.425 2.872 6.425 6.419v0.044c0 0.006 0 0.025 0 0.044 0.038 0.636 0.12 2.948-0.586 5.877z\"></path></svg>"
+      }
+    },
+    "gkitTestimonialQuoteIconBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitQuoteIocnPosition": {
+      "type": "string",
+      "default": "bottom"
+    },
+    "gkitTestimonialEnableRating": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitQuoteIconCustomPosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitQuoteIconLeftRightPositionDesktop": {
+      "type": "string",
+      "default": {
+        "unit": "px",
+        "size": 10
+      }
+    },
+    "gkitQuoteIconLeftRightPositionTablet": {
+      "type": "string"
+    },
+    "gkitQuoteIconLeftRightPositionMobile": {
+      "type": "string"
+    },
+    "gkitQuoteIconLeftRightPositionTabletLandscape": {
+      "type": "string"
+    },
+    "gkitQuoteIconLeftRightPositionMobileLandscape": {
+      "type": "string"
+    },
+    "gkitQuoteIconLeftRightPositionLaptop": {
+      "type": "string"
+    },
+    "gkitQuoteIconLeftRightPositionWideScreen": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionDesktop": {
+      "type": "string",
+      "default": {
+        "unit": "px",
+        "size": 10
+      }
+    },
+    "gkitQuoteIconTopBottomPositionTablet": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionMobile": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionTabletLandscape": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionMobileLandscape": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionLaptop": {
+      "type": "string"
+    },
+    "gkitQuoteIconTopBottomPositionWideScreen": {
+      "type": "string"
+    },
+    "gkitTestimonialShowSeparator": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitTestimonialWrapperPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialWrapperPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemSpaceBetweenWideScreen": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemBorderRadiousWideScreen": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBackground": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemNormalBorderWideScreen": {
+      "type": "object"
+    },
+    "gkitSlidesItemHoverBorderColor": {
+      "type": "string",
+      "default": "#2575fc"
+    },
+    "gkitSlidesItemActiveBorderColor": {
+      "type": "string",
+      "default": "#2575fc"
+    },
+    "gkitSlidesItemNormalBoxShadow": {
+      "type": "object"
+    },
+    "gkitSlidesItemHoverBackground": {
+      "type": "object"
+    },
+    "gkitSlidesItemHoverBoxShadow": {
+      "type": "object"
+    },
+    "gkitSlidesItemActiveBackground": {
+      "type": "object"
+    },
+    "gkitSlidesItemActiveBoxShadow": {
+      "type": "object"
+    },
+    "gkitSlideItemsVerticalAlignmentDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "gkitSlideItemsVerticalAlignmentTablet": {
+      "type": "string"
+    },
+    "gkitSlideItemsVerticalAlignmentMobile": {
+      "type": "string"
+    },
+    "gkitSlideItemsVerticalAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "gkitSlideItemsVerticalAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "gkitSlideItemsVerticalAlignmentLaptop": {
+      "type": "string"
+    },
+    "gkitSlideItemsVerticalAlignmentWideScreen": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentDesktop": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentTablet": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentMobile": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentLaptop": {
+      "type": "string"
+    },
+    "gkitSlideItemsHorizontalAlignmentWideScreen": {
+      "type": "string"
+    },
+    "gkitSlidesItemContentPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemContentPaddingWideScreen": {
+      "type": "object"
+    },
+    "useSlidesItemFixedHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitSlidesItemFixedHeightDesktop": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightTablet": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightMobile": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightLaptop": {
+      "type": "object"
+    },
+    "gkitSlidesItemFixedHeightWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionColor": {
+      "type": "string"
+    },
+    "gkitTestimonialDescriptionHoverAndActiveColor": {
+      "type": "string"
+    },
+    "gkitTestimonialDescriptionTypography": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialDescriptionMarginWideScreen": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleHoverAndActiveColor": {
+      "type": "string"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "titleMarginDesktop": {
+      "type": "object"
+    },
+    "titleMarginTablet": {
+      "type": "object"
+    },
+    "titleMarginMobile": {
+      "type": "object"
+    },
+    "titleMarginTabletLandscape": {
+      "type": "object"
+    },
+    "titleMarginMobileLandscape": {
+      "type": "object"
+    },
+    "titleMarginLaptop": {
+      "type": "object"
+    },
+    "titleMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingColor": {
+      "type": "string",
+      "default": "#fec42d"
+    },
+    "gkitTestimonialRatingHoverAndActiveColor": {
+      "type": "string"
+    },
+    "gkitTestimonialRatingSizeDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialRatingSpaceWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialReviewMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconNormalColor": {
+      "type": "string"
+    },
+    "gkitTestimonialQuoteIconNormalBackground": {
+      "type": "object",
+      "default": "#FFFFFF"
+    },
+    "gkitTestimonialQuoteIconHoverColor": {
+      "type": "string"
+    },
+    "gkitTestimonialQuoteIconHoverBackground": {
+      "type": "object",
+      "default": "#FFFFFF"
+    },
+    "gkitTestimonialQuoteIconActiveColor": {
+      "type": "string"
+    },
+    "gkitTestimonialQuoteIconActiveBackground": {
+      "type": "object",
+      "default": "#FFFFFF"
+    },
+    "gkitTestimonialQuoteIconSizeDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitQuoteIconBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialQuoteIconBackground": {
+      "type": "object",
+      "default": "#FFAD28"
+    },
+    "gkitTestimonialTitleSeparatorNormalColor": {
+      "type": "object",
+      "default": "#2575fc"
+    },
+    "gkitTestimonialTitleSeparatorHoverColor": {
+      "type": "object",
+      "default": "#2575fc"
+    },
+    "gkitTestimonialTitleSeparatorWidthDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorHeightWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialTitleSeparatorMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialSlidesItemNormalBackground": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "gkitTestimonialClientNameColor": {
+      "type": "string"
+    },
+    "gkitTestimonialClientHoverAndActiveColor": {
+      "type": "string"
+    },
+    "gkitTestimonialClientTypography": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientBottomSpaceWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationColor": {
+      "type": "string"
+    },
+    "gkitClientDesignationHoverAndActiveColor": {
+      "type": "string"
+    },
+    "gkitTestimonialClientDesignationTypography": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientDesignationMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialClientImageAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "gkitTestimonialImageAlignment": {
+      "type": "string"
+    },
+    "useClientImagePosition": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitTestimonialClientImagePosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "gkitTestimonialImageBorderDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBorderWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialImageBoxShadow": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialImageMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitClientImageBackground": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceDesktop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceTablet": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceMobile": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceTabletLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceMobileLandscape": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceLaptop": {
+      "type": "object"
+    },
+    "gkitTestimonialClientLogoBottomSpaceWideScreen": {
+      "type": "object"
+    },
+    "swiperArrows": {
+      "type": "object"
+    },
+    "swiperDots": {
+      "type": "object",
+      "default": {
+        "alignmentDesktop": "center",
+        "alignmentTablet": "center",
+        "alignmentMobile": "center",
+        "alignmentTabletLandscape": "center",
+        "alignmentMobileLandscape": "center",
+        "alignmentLaptop": "center",
+        "alignmentWideScreen": "center"
+      }
+    },
+    "swiperSettings": {
+      "type": "object",
+      "default": {
+        "spaceBetweenDesktop": {
+          "size": 10
+        },
+        "spaceBetweenTablet": {
+          "size": 10
+        },
+        "spaceBetweenMobile": {
+          "size": 10
+        },
+        "spaceBetweenTabletLandscape": {
+          "size": 10
+        },
+        "spaceBetweenMobileLandscape": {
+          "size": 10
+        },
+        "spaceBetweenLaptop": {
+          "size": 10
+        },
+        "spaceBetweenWideScreen": {
+          "size": 10
+        },
+        "slidesPerGroupDesktop": {
+          "size": 1
+        },
+        "slidesPerGroupTablet": {
+          "size": 1
+        },
+        "slidesPerGroupMobile": {
+          "size": 1
+        },
+        "slidesPerGroupTabletLandscape": {
+          "size": 1
+        },
+        "slidesPerGroupMobileLandscape": {
+          "size": 1
+        },
+        "slidesPerGroupLaptop": {
+          "size": 1
+        },
+        "slidesPerGroupWideScreen": {
+          "size": 1
+        },
+        "slidesPerViewDesktop": {
+          "size": 1
+        },
+        "slidesPerViewTablet": {
+          "size": 1
+        },
+        "slidesPerViewMobile": {
+          "size": 1
+        },
+        "slidesPerViewTabletLandscape": {
+          "size": 1
+        },
+        "slidesPerViewMobileLandscape": {
+          "size": 1
+        },
+        "slidesPerViewLaptop": {
+          "size": 1
+        },
+        "slidesPerViewWideScreen": {
+          "size": 1
+        },
+        "speed": 1000,
+        "autoplay": true,
+        "loop": false,
+        "delay": 3000,
+        "pauseOnMouseEnter": false
+      }
+    },
+    "enableArrows": {
+      "type": "boolean",
+      "default": false
+    },
+    "leftArrowIcon": {
+      "type": "object",
+      "default": {
+        "title": "arrow-left",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 512\" className=\"gkit-icon\" aria-hidden=\"true\" focusable=\"false\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z\"></path></svg>"
+      }
+    },
+    "rightArrowIcon": {
+      "type": "object",
+      "default": {
+        "title": "arrow-right",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 512\" className=\"gkit-icon\" aria-hidden=\"true\" focusable=\"false\"><path fillRule=\"evenodd\" clipRule=\"evenodd\" d=\"M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z\"></path></svg>"
+      }
+    },
+    "enableDots": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": [
+    "file:./index.js",
+    "swiper"
+  ],
+  "style": [
+    "file:./style-index.css",
+    "swiper"
+  ],
+  "viewScript": [
+    "file:./frontend.js",
+    "swiper"
+  ]
+}

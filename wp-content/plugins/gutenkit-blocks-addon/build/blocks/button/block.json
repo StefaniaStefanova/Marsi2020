@@ -1,0 +1,355 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/button",
+  "version": "1.0.0",
+  "title": "Button",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "ekit",
+    "button",
+    "call",
+    "call button"
+  ],
+  "description": "Button block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Click to Watch",
+      "excludeCopy": true
+    },
+    "url": {
+      "type": "object",
+      "default": {
+        "url": "#"
+      },
+      "excludeCopy": true
+    },
+    "iconsSwitch": {
+      "type": "boolean",
+      "default": true,
+      "excludeCopy": true
+    },
+    "icons": {
+      "type": "object",
+      "default": {
+        "title": "play-button1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>play-button1</title>\n<path d=\"M29.85 8.403c-2.136-3.7-5.585-6.346-9.711-7.452s-8.436-0.538-12.136 1.598c-3.7 2.136-6.346 5.585-7.452 9.711s-0.538 8.436 1.598 12.136c2.136 3.7 5.585 6.346 9.711 7.452 1.378 0.369 2.776 0.552 4.165 0.552 2.771 0 5.506-0.727 7.971-2.15 3.7-2.136 6.346-5.585 7.452-9.711s0.538-8.436-1.598-12.136zM29.839 20.108c-0.991 3.697-3.361 6.786-6.676 8.7s-7.175 2.422-10.872 1.431c-3.697-0.991-6.786-3.361-8.7-6.676s-2.422-7.175-1.431-10.872c0.991-3.697 3.361-6.786 6.676-8.7 2.208-1.275 4.658-1.926 7.141-1.926 1.244 0 2.497 0.164 3.731 0.494 3.697 0.99 6.786 3.361 8.7 6.676s2.422 7.175 1.431 10.872zM23.674 14.891l-10.283-5.937c-0.546-0.315-1.197-0.315-1.743-0s-0.871 0.879-0.871 1.509v11.874c0 0.63 0.326 1.194 0.871 1.509 0.273 0.158 0.572 0.236 0.871 0.236s0.599-0.079 0.871-0.236l10.283-5.937c0.546-0.315 0.871-0.879 0.871-1.509s-0.326-1.194-0.871-1.509zM22.841 16.467l-10.283 5.937c-0.013 0.007-0.039 0.022-0.077 0s-0.039-0.052-0.039-0.067v-11.874c0-0.014 0-0.045 0.039-0.067 0.015-0.009 0.028-0.012 0.040-0.012 0.018 0 0.030 0.007 0.038 0.012l10.283 5.937c0.013 0.007 0.039 0.022 0.039 0.067s-0.026 0.060-0.039 0.067zM25.831 8.803c-1.981-2.559-4.958-4.278-8.169-4.716-0.455-0.062-0.876 0.257-0.938 0.712s0.257 0.876 0.712 0.938c2.782 0.38 5.361 1.869 7.077 4.086 0.164 0.212 0.41 0.323 0.659 0.323 0.178 0 0.358-0.057 0.509-0.174 0.364-0.281 0.43-0.805 0.149-1.168z\"></path>\n</svg>\n"
+      },
+      "excludeCopy": true
+    },
+    "iconAlign": {
+      "type": "string",
+      "default": "right",
+      "excludeCopy": true
+    },
+    "alignDesktop": {
+      "type": "string"
+    },
+    "alignTablet": {
+      "type": "string"
+    },
+    "alignMobile": {
+      "type": "string"
+    },
+    "alignTabletLandscape": {
+      "type": "string"
+    },
+    "alignMobileLandscape": {
+      "type": "string"
+    },
+    "alignLaptop": {
+      "type": "string"
+    },
+    "alignWideScreen": {
+      "type": "string"
+    },
+    "btnClass": {
+      "type": "string",
+      "default": "",
+      "excludeCopy": true
+    },
+    "btnID": {
+      "type": "string",
+      "default": "",
+      "excludeCopy": true
+    },
+    "widthDesktop": {
+      "type": "object"
+    },
+    "widthTablet": {
+      "type": "object"
+    },
+    "widthMobile": {
+      "type": "object"
+    },
+    "widthTabletLandscape": {
+      "type": "object"
+    },
+    "widthMobileLandscape": {
+      "type": "object"
+    },
+    "widthLaptop": {
+      "type": "object"
+    },
+    "widthWideScreen": {
+      "type": "object"
+    },
+    "textPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "14px",
+        "right": "22px",
+        "bottom": "14px",
+        "left": "22px"
+      }
+    },
+    "textPaddingTablet": {
+      "type": "object"
+    },
+    "textPaddingMobile": {
+      "type": "object"
+    },
+    "textPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "textPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "textPaddingLaptop": {
+      "type": "object"
+    },
+    "textPaddingWideScreen": {
+      "type": "object"
+    },
+    "typography": {
+      "type": "object",
+      "default": {
+        "fontSize": {
+          "Desktop": {
+            "size": 14,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "shadow": {
+      "type": "object"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic",
+        "backgroundColor": "#2575fc"
+      }
+    },
+    "hoverColor": {
+      "type": "string"
+    },
+    "bgHoverColor": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic",
+        "backgroundColor": "#0069d9"
+      }
+    },
+    "backgroundHoverTransformY": {
+      "type": "object"
+    },
+    "borderDesktop": {
+      "type": "object"
+    },
+    "borderTablet": {
+      "type": "object"
+    },
+    "borderMobile": {
+      "type": "object"
+    },
+    "borderTabletLandscape": {
+      "type": "object"
+    },
+    "borderMobileLandscape": {
+      "type": "object"
+    },
+    "borderLaptop": {
+      "type": "object"
+    },
+    "borderWideScreen": {
+      "type": "object"
+    },
+    "borderRadiusDesktop": {
+      "type": "object",
+      "default": {
+        "top": "5px",
+        "right": "5px",
+        "bottom": "5px",
+        "left": "5px"
+      }
+    },
+    "borderRadiusTablet": {
+      "type": "object"
+    },
+    "borderRadiusMobile": {
+      "type": "object"
+    },
+    "borderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "borderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "borderRadiusLaptop": {
+      "type": "object"
+    },
+    "borderRadiusWideScreen": {
+      "type": "object"
+    },
+    "hoverBorderDesktop": {
+      "type": "object"
+    },
+    "hoverBorderTablet": {
+      "type": "object"
+    },
+    "hoverBorderMobile": {
+      "type": "object"
+    },
+    "hoverBorderTabletLandscape": {
+      "type": "object"
+    },
+    "hoverBorderMobileLandscape": {
+      "type": "object"
+    },
+    "hoverBorderLaptop": {
+      "type": "object"
+    },
+    "hoverBorderWideScreen": {
+      "type": "object"
+    },
+    "hoverBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "hoverBorderRadiusTablet": {
+      "type": "object"
+    },
+    "hoverBorderRadiusMobile": {
+      "type": "object"
+    },
+    "hoverBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "hoverBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "hoverBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "hoverBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "boxShadowGroup": {
+      "type": "object"
+    },
+    "boxShadowGroupHover": {
+      "type": "object"
+    },
+    "iconFontSizeDesktop": {
+      "type": "object",
+      "default": {
+        "size": 18,
+        "unit": "px"
+      }
+    },
+    "iconFontSizeTablet": {
+      "type": "object"
+    },
+    "iconFontSizeMobile": {
+      "type": "object"
+    },
+    "iconFontSizeTabletLandscape": {
+      "type": "object"
+    },
+    "iconFontSizeMobileLandscape": {
+      "type": "object"
+    },
+    "iconFontSizeLaptop": {
+      "type": "object"
+    },
+    "iconFontSizeWideScreen": {
+      "type": "object"
+    },
+    "normalIconPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "size": 8,
+        "unit": "px"
+      }
+    },
+    "normalIconPaddingTablet": {
+      "type": "object"
+    },
+    "normalIconPaddingMobile": {
+      "type": "object"
+    },
+    "normalIconPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "normalIconPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "normalIconPaddingLaptop": {
+      "type": "object"
+    },
+    "normalIconPaddingWideScreen": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignDesktop": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignTablet": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignMobile": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignTabletLandscape": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignMobileLandscape": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignLaptop": {
+      "type": "object"
+    },
+    "normalIconVerticalAlignWideScreen": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

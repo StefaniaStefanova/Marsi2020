@@ -1,0 +1,396 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenkit/dual-button",
+	"version": "1.0.0",
+	"title": "Dual Button",
+	"category": "gutenkit",
+	"keywords": ["ekit", "button", "btn", "dual", "advance", "link"],
+	"description": "Dual button block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"gkitShowButtonMiddleText": {
+			"type": "boolean",
+			"default": true,
+			"excludeCopy": true
+		},
+		"gkitButtonMiddleText": {
+			"type": "string",
+			"default": "Or",
+			"excludeCopy": true
+		},
+		"gkitDoubleButtonAlignDesktop": {
+			"type": "string",
+			"default": "center"
+		},
+		"gkitDoubleButtonAlignTablet": {
+			"type": "string",
+			"default": "center"
+		},
+		"gkitDoubleButtonAlignMobile": {
+			"type": "string",
+			"default": "center"
+		},
+		"gkitDualButtonWidthDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "%",
+				"size": 40
+			}
+		},
+		"gkitDualButtonWidthTablet": {
+			"type": "object",
+			"default": {
+				"unit": "%",
+				"size": 80
+			}
+		},
+		"gkitDualButtonWidthMobile": {
+			"type": "object",
+			"default": {
+				"unit": "%",
+				"size": 100
+			}
+		},
+		"gkitDualButtonGapDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 5
+			}
+		},
+		"gkitDualButtonGapTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 5
+			}
+		},
+		"gkitDualButtonGapMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 5
+			}
+		},
+		"gkitButtonOneText": {
+			"type": "string",
+			"default": "Button",
+			"excludeCopy": true
+		},
+		"gkitButtonOneLink": {
+			"type": "object",
+			"excludeCopy": true
+		},
+		"gkitButtonOneIconsShow": {
+			"type": "boolean",
+			"default": false,
+			"excludeCopy": true
+		},
+		"gkitButtonOneIcons": {
+			"type": "object",
+			"excludeCopy": true
+		},
+		"gkitDoubleButtonOneIconPosition": {
+			"type": "string",
+			"default": "before"
+		},
+		"gkitDoubleButtonOneIconSpecingDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitDoubleButtonOneIconSpecingTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitDoubleButtonOneIconSpecingMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitButtonTwoText": {
+			"type": "string",
+			"default": "Button",
+			"excludeCopy": true
+		},
+		"gkitButtonTwoLink": {
+			"type": "object",
+			"excludeCopy": true
+		},
+		"gkitButtonTwoIconsShow": {
+			"type": "boolean",
+			"default": false,
+			"excludeCopy": true
+		},
+		"gkitButtonTwoIcons": {
+			"type": "object",
+			"excludeCopy": true
+		},
+		"gkitDoubleButtonTwoIconPosition": {
+			"type": "string",
+			"default": "before"
+		},
+		"gkitDoubleButtonTwoIconSpecingDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitDoubleButtonTwoIconSpecingTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitDoubleButtonTwoIconSpecingMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 8
+			}
+		},
+		"gkitDoubleButtonOneColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"gkitDoubleButtonOneTypography": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBorder": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBackground": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneBoxShadow": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOnePaddingDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOnePaddingTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOnePaddingMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneMarginDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneMarginTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneMarginMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneAlignDesktop": {
+			"type": "string"
+		},
+		"gkitDoubleButtonOneAlignTablet": {
+			"type": "string"
+		},
+		"gkitDoubleButtonOneAlignMobile": {
+			"type": "string"
+		},
+		"gkitDoubleButtonOneHoverColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"gkitDoubleButtonOneHoverBorderColor": {
+			"type": "string"
+		},
+		"gkitDoubleButtonOneHoverBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneHoverBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneHoverBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneHoverBackground": {
+			"type": "object"
+		},
+		"gkitDoubleButtonOneHoverBoxShadow": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"gkitDoubleButtonTwoTypography": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBorder": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBackground": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoBoxShadow": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoPaddingDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoPaddingTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoPaddingMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoMarginDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoMarginTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoMarginMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoAlignDesktop": {
+			"type": "string"
+		},
+		"gkitDoubleButtonTwoAlignTablet": {
+			"type": "string"
+		},
+		"gkitDoubleButtonTwoAlignMobile": {
+			"type": "string"
+		},
+		"gkitDoubleButtonTwoHoverColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"gkitDoubleButtonTwoHoverBorderColor": {
+			"type": "string"
+		},
+		"gkitDoubleButtonTwoHoverBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoHoverBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoHoverBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoHoverBackground": {
+			"type": "object"
+		},
+		"gkitDoubleButtonTwoHoverBoxShadow": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"gkitDoubleButtonMiddletextTypography": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBorder": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBackground": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextBoxShadow": {
+			"type": "object"
+		},
+		"gkitDoubleButtonMiddletextWidthDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		},
+		"gkitDoubleButtonMiddletextWidthTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		},
+		"gkitDoubleButtonMiddletextWidthMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		},
+		"gkitDoubleButtonMiddletextHeightDesktop": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		},
+		"gkitDoubleButtonMiddletextHeightTablet": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		},
+		"gkitDoubleButtonMiddletextHeightMobile": {
+			"type": "object",
+			"default": {
+				"unit": "px",
+				"size": 40
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

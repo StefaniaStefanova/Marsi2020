@@ -1,0 +1,89 @@
+.gkit-font-family {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+
+	&>* {
+		flex: 1;
+	}
+
+	&-select {
+		flex-basis: 30%;
+		.gkit__control {
+			border-radius: 0;
+			min-height: 25px;
+			box-shadow: none;
+			padding: 0 3px;
+			cursor: pointer;
+
+			&:hover {
+				border-color: #397FE9;
+			}
+
+			&:focus {
+				border-color: #397FE9;
+			}
+
+			.gkit__value-container {
+				padding: 0;
+
+				.gkit__input-container {
+					margin: 0;
+					padding: 0;
+				}
+
+				.gkit__single-value {
+					margin: 0;
+				}
+			}
+
+			.gkit__indicators {
+				.gkit__indicator-separator {
+					display: none;
+				}
+
+				.gkit__dropdown-indicator {
+					padding: 0;
+
+					svg {
+						width: 16px;
+						height: 16px;
+						display: block;
+					}
+				}
+			}
+		}
+
+		.gkit__input {
+			box-shadow: none !important;
+			max-width: 100%;
+			min-width: 40px;
+		}
+
+		.gkit__menu {
+			z-index: 999999;
+			border-radius: 0;
+			.gkit__menu-list {
+				overflow-x: hidden;
+				overflow-y: auto;
+				&::-webkit-scrollbar {
+					width: 8px;
+					background-color: #f2f7ff;
+				}
+
+				//track
+				&::-webkit-scrollbar-thumb {
+					background-color: #397FE9;
+					border-radius: 4px;
+					cursor: pointer;
+				}
+			}
+
+			&__option {
+				cursor: pointer;
+			}
+		}
+	}
+}

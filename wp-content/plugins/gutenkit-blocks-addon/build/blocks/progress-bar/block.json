@@ -1,0 +1,182 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/progress-bar",
+  "version": "1.0.3",
+  "title": "Progress Bar",
+  "category": "gutenkit",
+  "description": "Progress bar block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "style": {
+      "type": "string",
+      "default": "default"
+    },
+    "title": {
+      "type": "string",
+      "default": "Wordpress",
+      "excludeCopy": true
+    },
+    "progress": {
+      "type": "object",
+      "default": {
+        "size": 90
+      },
+      "excludeCopy": true
+    },
+    "duration": {
+      "type": "object",
+      "default": {
+        "size": 3500
+      },
+      "excludeCopy": true
+    },
+    "percentageHide": {
+      "type": "boolean",
+      "default": false,
+      "excludeCopy": true
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "title": "arrow-right-1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>arrow-right-1</title>\n<path d=\"M30.966 16.234l-9.6-9.6c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l8.234 8.234h-26.069c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h26.069l-8.234 8.234c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.6-9.6c0.312-0.312 0.312-0.819 0-1.131z\"></path>\n</svg>"
+      }
+    },
+    "barBackground": {
+      "type": "object"
+    },
+    "barHeightDesktop": {
+      "type": "object"
+    },
+    "barHeightTablet": {
+      "type": "object"
+    },
+    "barHeightMobile": {
+      "type": "object"
+    },
+    "barHeightTabletLandscape": {
+      "type": "object"
+    },
+    "barHeightMobileLandscape": {
+      "type": "object"
+    },
+    "barHeightLaptop": {
+      "type": "object"
+    },
+    "barHeightWideScreen": {
+      "type": "object"
+    },
+    "barBoxShadow": {
+      "type": "object"
+    },
+    "barborderRadius": {
+      "type": "object"
+    },
+    "barPadding": {
+      "type": "object"
+    },
+    "trackBackground": {
+      "type": "object"
+    },
+    "trackBorderRadius": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "titleMarginBottomDesktop": {
+      "type": "object"
+    },
+    "titleMarginBottomTablet": {
+      "type": "object"
+    },
+    "titleMarginBottomMobile": {
+      "type": "object"
+    },
+    "titleMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "titleMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "titleMarginBottomLaptop": {
+      "type": "object"
+    },
+    "titleMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "percentageColor": {
+      "type": "string"
+    },
+    "percentageTypography": {
+      "type": "object"
+    },
+    "percentageBackground": {
+      "type": "string"
+    },
+    "trackStripeBackground": {
+      "type": "string"
+    },
+    "barStripeBackground": {
+      "type": "string"
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "iconSizeDesktop": {
+      "type": "object"
+    },
+    "iconSizeTablet": {
+      "type": "object"
+    },
+    "iconSizeMobile": {
+      "type": "object"
+    },
+    "iconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "iconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "iconSizeLaptop": {
+      "type": "object"
+    },
+    "iconSizeWideScreen": {
+      "type": "object"
+    },
+    "switchColor": {
+      "type": "string"
+    },
+    "trackBoxShadow": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js"
+}

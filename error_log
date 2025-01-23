@@ -1,0 +1,93 @@
+[06-Jan-2025 13:05:02 UTC] Cron грешка при планирано събитие за кука: action_scheduler_run_queue, Грешен код: invalid_schedule, Грешно съобщение: Няма планирани събития., Данни: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[08-Jan-2025 09:05:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:156
+Stack trace:
+#0 /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#5 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 156
+[09-Jan-2025 11:05:12 UTC] Cron грешка при планирано събитие за кука: woocommerce_geoip_updater, Грешен код: invalid_schedule, Грешно съобщение: Няма планирани събития., Данни: {"schedule":"fifteendays","args":[],"interval":1296000}
+[10-Jan-2025 13:05:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_create' at line 3 for query SELECT
+					id,
+					row_number() OVER (ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_created_at,
+					date_updated_gmt AS order_updated_at,
+					currency,
+					total_amount,
+					payment_method,
+					payment_method_title
+				FROM IHTeo4RX4_wc_orders
+				WHERE
+					type = 'shop_order'
+					AND status IN ('wc-completed', 'wc-refunded')
+				ORDER BY date_created_gmt ASC
+				LIMIT 20; made by do_action_ref_array('woocommerce_tracker_send_event'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Tracker::send_tracking_data, WC_Tracker::get_tracking_data, WC_Tracker::get_order_snapshot, WC_Tracker::get_order_data
+[10-Jan-2025 13:05:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_create' at line 3 for query SELECT
+					id,
+					row_number() OVER (ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_created_at,
+					date_updated_gmt AS order_updated_at,
+					currency,
+					total_amount,
+					payment_method,
+					payment_method_title
+				FROM IHTeo4RX4_wc_orders
+				WHERE
+					type = 'shop_order'
+					AND status IN ('wc-completed', 'wc-refunded')
+				ORDER BY date_created_gmt DESC
+				LIMIT 20; made by do_action_ref_array('woocommerce_tracker_send_event'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Tracker::send_tracking_data, WC_Tracker::get_tracking_data, WC_Tracker::get_order_snapshot, WC_Tracker::get_order_data
+[10-Jan-2025 14:05:02 UTC] PHP Warning:  Undefined array key "your-message" in /home/marsok/public_html/wp-content/plugins/code-snippets/php/snippet-ops.php(582) : eval()'d code on line 6
+[10-Jan-2025 14:05:02 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/marsok/public_html/wp-content/plugins/code-snippets/php/snippet-ops.php(582) : eval()'d code on line 29
+[10-Jan-2025 14:05:02 UTC] PHP Warning:  file_get_contents(https://api.openai.com/v1/chat/completions): Failed to open stream: no suitable wrapper could be found in /home/marsok/public_html/wp-content/plugins/code-snippets/php/snippet-ops.php(582) : eval()'d code on line 29
+[17-Jan-2025 13:05:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_create' at line 3 for query SELECT
+					id,
+					row_number() OVER (ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_created_at,
+					date_updated_gmt AS order_updated_at,
+					currency,
+					total_amount,
+					payment_method,
+					payment_method_title
+				FROM IHTeo4RX4_wc_orders
+				WHERE
+					type = 'shop_order'
+					AND status IN ('wc-completed', 'wc-refunded')
+				ORDER BY date_created_gmt ASC
+				LIMIT 20; made by do_action_ref_array('woocommerce_tracker_send_event'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Tracker::send_tracking_data, WC_Tracker::get_tracking_data, WC_Tracker::get_order_snapshot, WC_Tracker::get_order_data
+[17-Jan-2025 13:05:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_create' at line 3 for query SELECT
+					id,
+					row_number() OVER (ORDER BY date_created_gmt) AS order_rank,
+					date_created_gmt AS order_created_at,
+					date_updated_gmt AS order_updated_at,
+					currency,
+					total_amount,
+					payment_method,
+					payment_method_title
+				FROM IHTeo4RX4_wc_orders
+				WHERE
+					type = 'shop_order'
+					AND status IN ('wc-completed', 'wc-refunded')
+				ORDER BY date_created_gmt DESC
+				LIMIT 20; made by do_action_ref_array('woocommerce_tracker_send_event'), WP_Hook->do_action, WP_Hook->apply_filters, WC_Tracker::send_tracking_data, WC_Tracker::get_tracking_data, WC_Tracker::get_order_snapshot, WC_Tracker::get_order_data
+[22-Jan-2025 09:05:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:156
+Stack trace:
+#0 /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#5 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 156

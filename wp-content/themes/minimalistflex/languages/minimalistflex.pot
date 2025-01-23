@@ -1,0 +1,1058 @@
+# Copyright (C) 2024 Frank419
+# This file is distributed under the GNU General Public License v3.0 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MinimalistFlex 1.0.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/minimalistflex\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-14T13:34:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: minimalistflex\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "MinimalistFlex"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/onmyodev/MinimalistFlex/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "MinimalistFlex is an elegant, easy to use theme that aims to provide a smooth user experience. As a classic theme, we try to provide as many options as possible, while not being overwhelming. With full support of flexible header images, custom colors and layout, multiple widget areas, you can still customize your site in a lot of ways. Compatibility is also an important affair: MinimalistFlex is tested on many versions with a minimum of WordPress 4.9 and PHP 5.6, ensuring that almost everyone can enjoy the theme without worrying to upgrade. Mobile users are also considered well: MinimalistFlex is fully responsive on its own, and works well even on very small screen sizes!"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Frank419"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://onmyodev.com/"
+msgstr ""
+
+#: 404.php:11
+msgid "You&apos;ve reached the edge of the world."
+msgstr ""
+
+#: 404.php:12
+msgid "It looks like the page you are looking for doesn&apos;t exist."
+msgstr ""
+
+#: 404.php:13
+msgid "What about a search?"
+msgstr ""
+
+#: 404.php:15
+msgid "Go back"
+msgstr ""
+
+#: author.php:25
+msgid "User description"
+msgstr ""
+
+#: author.php:26
+#: includes/customizer.php:136
+msgid "Registration time"
+msgstr ""
+
+#: author.php:27
+#: includes/customizer.php:137
+msgid "Website"
+msgstr ""
+
+#: author.php:28
+msgid "Email"
+msgstr ""
+
+#. translators: %s: The author display name.
+#: author.php:53
+msgid "All posts by %s"
+msgstr ""
+
+#. translators: %1$s: Number of comments. %2$s: Post title.
+#: comments.php:19
+msgctxt "comments title"
+msgid "%1$s comment on \"%2$s\""
+msgid_plural "%1$s comments on \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:44
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:45
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:46
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:51
+#: singular.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:39
+msgid "Back to top"
+msgstr ""
+
+#. translators: %s: Link to theme author website.
+#: footer.php:78
+msgid "Theme <a href=\"%s\">MinimalistFlex</a>."
+msgstr ""
+
+#: functions.php:37
+msgid "An abstract default header image."
+msgstr ""
+
+#: functions.php:42
+msgid "A default header image that contains three lines."
+msgstr ""
+
+#: functions.php:67
+msgctxt "sidebar name"
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:69
+msgid "Widgets in this area will be shown on all posts and pages."
+msgstr ""
+
+#: functions.php:76
+msgctxt "sidebar name"
+msgid "Above Content"
+msgstr ""
+
+#: functions.php:78
+msgid "Widgets in this area will be shown above the main content."
+msgstr ""
+
+#: functions.php:85
+msgctxt "sidebar name"
+msgid "Below Content"
+msgstr ""
+
+#: functions.php:87
+msgid "Widgets in this area will be shown below the main content."
+msgstr ""
+
+#: functions.php:94
+msgctxt "sidebar name"
+msgid "Footer"
+msgstr ""
+
+#: functions.php:96
+msgid "Widgets in this area will be shown in the footer. Always shows."
+msgstr ""
+
+#: functions.php:103
+msgctxt "sidebar name"
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:105
+msgid "Widgets in this area will be shown in the footer to construct a multi column footer. Only shows when the footer is set to display it. Also twice as wide as other footer widget areas."
+msgstr ""
+
+#: functions.php:112
+msgctxt "sidebar name"
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:114
+msgid "Widgets in this area will be shown in the footer to construct a multi column footer. Only shows when the footer is set to display it."
+msgstr ""
+
+#: functions.php:126
+msgid "Main Menu"
+msgstr ""
+
+#: header.php:52
+msgid "Skip to main content"
+msgstr ""
+
+#: header.php:61
+msgid "The header image link."
+msgstr ""
+
+#. translators: %s: The label of the header image link.
+#: header.php:69
+msgid "The image of the header image link to \"%s\"."
+msgstr ""
+
+#: header.php:73
+msgid "The header image."
+msgstr ""
+
+#: header.php:92
+msgid "This element sends you to the last menu item."
+msgstr ""
+
+#: header.php:94
+msgid "Toggle navigation dropdown"
+msgstr ""
+
+#: header.php:101
+msgid "This element sends you back to the close menu button."
+msgstr ""
+
+#: includes/class-color-palette-control.php:35
+msgctxt "color palette"
+msgid "Minimal"
+msgstr ""
+
+#: includes/class-color-palette-control.php:36
+msgctxt "color palette"
+msgid "Light"
+msgstr ""
+
+#: includes/class-color-palette-control.php:37
+msgctxt "color palette"
+msgid "Dark"
+msgstr ""
+
+#: includes/class-color-palette-control.php:38
+msgctxt "color palette"
+msgid "Galatic"
+msgstr ""
+
+#: includes/class-color-palette-control.php:39
+msgctxt "color palette"
+msgid "Spring"
+msgstr ""
+
+#: includes/class-multi-image-control.php:34
+msgid "No image set"
+msgstr ""
+
+#: includes/class-multi-image-control.php:38
+msgid "Add Image"
+msgstr ""
+
+#: includes/color-definitions.php:28
+msgid "Content Background"
+msgstr ""
+
+#: includes/color-definitions.php:29
+msgid "Sidebar Background"
+msgstr ""
+
+#: includes/color-definitions.php:30
+msgid "Secondary Text"
+msgstr ""
+
+#: includes/color-definitions.php:31
+msgid "Default"
+msgstr ""
+
+#: includes/color-definitions.php:32
+msgid "Link"
+msgstr ""
+
+#: includes/color-definitions.php:33
+msgid "Link Hover"
+msgstr ""
+
+#: includes/color-definitions.php:34
+msgid "Tint A"
+msgstr ""
+
+#: includes/color-definitions.php:35
+msgid "Tint A Dark"
+msgstr ""
+
+#: includes/color-definitions.php:36
+msgid "Tint B"
+msgstr ""
+
+#: includes/color-definitions.php:37
+msgid "Tint C"
+msgstr ""
+
+#: includes/color-definitions.php:38
+msgid "Contrast (Light)"
+msgstr ""
+
+#: includes/color-definitions.php:39
+msgid "Contrast (Dark)"
+msgstr ""
+
+#: includes/color-definitions.php:40
+msgid "Footer Text"
+msgstr ""
+
+#: includes/color-definitions.php:41
+msgid "Footer Background"
+msgstr ""
+
+#: includes/color-definitions.php:42
+msgid "Header Background"
+msgstr ""
+
+#: includes/color-definitions.php:43
+msgid "Navigation Menu Background"
+msgstr ""
+
+#: includes/color-definitions.php:44
+msgid "Navigation Menu Submenu Background"
+msgstr ""
+
+#: includes/color-definitions.php:45
+msgid "Navigation Menu"
+msgstr ""
+
+#: includes/color-definitions.php:49
+msgid "The background color of the main content area."
+msgstr ""
+
+#: includes/color-definitions.php:50
+msgid "The background color of the sidebar."
+msgstr ""
+
+#: includes/color-definitions.php:51
+msgid "The secondary text color. Should be lighter than the default color."
+msgstr ""
+
+#: includes/color-definitions.php:52
+msgid "The default text color."
+msgstr ""
+
+#: includes/color-definitions.php:53
+msgid "The link color."
+msgstr ""
+
+#: includes/color-definitions.php:54
+msgid "The link color when hovered."
+msgstr ""
+
+#: includes/color-definitions.php:55
+msgid "Tint color A. Should be a light color."
+msgstr ""
+
+#: includes/color-definitions.php:56
+msgid "A darker variant of the tint color A. Only used on the scroll bars."
+msgstr ""
+
+#: includes/color-definitions.php:57
+msgid "Tint color B. Should be a dark color."
+msgstr ""
+
+#: includes/color-definitions.php:58
+msgid "Tint color C. Should be a *even darker* color."
+msgstr ""
+
+#: includes/color-definitions.php:59
+msgid "Text color on a light background. Better keep it as is."
+msgstr ""
+
+#: includes/color-definitions.php:60
+msgid "Text color on a dark background. Better keep it as is."
+msgstr ""
+
+#: includes/color-definitions.php:61
+msgid "The footer text color."
+msgstr ""
+
+#: includes/color-definitions.php:62
+msgid "The footer background color."
+msgstr ""
+
+#: includes/color-definitions.php:63
+msgid "The background color of the header."
+msgstr ""
+
+#: includes/color-definitions.php:64
+msgid "The background color of the navigation menu dropdown."
+msgstr ""
+
+#: includes/color-definitions.php:65
+msgid "The background color of the submenus of the navigation menu dropdown."
+msgstr ""
+
+#: includes/color-definitions.php:66
+msgid "The text color of the navigation menu dropdown."
+msgstr ""
+
+#: includes/customizer.php:19
+msgid "Default Featured Images"
+msgstr ""
+
+#: includes/customizer.php:20
+msgid "The theme can provide the following images as a fallback when there's no featured image set for a post. You can also select where to display those images."
+msgstr ""
+
+#: includes/customizer.php:44
+msgid "Default Images"
+msgstr ""
+
+#: includes/customizer.php:45
+msgid "Click on \"Add Image\" to add an image. Click on the image to remove it. There's no limit on how many images you can add."
+msgstr ""
+
+#: includes/customizer.php:48
+msgid "Suggested Images"
+msgstr ""
+
+#: includes/customizer.php:49
+msgid "We have prepared some pre-built, generic purpose images for you to choose from. Click on an image will add it into the selection."
+msgstr ""
+
+#: includes/customizer.php:53
+msgid "Location"
+msgstr ""
+
+#: includes/customizer.php:54
+msgid "You may decide if and where should the default image show."
+msgstr ""
+
+#: includes/customizer.php:59
+msgid "Always"
+msgstr ""
+
+#: includes/customizer.php:60
+msgid "Archive Page Only"
+msgstr ""
+
+#: includes/customizer.php:61
+msgid "Single Page Only"
+msgstr ""
+
+#: includes/customizer.php:62
+msgid "Never"
+msgstr ""
+
+#: includes/customizer.php:66
+msgid "Display First Image"
+msgstr ""
+
+#: includes/customizer.php:67
+msgid "The theme can also retrieve the first image in a post if possible. When no image was found, the theme can fallback to the default images set below."
+msgstr ""
+
+#: includes/customizer.php:72
+#: includes/customizer.php:125
+#: includes/customizer.php:162
+#: includes/customizer.php:174
+#: includes/customizer.php:517
+#: includes/customizer.php:540
+#: includes/customizer.php:563
+#: includes/customizer.php:574
+#: includes/customizer.php:597
+#: includes/customizer.php:608
+#: includes/customizer.php:619
+#: includes/customizer.php:642
+#: includes/customizer.php:653
+#: includes/customizer.php:664
+#: includes/customizer.php:687
+#: includes/customizer.php:710
+#: includes/customizer.php:721
+#: includes/customizer.php:739
+#: includes/customizer.php:750
+#: includes/customizer.php:761
+msgid "Yes"
+msgstr ""
+
+#: includes/customizer.php:73
+#: includes/customizer.php:126
+#: includes/customizer.php:163
+#: includes/customizer.php:175
+#: includes/customizer.php:507
+#: includes/customizer.php:518
+#: includes/customizer.php:530
+#: includes/customizer.php:541
+#: includes/customizer.php:553
+#: includes/customizer.php:564
+#: includes/customizer.php:575
+#: includes/customizer.php:587
+#: includes/customizer.php:598
+#: includes/customizer.php:609
+#: includes/customizer.php:620
+#: includes/customizer.php:632
+#: includes/customizer.php:643
+#: includes/customizer.php:654
+#: includes/customizer.php:665
+#: includes/customizer.php:677
+#: includes/customizer.php:688
+#: includes/customizer.php:700
+#: includes/customizer.php:711
+#: includes/customizer.php:722
+#: includes/customizer.php:740
+#: includes/customizer.php:751
+#: includes/customizer.php:762
+#: includes/customizer.php:774
+msgid "No"
+msgstr ""
+
+#: includes/customizer.php:88
+msgid "Color Palettes"
+msgstr ""
+
+#: includes/customizer.php:89
+msgid "We had prepared some fine tuned color palettes for you. Select an option and it will automatically apply the palette to your site."
+msgstr ""
+
+#: includes/customizer.php:120
+msgid "Disable Shadows"
+msgstr ""
+
+#: includes/customizer.php:121
+msgid "This option lets you disable the shadow on the site. It should only affect the shadow created by the theme."
+msgstr ""
+
+#: includes/customizer.php:129
+msgid "The default background setting from the WordPress core. If set, it will blend with the content &amp; sidebar background colors set below."
+msgstr ""
+
+#: includes/customizer.php:130
+msgid "The default header text setting from the WordPress core. Used on the header and the toggle button."
+msgstr ""
+
+#. translators: This line is special. The part before <br> is the description of the section, while the rest is the option name.
+#: includes/customizer.php:135
+msgid "Below are some metadatas that you may configure whether to display or not.<br>Description"
+msgstr ""
+
+#: includes/customizer.php:138
+msgid "Email address"
+msgstr ""
+
+#: includes/customizer.php:158
+msgid "Metadatas"
+msgstr ""
+
+#: includes/customizer.php:186
+msgctxt "customizer panel"
+msgid "Layout"
+msgstr ""
+
+#: includes/customizer.php:187
+msgid "Here you may configure how different pages on your site looks like."
+msgstr ""
+
+#: includes/customizer.php:194
+msgctxt "customizer section"
+msgid "Blog Page"
+msgstr ""
+
+#: includes/customizer.php:195
+msgid "Here you may customize the layout of your blog page."
+msgstr ""
+
+#: includes/customizer.php:201
+msgctxt "customizer section"
+msgid "Front Page"
+msgstr ""
+
+#: includes/customizer.php:202
+msgid "Here you may customize the layout of your front page. Only takes effect when using a static front page."
+msgstr ""
+
+#: includes/customizer.php:208
+msgctxt "customizer section"
+msgid "Archives"
+msgstr ""
+
+#: includes/customizer.php:209
+msgid "Here you may customize the layout of your archive pages."
+msgstr ""
+
+#: includes/customizer.php:215
+msgctxt "customizer section"
+msgid "Search Results"
+msgstr ""
+
+#: includes/customizer.php:216
+msgid "Here you may customize the layout of your search result pages."
+msgstr ""
+
+#: includes/customizer.php:222
+msgctxt "customizer section"
+msgid "Author Pages"
+msgstr ""
+
+#: includes/customizer.php:223
+msgid "Here you may customize the layout of your author pages."
+msgstr ""
+
+#: includes/customizer.php:229
+msgctxt "customizer section"
+msgid "Single Posts"
+msgstr ""
+
+#: includes/customizer.php:230
+msgid "Here you may customize the layout of your posts."
+msgstr ""
+
+#: includes/customizer.php:236
+msgctxt "customizer section"
+msgid "Pages"
+msgstr ""
+
+#: includes/customizer.php:237
+msgid "Here you may customize the layout of your pages."
+msgstr ""
+
+#: includes/customizer.php:243
+msgctxt "customizer section"
+msgid "Interface &amp; Elements"
+msgstr ""
+
+#: includes/customizer.php:244
+msgid "You may customize your site's interface and the elements displayed here."
+msgstr ""
+
+#: includes/customizer.php:249
+msgctxt "customizer section"
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer.php:250
+msgid "You may customize how your footer looks like here."
+msgstr ""
+
+#: includes/customizer.php:447
+#: templates/loop.php:108
+msgid "Read More"
+msgstr ""
+
+#: includes/customizer.php:488
+msgid "Header Image Link"
+msgstr ""
+
+#: includes/customizer.php:489
+msgid "You may link the header image to a URL. Leave blank if you do not want to do so."
+msgstr ""
+
+#: includes/customizer.php:495
+msgid "Header Image Label"
+msgstr ""
+
+#: includes/customizer.php:496
+msgid "You may provide a description of your header image. Also will become the label of the link if set. Should be set for better accessibility."
+msgstr ""
+
+#: includes/customizer.php:502
+#: includes/customizer.php:525
+#: includes/customizer.php:548
+#: includes/customizer.php:582
+#: includes/customizer.php:627
+#: includes/customizer.php:672
+#: includes/customizer.php:695
+msgctxt "layout"
+msgid "Sidebar"
+msgstr ""
+
+#: includes/customizer.php:503
+#: includes/customizer.php:526
+#: includes/customizer.php:549
+#: includes/customizer.php:583
+#: includes/customizer.php:628
+#: includes/customizer.php:673
+#: includes/customizer.php:696
+msgid "Select whether to display the sidebar, and its location."
+msgstr ""
+
+#: includes/customizer.php:505
+#: includes/customizer.php:528
+#: includes/customizer.php:551
+#: includes/customizer.php:585
+#: includes/customizer.php:630
+#: includes/customizer.php:675
+#: includes/customizer.php:698
+msgid "Left sidebar"
+msgstr ""
+
+#: includes/customizer.php:506
+#: includes/customizer.php:529
+#: includes/customizer.php:552
+#: includes/customizer.php:586
+#: includes/customizer.php:631
+#: includes/customizer.php:676
+#: includes/customizer.php:699
+msgid "Right sidebar"
+msgstr ""
+
+#: includes/customizer.php:514
+#: includes/customizer.php:537
+#: includes/customizer.php:560
+#: includes/customizer.php:594
+#: includes/customizer.php:639
+#: includes/customizer.php:684
+#: includes/customizer.php:707
+msgctxt "layout"
+msgid "Header Image"
+msgstr ""
+
+#: includes/customizer.php:515
+#: includes/customizer.php:538
+#: includes/customizer.php:561
+#: includes/customizer.php:595
+#: includes/customizer.php:640
+#: includes/customizer.php:685
+#: includes/customizer.php:708
+msgid "Select whether to display the header image."
+msgstr ""
+
+#: includes/customizer.php:571
+msgctxt "layout"
+msgid "Title"
+msgstr ""
+
+#: includes/customizer.php:572
+msgid "Select whether to display the archive title."
+msgstr ""
+
+#: includes/customizer.php:605
+msgctxt "layout"
+msgid "Search Query"
+msgstr ""
+
+#: includes/customizer.php:606
+msgid "Select whether to display the search query."
+msgstr ""
+
+#: includes/customizer.php:616
+msgctxt "layout"
+msgid "Search Form"
+msgstr ""
+
+#: includes/customizer.php:617
+msgid "Select whether to also display the search form."
+msgstr ""
+
+#: includes/customizer.php:650
+msgctxt "layout"
+msgid "Author Name"
+msgstr ""
+
+#: includes/customizer.php:651
+msgid "Select whether to display the author name."
+msgstr ""
+
+#: includes/customizer.php:661
+msgctxt "layout"
+msgid "Admin Status"
+msgstr ""
+
+#: includes/customizer.php:662
+msgid "Show an indicator in the bottom-right of the avatar if the author is an admin."
+msgstr ""
+
+#: includes/customizer.php:718
+msgid "Scroll to top button"
+msgstr ""
+
+#: includes/customizer.php:719
+msgid "Whether to display a \"Scroll to top\" button in the bottom-right corner."
+msgstr ""
+
+#: includes/customizer.php:729
+msgid "Excerpt Word Count"
+msgstr ""
+
+#: includes/customizer.php:730
+msgid "The word count of the excerpts on any archive page and the blog page."
+msgstr ""
+
+#: includes/customizer.php:736
+msgid "Auto h2 Label"
+msgstr ""
+
+#: includes/customizer.php:737
+msgid "The theme can automatically theme and label the h2 elements in single posts and pages, providing a better visual. May not work well in all circumstances, use with caution."
+msgstr ""
+
+#: includes/customizer.php:747
+msgid "Comment Count"
+msgstr ""
+
+#: includes/customizer.php:748
+msgid "Whether to display the comment count of the posts listed in an archive page."
+msgstr ""
+
+#: includes/customizer.php:758
+msgid "Publisher"
+msgstr ""
+
+#: includes/customizer.php:759
+msgid "Whether to display the publisher."
+msgstr ""
+
+#: includes/customizer.php:769
+msgid "Publish Date"
+msgstr ""
+
+#: includes/customizer.php:770
+msgid "Whether to display the published date."
+msgstr ""
+
+#: includes/customizer.php:772
+msgid "Yes, publish time only."
+msgstr ""
+
+#: includes/customizer.php:773
+msgid "Yes, and display modified time if possible."
+msgstr ""
+
+#: includes/customizer.php:781
+msgid "Read More Link"
+msgstr ""
+
+#: includes/customizer.php:782
+msgid "The text for the \"Read More\" links."
+msgstr ""
+
+#: includes/customizer.php:788
+msgid "Thumbnail Images Size"
+msgstr ""
+
+#: includes/customizer.php:789
+msgid "Select whether to enable flexible height for your thumbnail images, or use a fixed height."
+msgstr ""
+
+#: includes/customizer.php:791
+msgid "Fixed"
+msgstr ""
+
+#: includes/customizer.php:792
+msgid "Flexible"
+msgstr ""
+
+#: includes/customizer.php:799
+msgid "Height"
+msgstr ""
+
+#: includes/customizer.php:800
+msgid "Enter your desired height here. Should be in pixels."
+msgstr ""
+
+#: includes/customizer.php:806
+msgid "Footer Options"
+msgstr ""
+
+#: includes/customizer.php:807
+msgid "Choose what to display in your footer credit section."
+msgstr ""
+
+#: includes/customizer.php:809
+msgid "Both MinimalistFlex credits and custom footer text."
+msgstr ""
+
+#: includes/customizer.php:810
+msgid "MinimalistFlex credits only."
+msgstr ""
+
+#: includes/customizer.php:811
+msgid "Custom footer text only."
+msgstr ""
+
+#: includes/customizer.php:812
+msgid "Neither."
+msgstr ""
+
+#: includes/customizer.php:819
+msgid "Custom Footer Text"
+msgstr ""
+
+#: includes/customizer.php:820
+msgid "Here you may set a custom footer text to be displayed in the footer credits. HTML allowed."
+msgstr ""
+
+#: includes/customizer.php:826
+msgid "Footer Widget Layout"
+msgstr ""
+
+#: includes/customizer.php:827
+msgid "Choose the layout of the footer widgets."
+msgstr ""
+
+#: includes/customizer.php:829
+msgid "One column. Only shows the \"Footer\" widget area."
+msgstr ""
+
+#: includes/customizer.php:830
+msgid "Two columns. Also shows the \"Footer 2\" widget area."
+msgstr ""
+
+#: includes/customizer.php:831
+msgid "Three columns. Also shows the \"Footer 3\" widget area (aka all areas)."
+msgstr ""
+
+#: includes/languages.php:10
+msgid "Featured"
+msgstr ""
+
+#: includes/languages.php:11
+msgid "Post Author"
+msgstr ""
+
+#: includes/languages.php:12
+msgid "Admin"
+msgstr ""
+
+#: page.php:24
+#: singular.php:48
+#: templates/loop.php:73
+msgid "Pages: "
+msgstr ""
+
+#. translators: %s: The search query.
+#: search.php:16
+#: search.php:40
+msgid "You have searched for: \"%s\""
+msgstr ""
+
+#: search.php:25
+msgid "Not finding what you are looking at? You may refine your search below:"
+msgstr ""
+
+#: search.php:49
+msgid "We are unable to find anything with this query. Try refine your search below:"
+msgstr ""
+
+#: search.php:56
+msgid "We are unable to find anything with this query."
+msgstr ""
+
+#: sidebar-above-content.php:14
+#: sidebar-below-content.php:14
+#: sidebar-footer-2.php:14
+#: sidebar-footer-3.php:14
+#: sidebar-footer.php:14
+msgid "Sorry, but no widgets were found in this area."
+msgstr ""
+
+#: sidebar-above-content.php:15
+#: sidebar-below-content.php:15
+#: sidebar-footer-2.php:15
+#: sidebar-footer-3.php:15
+#: sidebar-footer.php:15
+#: sidebar.php:18
+msgid "This message is displayed to administrators only."
+msgstr ""
+
+#: sidebar.php:15
+msgid "Sorry, but no widgets were found in this area. "
+msgstr ""
+
+#: sidebar.php:16
+msgid "Some default widgets had been displayed instead."
+msgstr ""
+
+#: sidebar.php:26
+msgid "Archives"
+msgstr ""
+
+#. translators: %s: Title of the post.
+#: singular.php:36
+#: templates/loop.php:45
+msgid "The thumbnail image for %s."
+msgstr ""
+
+#: templates/empty.php:3
+msgid "Sorry, but nothing was found at this place."
+msgstr ""
+
+#. translators: %s: Post title associated with the thumbnail image.
+#: templates/loop.php:22
+msgid "Thumbnail image of %s. Also a link that navigates to it."
+msgstr ""
+
+#. translators: %s: Post title associated with the thumbnail image.
+#: templates/loop.php:39
+msgid "The thhumbnail image link for %s"
+msgstr ""
+
+#. translators: %d: Number of comments.
+#: templates/loop.php:57
+msgctxt "comment count"
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Post publish time.
+#: templates/loop.php:89
+#: templates/publisher.php:19
+msgid "Published on %s"
+msgstr ""
+
+#. translators: %s: Post last modified time.
+#: templates/loop.php:95
+#: templates/publisher.php:25
+msgid "Last modified on %s"
+msgstr ""
+
+#. translators: %s: Post title.
+#: templates/loop.php:104
+msgid "Read more of %s"
+msgstr ""
+
+#: templates/metadata.php:12
+msgid "Categories:"
+msgstr ""
+
+#: templates/metadata.php:27
+msgid "Tags:"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Success"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Warning"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Danger"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Tint"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Tint Alt"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Default"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex Dark Background"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "MinimalistFlex White"
+msgstr ""

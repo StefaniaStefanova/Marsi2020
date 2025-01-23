@@ -1,0 +1,465 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/advanced-accordion",
+  "version": "1.0.0",
+  "title": "Advanced Accordion",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "accordion",
+    "faq",
+    "faq schema",
+    "advanced",
+    "advanced accordion",
+    "gutenkit"
+  ],
+  "allowedBlocks": [
+    "gutenkit/advanced-accordion-item"
+  ],
+  "description": "Advanced Accordion block for GutenKit",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "accordionItems": {
+      "type": "array",
+      "default": [
+        {},
+        {},
+        {}
+      ],
+      "excludeCopy": true
+    },
+    "style": {
+      "type": "string",
+      "default": "accordion-primary"
+    },
+    "iconPosStyle": {
+      "type": "string",
+      "default": "right",
+      "excludeCopy": true
+    },
+    "displayLoopCount": {
+      "type": "boolean",
+      "default": false,
+      "excludeCopy": true
+    },
+    "leftIcons": {
+      "type": "object",
+      "default": {
+        "title": "down-arrow1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>down-arrow1</title>\n<path d=\"M31.582 8.495c-0.578-0.613-1.544-0.635-2.153-0.059l-13.43 12.723-13.428-12.723c-0.61-0.578-1.574-0.553-2.153 0.059-0.579 0.611-0.553 1.576 0.058 2.155l14.477 13.715c0.293 0.277 0.67 0.418 1.047 0.418s0.756-0.14 1.048-0.418l14.477-13.715c0.611-0.579 0.637-1.544 0.058-2.155z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "leftIconActives": {
+      "type": "object",
+      "default": {
+        "title": "up-arrow1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>up-arrow1</title>\n<path d=\"M31.524 22.15l-14.477-13.715c-0.587-0.556-1.509-0.556-2.095 0l-14.477 13.715c-0.611 0.579-0.637 1.544-0.058 2.155 0.579 0.613 1.544 0.637 2.153 0.058l13.428-12.721 13.43 12.721c0.294 0.279 0.67 0.418 1.048 0.418 0.402 0 0.806-0.159 1.105-0.475 0.579-0.611 0.553-1.576-0.058-2.155z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "rightIcons": {
+      "type": "object",
+      "default": {
+        "title": "down-arrow1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>down-arrow1</title>\n<path d=\"M31.582 8.495c-0.578-0.613-1.544-0.635-2.153-0.059l-13.43 12.723-13.428-12.723c-0.61-0.578-1.574-0.553-2.153 0.059-0.579 0.611-0.553 1.576 0.058 2.155l14.477 13.715c0.293 0.277 0.67 0.418 1.047 0.418s0.756-0.14 1.048-0.418l14.477-13.715c0.611-0.579 0.637-1.544 0.058-2.155z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "rightIconActives": {
+      "type": "object",
+      "default": {
+        "title": "up-arrow",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>up-arrow</title>\n<path d=\"M26.915 10.844c0.451 0.451 0.451 1.162 0 1.613-0.436 0.436-1.162 0.436-1.597 0l-8.18-8.18v26.995c0 0.629-0.5 1.129-1.129 1.129s-1.146-0.5-1.146-1.129v-26.996l-8.164 8.18c-0.451 0.436-1.178 0.436-1.613 0-0.451-0.451-0.451-1.162 0-1.613l10.117-10.117c0.436-0.436 1.162-0.436 1.597 0l10.116 10.118z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "background": {
+      "type": "object"
+    },
+    "curveFillColor": {
+      "type": "string"
+    },
+    "curveStrokeColor": {
+      "type": "string"
+    },
+    "titleBorderOpen": {
+      "type": "object"
+    },
+    "borderRadiousCurveShapeOpen": {
+      "type": "object"
+    },
+    "boxShadowOpen": {
+      "type": "object"
+    },
+    "titleColorClose": {
+      "type": "string"
+    },
+    "backgroundClose": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "curveFillClose": {
+      "type": "string"
+    },
+    "curveStrokeClose": {
+      "type": "string"
+    },
+    "titleBorderClose": {
+      "type": "object"
+    },
+    "borderRadiousClose": {
+      "type": "object"
+    },
+    "boxShadowClose": {
+      "type": "object"
+    },
+    "titleColorHover": {
+      "type": "string"
+    },
+    "backgroundHover": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "curveFillHover": {
+      "type": "string"
+    },
+    "curveStrokeHover": {
+      "type": "string"
+    },
+    "titleBorderHover": {
+      "type": "object"
+    },
+    "borderRadiousHover": {
+      "type": "object"
+    },
+    "boxShadowHover": {
+      "type": "object"
+    },
+    "titlePaddingDesktop": {
+      "type": "object"
+    },
+    "titlePaddingTablet": {
+      "type": "object"
+    },
+    "titlePaddingMobile": {
+      "type": "object"
+    },
+    "titlePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "titlePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "titlePaddingLaptop": {
+      "type": "object"
+    },
+    "titlePaddingWideScreen": {
+      "type": "object"
+    },
+    "titleMarginBottomDesktop": {
+      "type": "object"
+    },
+    "titleMarginBottomTablet": {
+      "type": "object"
+    },
+    "titleMarginBottomMobile": {
+      "type": "object"
+    },
+    "titleMarginBottomTabletLandscape": {
+      "type": "object"
+    },
+    "titleMarginBottomMobileLandscape": {
+      "type": "object"
+    },
+    "titleMarginBottomLaptop": {
+      "type": "object"
+    },
+    "titleMarginBottomWideScreen": {
+      "type": "object"
+    },
+    "contentColor": {
+      "type": "string"
+    },
+    "contentTypography": {
+      "type": "object"
+    },
+    "contentBackground": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "contentBorderRadious": {
+      "type": "object"
+    },
+    "contentPaddingDesktop": {
+      "type": "object"
+    },
+    "contentPaddingTablet": {
+      "type": "object"
+    },
+    "contentPaddingMobile": {
+      "type": "object"
+    },
+    "contentPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "contentPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "contentPaddingLaptop": {
+      "type": "object"
+    },
+    "contentPaddingWideScreen": {
+      "type": "object"
+    },
+    "borderClosed": {
+      "type": "object"
+    },
+    "borderRadiousClosed": {
+      "type": "object"
+    },
+    "elementBoxShadowGroupClosed": {
+      "type": "object"
+    },
+    "borderOpen": {
+      "type": "object"
+    },
+    "borderRadiousOpen": {
+      "type": "object"
+    },
+    "elementBoxShadowGroup": {
+      "type": "object"
+    },
+    "lastChildBorderBottom": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconTypographyCloseDesktop": {
+      "type": "object"
+    },
+    "iconTypographyCloseTablet": {
+      "type": "object"
+    },
+    "iconTypographyCloseMobile": {
+      "type": "object"
+    },
+    "iconTypographyCloseTabletLandscape": {
+      "type": "object"
+    },
+    "iconTypographyCloseMobileLandscape": {
+      "type": "object"
+    },
+    "iconTypographyCloseLaptop": {
+      "type": "object"
+    },
+    "iconTypographyCloseWideScreen": {
+      "type": "object"
+    },
+    "iconColorClose": {
+      "type": "string"
+    },
+    "iconBoxBgClose": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBoxBgBeforeClose": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBorderClosed": {
+      "type": "object"
+    },
+    "iconTypographyDesktop": {
+      "type": "object"
+    },
+    "iconTypographyTablet": {
+      "type": "object"
+    },
+    "iconTypographyMobile": {
+      "type": "object"
+    },
+    "iconTypographyTabletLandscape": {
+      "type": "object"
+    },
+    "iconTypographyMobileLandscape": {
+      "type": "object"
+    },
+    "iconTypographyLaptop": {
+      "type": "object"
+    },
+    "iconTypographyWideScreen": {
+      "type": "object"
+    },
+    "iconColorOpen": {
+      "type": "string"
+    },
+    "iconBoxBgOpen": {
+      "type": "object"
+    },
+    "iconBoxBgBeforeOpen": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBorderOpen": {
+      "type": "object"
+    },
+    "iconTypographyHoverDesktop": {
+      "type": "object"
+    },
+    "iconTypographyHoverTablet": {
+      "type": "object"
+    },
+    "iconTypographyHoverMobile": {
+      "type": "object"
+    },
+    "iconTypographyHoverTabletLandscape": {
+      "type": "object"
+    },
+    "iconTypographyHoverMobileLandscape": {
+      "type": "object"
+    },
+    "iconTypographyHoverLaptop": {
+      "type": "object"
+    },
+    "iconTypographyHoverWideScreen": {
+      "type": "object"
+    },
+    "iconColorHover": {
+      "type": "string"
+    },
+    "iconBoxBgHover": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBoxBgBeforeHover": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBorderHover": {
+      "type": "object"
+    },
+    "iconBorderRadious": {
+      "type": "object"
+    },
+    "iconPaddingDesktop": {
+      "type": "object"
+    },
+    "iconPaddingTablet": {
+      "type": "object"
+    },
+    "iconPaddingMobile": {
+      "type": "object"
+    },
+    "iconPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "iconPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "iconPaddingLaptop": {
+      "type": "object"
+    },
+    "iconPaddingWideScreen": {
+      "type": "object"
+    },
+    "iconMarginDesktop": {
+      "type": "object"
+    },
+    "iconMarginTablet": {
+      "type": "object"
+    },
+    "iconMarginMobile": {
+      "type": "object"
+    },
+    "iconMarginTabletLandscape": {
+      "type": "object"
+    },
+    "iconMarginMobileLandscape": {
+      "type": "object"
+    },
+    "iconMarginLaptop": {
+      "type": "object"
+    },
+    "iconMarginWideScreen": {
+      "type": "object"
+    },
+    "iconBoxOpenBg": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBoxBg": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "iconBorder": {
+      "type": "object"
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "iconBoxCloseBg": {
+      "type": "object"
+    },
+    "closedIconBg": {
+      "type": "object",
+      "default": {
+        "backgroundType": "classic"
+      }
+    },
+    "closedIconBorder": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js"
+}

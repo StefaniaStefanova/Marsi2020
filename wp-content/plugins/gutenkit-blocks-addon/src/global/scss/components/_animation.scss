@@ -1,0 +1,101 @@
+.gkit-motion {
+	&-control{
+		margin-bottom: 16px;
+	}
+
+	&-label{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&__input {
+		box-shadow: none !important;
+		max-width: 100%;
+		min-width: 40px;
+	}
+
+	&__menu {
+		z-index: 999999 !important;
+		border-radius: 0;
+		.gkit-motion__menu-list {
+			overflow-x: hidden;
+			overflow-y: auto;
+			&::-webkit-scrollbar {
+				width: 8px;
+				background-color: #f2f7ff;
+			}
+
+			//track
+			&::-webkit-scrollbar-thumb {
+				background-color: #397FE9;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+		}
+
+		&__option {
+			cursor: pointer;
+		}
+	}
+
+	.gkit-motion__control {
+		border-radius: 0;
+		min-height: 25px;
+		box-shadow: none;
+		padding: 0 10px;
+		cursor: pointer;
+
+		&:hover {
+			border-color: #397FE9;
+		}
+
+		&:focus {
+			border-color: #397FE9;
+		}
+
+		.gkit-motion__value-container {
+			padding: 0;
+
+			.gkit-motion__input-container {
+				margin: 0;
+				padding: 0;
+			}
+
+			.gkit-motion__single-value {
+				margin: 0;
+			}
+		}
+
+		.gkit-motion__indicators {
+			.gkit-motion__indicator-separator {
+				display: none;
+			}
+
+			.gkit-motion__dropdown-indicator {
+				padding: 0;
+
+				svg {
+					width: 16px;
+					height: 16px;
+					display: block;
+				}
+			}
+		}
+	}
+
+	&-speed {
+		gap: 90px !important;
+
+		.components-input-control__backdrop {
+			border-color: #E6E6E6 !important;
+			box-shadow: none !important;
+			outline: none !important;
+
+			&:focus {
+				box-shadow: none !important;
+				outline: none !important;
+				border-color: #E6E6E6 !important;
+			}
+		}
+	}
+}

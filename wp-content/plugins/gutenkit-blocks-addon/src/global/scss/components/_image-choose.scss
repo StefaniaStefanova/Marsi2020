@@ -1,0 +1,106 @@
+.gkit-image-choose {
+    &-controls {
+        &-label {
+            @include gutenkit-control-title;
+        }
+    }
+
+    &-type-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+
+    &-radio {
+        input[type="radio"] {
+            display: none;
+
+            &:checked + .gkit-image-choose-radio-label {
+                border-color: #a4afb7;
+            }
+        }
+
+        &-label {
+            display: block;
+            margin: 5px 0;
+            border: 3px solid rgba(0,0,0,.08);
+            padding: 2px;
+
+			img{
+				max-width: 100%;
+				height: auto;
+                display: block;
+			}
+        }
+    }
+}
+
+.gkit-tooltip {
+    display: block;
+    box-sizing: border-box;
+
+    &-label {
+        visibility: hidden;
+        opacity: 0;
+        width: fit-content;
+        position: fixed;
+        transition: opacity 0.3s ease-in-out;
+        border: 3px solid #5c5c5c;
+        display: block;
+        box-sizing: inherit;
+        left: 0;
+        top: 0;
+        z-index: 100;
+
+        img{
+            display: block;
+            box-sizing: inherit;
+			max-width: 100%;
+			height: auto;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -12px;
+            right: -3px;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid #222;
+            border-left: 20px solid transparent;
+            box-sizing: inherit;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            right: -3px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #222;
+            border-left: 20px solid transparent;
+            display: none;
+            box-sizing: inherit;
+        }
+
+        &.arrow-down {
+            &::after{
+                display: none;
+                box-sizing: inherit;
+            }
+
+            &::before{
+                display: inline-block;
+                box-sizing: inherit;
+            }
+        }
+    }
+
+    .gkit-image-choose-show-tooltip {
+        & + .gkit-tooltip-label {
+            visibility: visible;
+            opacity: 1;
+            box-sizing: inherit;
+        }
+    }
+}

@@ -1,0 +1,433 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/image-accordion",
+  "version": "1.0.0",
+  "title": "Image Accordion",
+  "category": "gutenkit",
+  "icon": "columns",
+  "keywords": [
+    "gkit",
+    "image",
+    "accordion",
+    "image faq",
+    "faq"
+  ],
+  "description": "Image accordion block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "accordionItems": {
+      "type": "array",
+      "default": [
+        {
+          "isActive": false,
+          "backgroundImage": {
+            "url": "placeholder"
+          },
+          "title": "Image accordion Title",
+          "enableWrapLink": false,
+          "wrapLinkUrl": {},
+          "enableButtonUrl": false,
+          "buttonUrl": {},
+          "enableProjectLink": false,
+          "projectLink": {}
+        },
+        {
+          "isActive": true,
+          "backgroundImage": {
+            "url": "placeholder"
+          },
+          "title": "Image accordion Title",
+          "enableWrapLink": false,
+          "wrapLinkUrl": {},
+          "enableButtonUrl": false,
+          "buttonUrl": {},
+          "enableProjectLink": false,
+          "projectLink": {}
+        },
+        {
+          "isActive": false,
+          "backgroundImage": {
+            "url": "placeholder"
+          },
+          "title": "Image accordion Title",
+          "enableWrapLink": false,
+          "wrapLinkUrl": {},
+          "enableButtonUrl": false,
+          "buttonUrl": {},
+          "enableProjectLink": false,
+          "projectLink": {}
+        }
+      ],
+      "excludeCopy": true
+    },
+    "enableBtn": {
+      "type": "boolean",
+      "default": true,
+      "excludeCopy": true
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Read More",
+      "excludeCopy": true
+    },
+    "enablePopup": {
+      "type": "boolean",
+      "excludeCopy": true
+    },
+    "popUpIcon": {
+      "type": "object",
+      "default": {
+        "title": "plus",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>plus</title>\n<path d=\"M32 15.345h-14.945v-14.945h-2.11v14.945h-14.945v2.11h14.945v14.945h2.11v-14.945h14.945z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "enableProjectLink": {
+      "type": "boolean",
+      "default": false,
+      "excludeCopy": true
+    },
+    "projectLinkIcon": {
+      "type": "object",
+      "default": {
+        "title": "link",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>link</title>\n<path d=\"M17.091 20.797c-1.509 0-3.017-0.574-4.166-1.723-0.312-0.312-0.312-0.819 0-1.131s0.819-0.312 1.131 0c1.673 1.673 4.396 1.673 6.069 0l5.818-5.818c1.673-1.673 1.673-4.396 0-6.069s-4.395-1.673-6.069 0l-4.909 4.909c-0.312 0.312-0.819 0.312-1.131 0s-0.312-0.819 0-1.131l4.909-4.909c2.297-2.297 6.034-2.297 8.331 0s2.297 6.034 0 8.331l-5.818 5.818c-1.148 1.148-2.657 1.723-4.166 1.723zM7.491 30.397c-1.509 0-3.017-0.574-4.166-1.723-2.297-2.297-2.297-6.034 0-8.331l5.818-5.818c2.297-2.297 6.034-2.297 8.331 0 0.312 0.312 0.312 0.819 0 1.131s-0.819 0.312-1.131 0c-1.673-1.673-4.396-1.673-6.069 0l-5.818 5.818c-1.673 1.673-1.673 4.395 0 6.069s4.395 1.673 6.069 0l4.909-4.909c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-4.909 4.909c-1.148 1.148-2.657 1.723-4.166 1.723z\"></path>\n</svg>"
+      },
+      "excludeCopy": true
+    },
+    "accordionStyle": {
+      "type": "string",
+      "default": "horizontal",
+      "excludeCopy": true
+    },
+    "accordionStyleDesktop": {
+      "type": "string"
+    },
+    "accordionStyleTablet": {
+      "type": "string"
+    },
+    "accordionStyleMobile": {
+      "type": "string"
+    },
+    "accordionStyleTabletLandscape": {
+      "type": "string"
+    },
+    "accordionStyleMobileLandscape": {
+      "type": "string"
+    },
+    "accordionStyleLaptop": {
+      "type": "string"
+    },
+    "accordionStyleWideScreen": {
+      "type": "string"
+    },
+    "accordionDesktop": {
+      "type": "string",
+      "default": "horizontal",
+      "excludeCopy": true
+    },
+    "activeEvent": {
+      "type": "string",
+      "default": "click",
+      "excludeCopy": true
+    },
+    "minHeightDesktop": {
+      "type": "object",
+      "default": {
+        "size": 460,
+        "unit": "px"
+      }
+    },
+    "minHeightTablet": {
+      "type": "object"
+    },
+    "minHeightMobile": {
+      "type": "object"
+    },
+    "minHeightTabletLandscape": {
+      "type": "object"
+    },
+    "minHeightMobileLandscape": {
+      "type": "object"
+    },
+    "minHeightLaptop": {
+      "type": "object"
+    },
+    "minHeightWideScreen": {
+      "type": "object"
+    },
+    "gutterDesktop": {
+      "type": "object"
+    },
+    "gutterTablet": {
+      "type": "object"
+    },
+    "gutterMobile": {
+      "type": "object"
+    },
+    "gutterTabletLandscape": {
+      "type": "object"
+    },
+    "gutterMobileLandscape": {
+      "type": "object"
+    },
+    "gutterLaptop": {
+      "type": "object"
+    },
+    "gutterWideScreen": {
+      "type": "object"
+    },
+    "itemBorderDesktop": {
+      "type": "object",
+      "default": {
+        "color": "#5432",
+        "style": "solid",
+        "width": "1px"
+      }
+    },
+    "itemBorderTablet": {
+      "type": "object"
+    },
+    "itemBorderMobile": {
+      "type": "object"
+    },
+    "itemBorderTabletLandscape": {
+      "type": "object"
+    },
+    "itemBorderMobileLandscape": {
+      "type": "object"
+    },
+    "itemBorderLaptop": {
+      "type": "object"
+    },
+    "itemBorderWideScreen": {
+      "type": "object"
+    },
+    "bgActiveColor": {
+      "type": "object"
+    },
+    "titleMargin": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "contentAlignDesktop": {
+      "type": "string"
+    },
+    "contentAlignTablet": {
+      "type": "string"
+    },
+    "contentAlignMobile": {
+      "type": "string"
+    },
+    "contentAlignTabletLandscape": {
+      "type": "string"
+    },
+    "contentAlignMobileLandscape": {
+      "type": "string"
+    },
+    "contentAlignLaptop": {
+      "type": "string"
+    },
+    "contentAlignWideScreen": {
+      "type": "string"
+    },
+    "contentPaddingDesktop": {
+      "type": "object"
+    },
+    "contentPaddingTablet": {
+      "type": "object"
+    },
+    "contentPaddingMobile": {
+      "type": "object"
+    },
+    "contentPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "contentPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "contentPaddingLaptop": {
+      "type": "object"
+    },
+    "contentPaddingWideScreen": {
+      "type": "object"
+    },
+    "contentPositionDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "contentPositionTablet": {
+      "type": "string"
+    },
+    "contentPositionMobile": {
+      "type": "string"
+    },
+    "contentPositionTabletLandscape": {
+      "type": "string"
+    },
+    "contentPositionMobileLandscape": {
+      "type": "string"
+    },
+    "contentPositionLaptop": {
+      "type": "string"
+    },
+    "contentPositionWideScreen": {
+      "type": "string"
+    },
+    "btnPaddingDesktop": {
+      "type": "object"
+    },
+    "btnPaddingTablet": {
+      "type": "object"
+    },
+    "btnPaddingMobile": {
+      "type": "object"
+    },
+    "btnPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "btnPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "btnPaddingLaptop": {
+      "type": "object"
+    },
+    "btnPaddingWideScreen": {
+      "type": "object"
+    },
+    "btnTypography": {
+      "type": "object"
+    },
+    "btnTextColor": {
+      "type": "string"
+    },
+    "btnBackground": {
+      "type": "object"
+    },
+    "btnBorder": {
+      "type": "object"
+    },
+    "btnBorderRadius": {
+      "type": "object"
+    },
+    "btnTextColorHover": {
+      "type": "string"
+    },
+    "btnBackgroundHover": {
+      "type": "object"
+    },
+    "btnBorderHover": {
+      "type": "object"
+    },
+    "btnBorderRadiusHover": {
+      "type": "object"
+    },
+    "iconWidth": {
+      "type": "object"
+    },
+    "gkitIconSize": {
+      "type": "string"
+    },
+    "iconSpace": {
+      "type": "object",
+      "default": {
+        "size": 10,
+        "unit": "px"
+      }
+    },
+    "iconMargin": {
+      "type": "object"
+    },
+    "iconBorderRadiusDesktop": {
+      "type": "object",
+      "default": {
+        "top": "50%",
+        "right": "50%",
+        "bottom": "50%",
+        "left": "50%"
+      }
+    },
+    "iconBorderRadiusTablet": {
+      "type": "object"
+    },
+    "iconBorderRadiusMobile": {
+      "type": "object"
+    },
+    "iconBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "iconBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "iconBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "iconBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "popupIconBorder": {
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "#fff"
+      }
+    },
+    "linkIconBorder": {
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "#fff"
+      }
+    },
+    "iconBackground": {
+      "type": "string"
+    },
+    "pupUpIconColorHover": {
+      "type": "string"
+    },
+    "linkIconColorHover": {
+      "type": "string"
+    },
+    "iconBackgroundHover": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "file:./style-index.css",
+    "fancybox"
+  ],
+  "viewScript": "file:./frontend.js",
+  "script": [
+    "fancybox"
+  ]
+}

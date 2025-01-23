@@ -1,0 +1,72 @@
+.wp-block-gutenkit-nav-menu {
+    width: 100%;
+
+    .gkit-nav-menu-wrapper {
+        .gkit-nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .gkit-nav-menu {
+                gap: 5px;
+                flex-direction: column;
+            }
+
+            .wp-block-gutenkit-nav-menu-item {
+                transition: all .4s ease;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .gkit-nav-identity-panel{
+        display: none;
+    }
+
+    .gkit-menu-toggler {
+        display: none;
+        padding: 8px;
+        background-color: transparent;
+        border-radius: .25rem;
+        position: relative;
+        z-index: 10;
+        cursor: pointer;
+        width: 45px;
+        transition: all .4s ease-in;
+        border: 1px solid rgba(0, 0, 0, .2);
+
+        svg {
+            color: inherit;
+            fill: currentColor;
+        }
+    }
+
+    &.hamburger-position-right{
+        .gkit-nav-menu-hamburger {
+            margin-left: auto;
+        }
+    }
+
+    &.hamburger-position-center{
+        .gkit-nav-menu-hamburger {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+body{
+    &.lock-scroll{
+        overflow-y: hidden;
+    }
+}

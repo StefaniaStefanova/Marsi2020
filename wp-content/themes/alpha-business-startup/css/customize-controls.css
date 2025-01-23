@@ -1,0 +1,24 @@
+li#accordion-section-alpha_business_startup_go_pro {
+	display: block !important;
+}
+#accordion-section-alpha_business_startup_go_pro h3.accordion-section-title{
+  background: #4c2543 !important;
+  color: #fff !important;
+  font-size: 15px;
+  padding: 15px 15px 15px 10px;
+}
+a.button.button-secondary.alignright {
+  color: var(--wp--preset--color--primary) !important;
+  background: #ef2853 !important;
+  font-size: 14px;
+  margin: -5px !important;
+  border-radius: 0 !important;
+  border: solid 2px #fff !important;
+  font-size: 14px;
+}
+#accordion-section-alpha_business_startup_go_pro .accordion-section-title:after{
+  display: none;
+}
+.customize-pane-parent{
+  overflow-x: hidden !important;
+}

@@ -1,0 +1,65 @@
+@mixin transition ($properties...) {
+	$transition-properties: (); // Initialize an empty list to store transition properties
+
+	@each $property in $properties {
+		$transition-properties: append($transition-properties, $property .4s ease), // Append each property to the list
+	}
+
+	transition: $transition-properties; // Apply the transition properties
+}
+
+.gkit-block__inner {
+	margin-left: auto;
+    margin-right: auto;
+}
+.gkit-block-video-wrap {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	video {
+		object-fit: cover;
+    	background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.wp-block-gutenkit-container{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	@include transition(background, border, box-shadow, border-radius);
+
+	.gkit-container-overlay{
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	.wp-block-gutenkit-container{
+		margin-left: unset;
+		margin-right: unset;
+		flex-shrink: 1;
+		flex-grow: 0;
+
+		&.alignfull{
+			width: 100%;
+			flex-shrink: 1;
+		}
+
+		&.alignwide{
+			flex-shrink: 1;
+		}
+	}
+}
+
+.wp-site-blocks{
+	.wp-block-gutenkit-container{
+		.gkit-block-video-wrap{
+			z-index: -1;
+		}
+	}
+}

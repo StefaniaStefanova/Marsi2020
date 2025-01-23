@@ -1,0 +1,146 @@
+.wp-block-gutenkit-post-tab {
+
+	.post--tab {
+		display: flex;
+
+		.tab-header {
+			flex: 1 1 15%;
+			display: flex;
+			align-items: flex-start;
+
+			.tab__list {
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				flex: 1 1 15%;
+
+				>.tab__list__item {
+					font-size: 14px;
+					color: #232323;
+					border: none;
+					padding: 14px 16px 14px 30px;
+					cursor: pointer;
+					background: inherit;
+					transition: all 0.5s ease;
+					display: block;
+					position: relative;
+					text-decoration: none;
+
+					&.active,
+					&:hover {
+						color: #d72924;
+						background: #f0f1f4;
+						z-index: 2;
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			flex: 1 1 85%;
+		}
+	}
+
+	.gkit--tab__post__details {
+		min-height: 100px;
+
+		.tab-item {
+			display: none;
+			animation: hide-fadeout 600ms ease-out;
+
+			&.active {
+				display: flex;
+				flex-wrap: wrap;
+				animation: show-fadein 600ms ease-in;
+			}
+		}
+
+		.tab__post {
+
+			&--header {
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				margin-bottom: 20px;
+
+				padding: {
+					left: 0;
+					right: 0;
+				}
+
+				>img {
+					transition: all 0.4s ease-in-out;
+					width: 100%;
+					display: block;
+				}
+			}
+
+			&--title {
+				font-size: 15px;
+				font-weight: 500;
+				color: #232323;
+
+				>a {
+					color: inherit;
+					transition: 0.4s ease color;
+					line-height: inherit;
+					text-decoration: none;
+				}
+			}
+
+			&__single--item {
+
+				border-top: 0;
+				width: calc(100% / 3);
+
+				padding: {
+					left: 15px;
+					right: 15px;
+				}
+
+				float: left;
+
+				&:hover {
+
+					.tab__post--header {
+
+						>img {
+							transform: scale(1.2);
+						}
+					}
+				}
+			}
+		}
+
+		.post_grid_img_thumb {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 0.4s;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.clearfix {
+
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+	}
+
+	@keyframes show-fadein {
+
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+}

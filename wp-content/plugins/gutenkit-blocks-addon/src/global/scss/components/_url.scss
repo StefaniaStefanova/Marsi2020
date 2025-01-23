@@ -1,0 +1,32 @@
+.gkit-control-type-url {
+    &__dropdown {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        &-content {
+            .components-popover__content {
+                width: 200px;
+            }
+        }
+    }
+    .block-editor-link-control {
+        min-width: auto;
+        &__tools {
+            display: none;
+        }
+        &__search{
+            &-actions {
+                right: 25px;
+            }
+            &-item-action{
+                right: 26px;
+                position: absolute;
+            }
+        }
+        &:has(.block-editor-link-control__search-item.is-current) {
+            & + .gkit-control-type-url__dropdown {
+                top: 40px;
+            }
+        }
+    }
+}

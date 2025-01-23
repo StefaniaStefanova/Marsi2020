@@ -1,0 +1,63 @@
+.wp-block-gutenkit-dual-button {
+	&.gkit-dual-button-middle-text{
+		.gkit-dual-btn-wrapper{
+			gap: 0;
+		}
+	}
+	.gkit-dual-btn-container {
+		display: flex;
+		position: relative;
+		align-items: center;
+
+		.gkit-dual-btn-wrapper {
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+
+		.gkit-dual-btn {
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 700;
+			outline: none;
+			position: relative;
+			transition: all 0.4s ease;
+			text-align: center;
+			overflow: hidden;
+			color: #fff;
+			width: 100%;
+			background-color: #3b3b3b;
+			padding: 20px;
+			z-index: 1;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.gkit-dual-btn-first {
+			background-color: #2575fc;
+			transition: all .3s ease-in-out;
+
+			&:hover{
+				background-color: #0359eb;
+			}
+		}
+
+		.gkit-dual-btn-middle-text {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+			background: #fafaf8;
+			color: #444;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 14px;
+			z-index: 5;
+		}
+	}
+}

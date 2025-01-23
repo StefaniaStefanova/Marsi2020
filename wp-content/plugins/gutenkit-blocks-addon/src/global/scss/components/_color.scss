@@ -1,0 +1,118 @@
+.gkit-control-type-color {
+	.components-base-control {
+		&__color {
+			display: flex;
+			align-items: center;
+
+			button {
+				padding: 0px;
+
+				span {
+					font-size: 10px;
+					line-height: 20px;
+				}
+			}
+			.components-color-palette__custom-color-button {
+				&:after {
+					border-radius: 50%;
+					background-position: 0 0, 6px 6px;
+					background-size: 12px 12px;
+				}
+			}
+		}
+
+		.components-base-control__field{
+			display: flex;
+			align-items: center;
+
+			.components-base-control__label{
+				font-weight: 500;
+			}
+		}
+
+		&__label{
+			flex: 1;
+			flex-basis: 80%;
+			display: block !important;
+		}
+
+		&__palette {
+			position: relative;
+			.components-circular-option-picker {
+				position: absolute;
+				right: 26px;
+    			top: -6px;
+				button {
+					color: #000;
+					margin-left: 5px;
+					&:active:not(:disabled) {
+						background: none;
+					}
+					&:hover {
+						color: $primary-color;
+						box-shadow: none;
+					}
+					i {
+						font-size: 10px;
+					}
+				}
+
+				&__custom-clear-wrapper {
+					margin-top: 6px;
+				}
+
+				.components-button {
+                    &:is(.components-circular-option-picker__clear) {
+						transition: all 0.4s ease;
+						
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                }
+			}
+			button {
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background-size: 10px 10px;
+				padding: 0px;
+
+				&:focus {
+					box-shadow: none;
+				}
+
+				span {
+					display: none;
+				}
+			}
+
+			.components-color-palette__custom-color-text-wrapper{
+				display: none;
+			}
+		}
+	}
+
+	.components-circular-option-picker{
+		min-width: 20px;
+	}
+}
+
+.popover-slot{
+	.gkit-control-type-color{
+		.components-base-control{
+			&__field{
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.components-popover.components-dropdown__content {
+	.components-popover__content {
+		&:has(.components-color-picker) {
+			margin-right: 16px;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.gutenkit-boxshadow {
+    &>span {
+        @include gutenkit-control-title;
+    }
+    .components-button {
+        &:focus {
+            box-shadow: none !important;
+        }
+        svg {
+            width: 20px;
+        }
+    } 
+}

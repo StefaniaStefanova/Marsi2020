@@ -1,0 +1,145 @@
+.gkit-advanced-url {
+    margin: 0;
+    width: 100%;
+    position: relative;
+
+    .gkit-advanced-url-label {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4F4F4F;
+        text-transform: capitalize;
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    .gkit-advanced-url-input-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .gkit-advanced-url-input {
+            flex: 2;
+            margin-bottom: 0 !important;
+
+            .components-base-control__field {
+                margin: 0;
+
+                .components-text-control__input {
+                    border: 1px solid #949494;
+
+                    &:focus {
+                        box-shadow: none;
+                        border-color: #949494;
+                    }
+                }
+            }
+        }
+
+        .gkit-advanced-url-settings-button {
+            border: 1px solid #949494;
+            border-left: none;
+            min-width: 31px;
+            height: 31px;
+            padding: 0;
+
+            span {
+                transition: rotate 0.3s ease;
+                font-size: 16px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                border-color: #949494;
+                color: #949494;
+            }
+
+            &:hover {
+                color: $primary-color;
+                border-color: #949494;
+            }
+
+            &.is-active {
+                span {
+                    rotate: 360deg;
+                }
+            }
+        }
+    }
+
+    .gkit-advanced-url-settings {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+
+        .gkit-advanced-url-settings-checkbox {
+            .components-checkbox-control__input-container {
+                margin-right: 5px;
+
+                .components-checkbox-control__input {
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                    &:checked {
+                        background: $primary-color;
+                        border-color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        &.is-opened {
+            max-height: 300px;
+        }
+    }
+
+    .gkit-advanced-url-suggestions {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        max-height: 200px;
+        padding: 8px;
+        z-index: 9999;
+        box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+        transform: translateY(-8px);
+        border-radius: 4px;
+        overflow-y: auto;
+
+        .gkit-advanced-url-suggestion {
+            width: 100%;
+            padding: 2px;
+            height: fit-content;
+            text-align: left;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 10px;
+
+            span {
+                display: block;
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .gkit-advanced-url-spinner{
+        position: absolute;
+        right: 23px;
+        top: 50%;
+        transform: translateY(-4px);
+        width: 12px;
+        height: 12px;
+    }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/business-hours-item",
+  "version": "1.0.0",
+  "title": "Business Hours Item",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "business hours",
+    "opening hours",
+    "hours",
+    "opening times",
+    "times",
+    "currently open",
+    "watch"
+  ],
+  "description": "Business Hours Item for gutenkit.",
+  "parent": [
+    "gutenkit/business-hours"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitBusinessDay": {
+      "type": "string",
+      "default": "Friday"
+    },
+    "gkitBusinessTime": {
+      "type": "string",
+      "default": "10:00 AM to 7:00 PM"
+    },
+    "gkitHighlightThisDay": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitSingleBusinessDayColor": {
+      "type": "string"
+    },
+    "gkitSingleBusinessTimeColor": {
+      "type": "string"
+    },
+    "gkitSingleBusinessBackgroundColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": [
+    "file:./index.css"
+  ]
+}

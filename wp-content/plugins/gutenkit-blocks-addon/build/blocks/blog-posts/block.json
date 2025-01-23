@@ -1,0 +1,1439 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/blog-posts",
+  "version": "1.0.0",
+  "title": "Blog Posts",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "blog",
+    "post",
+    "grid",
+    "recent post",
+    "recent",
+    "category post",
+    "category"
+  ],
+  "description": "Display a list of blog posts.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "layout": {
+      "type": "string",
+      "default": "list"
+    },
+    "postsPerRowDesktop": {
+      "type": "number",
+      "default": 3
+    },
+    "postsPerRowTablet": {
+      "type": "number",
+      "default": 3
+    },
+    "postsPerRowMobile": {
+      "type": "number"
+    },
+    "postsPerRowTabletLandscape": {
+      "type": "number"
+    },
+    "postsPerRowMobileLandscape": {
+      "type": "number"
+    },
+    "postsPerRowLaptop": {
+      "type": "number"
+    },
+    "postsPerRowWideScreen": {
+      "type": "number"
+    },
+    "postsGridSpaceBetweenDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 20
+      }
+    },
+    "postsGridSpaceBetweenTablet": {
+      "type": "object"
+    },
+    "postsGridSpaceBetweenMobile": {
+      "type": "object"
+    },
+    "postsGridSpaceBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "postsGridSpaceBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "postsGridSpaceBetweenLaptop": {
+      "type": "object"
+    },
+    "postsGridSpaceBetweenWideScreen": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 20
+      }
+    },
+    "thumbContentSpaceBetweenTablet": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenMobile": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenLaptop": {
+      "type": "object"
+    },
+    "thumbContentSpaceBetweenWideScreen": {
+      "type": "object"
+    },
+    "showFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "featuredImageSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "featuredImagePosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "showPostTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "numberOfWordsTitle": {
+      "type": "number",
+      "default": 5
+    },
+    "showPostContent": {
+      "type": "boolean",
+      "default": true
+    },
+    "numberOfWordsContent": {
+      "type": "number",
+      "default": 12
+    },
+    "showBlogPostsReadMore": {
+      "type": "boolean",
+      "default": false
+    },
+    "numberOfPosts": {
+      "type": "number",
+      "default": 10
+    },
+    "selectPostBy": {
+      "type": "string",
+      "default": "category"
+    },
+    "selectedCategories": {
+      "type": "array",
+      "default": []
+    },
+    "offset": {
+      "type": "number",
+      "default": 0
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "order": {
+      "type": "string",
+      "default": "desc"
+    },
+    "selectedPosts": {
+      "type": "array",
+      "default": []
+    },
+    "gkitBlogPostsFloatingDate": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitBlogPostsFloatingDateStyle": {
+      "type": "string",
+      "default": "style1"
+    },
+    "gkitBlogPostsFloatingCategory": {
+      "type": "boolean",
+      "default": false
+    },
+    "showMetaData": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMetaSeparator": {
+      "type": "boolean",
+      "default": true
+    },
+    "metaSeparatorHeight": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 20
+      }
+    },
+    "metaSeparatorWidth": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 2
+      }
+    },
+    "metaSeparatorSpacing": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": -5
+      }
+    },
+    "metaDataPosition": {
+      "type": "string",
+      "default": "before-title"
+    },
+    "metaData": {
+      "type": "array",
+      "default": []
+    },
+    "dateIcon": {
+      "type": "object",
+      "default": {
+        "title": "calendar",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>calendar3</title>\n<path d=\"M30.831 6.246c-0.209-1.012-0.698-1.919-1.396-2.617-0.209-0.209-0.454-0.419-0.733-0.593l-0.035-0.035c-0.035-0.035-0.070-0.035-0.105-0.070-0.105-0.070-0.209-0.14-0.314-0.174h-0.035c-0.733-0.384-1.535-0.593-2.443-0.593h-2.164v-1.501c0-0.349-0.279-0.663-0.663-0.663-0.349 0-0.663 0.279-0.663 0.663v1.431h-12.528v-1.431c0-0.349-0.314-0.663-0.663-0.663s-0.663 0.279-0.663 0.663v1.431h-2.164c-0.663 0-1.326 0.14-1.919 0.384-0.663 0.279-1.256 0.663-1.745 1.152-0.279 0.279-0.523 0.593-0.733 0.907-0.209 0.349-0.384 0.698-0.523 1.082-0.070 0.209-0.14 0.419-0.174 0.628-0.070 0.349-0.105 0.698-0.105 1.047v19.577c0 1.431 0.593 2.722 1.501 3.629 0.942 0.942 2.233 1.501 3.629 1.501h19.612c1.431 0 2.722-0.593 3.629-1.501 0.942-0.942 1.501-2.233 1.501-3.629v-19.577c0-0.349-0.035-0.698-0.105-1.047zM2.425 7.258c0-0.279 0.035-0.523 0.070-0.768s0.14-0.489 0.209-0.733c0.14-0.314 0.314-0.593 0.489-0.838 0.105-0.14 0.209-0.244 0.314-0.384 0.209-0.209 0.454-0.384 0.698-0.558 0.593-0.349 1.256-0.558 1.989-0.558h2.164v1.431c0 0.349 0.279 0.663 0.663 0.663 0.349 0 0.663-0.279 0.663-0.663v-1.431h12.702v1.431c0 0.349 0.279 0.663 0.663 0.663 0.349 0 0.663-0.279 0.663-0.663v-1.431h2.164c0.733 0 1.431 0.209 1.989 0.558 0.244 0.174 0.489 0.349 0.698 0.558 0.523 0.523 0.907 1.186 1.047 1.954 0.035 0.244 0.070 0.523 0.070 0.768v2.862h-27.254v-2.861zM29.714 26.835c0 1.082-0.419 2.059-1.117 2.757s-1.675 1.117-2.722 1.117h-19.612c-1.047 0-2.024-0.419-2.722-1.117s-1.117-1.675-1.117-2.722v-15.459h27.289v15.424z\"></path></svg>"
+      }
+    },
+    "authorIcon": {
+      "type": "object",
+      "default": {
+        "title": "user",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"32\" viewBox=\"0 0 35 32\">\n<title>User</title>\n<path d=\"M32 24.91l-5.557-2.747c-0.511-0.256-0.83-0.766-0.83-1.405v-1.98c0.128-0.192 0.256-0.319 0.447-0.575 0.703-1.022 1.277-2.172 1.725-3.385 0.83-0.383 1.341-1.214 1.341-2.108v-2.299c0-0.575-0.192-1.086-0.575-1.533v-3.002c0.064-0.319 0.192-2.236-1.214-3.768-1.214-1.341-3.13-2.044-5.748-2.044s-4.599 0.703-5.748 2.044c-0.83 0.958-1.086 2.044-1.214 2.81-1.022-0.511-2.172-0.766-3.513-0.766-6.068 0-6.387 5.174-6.387 5.238v2.683c-0.383 0.383-0.575 0.894-0.575 1.341v1.916c0 0.639 0.255 1.214 0.766 1.597 0.511 1.788 1.661 3.194 2.108 3.641v1.597c0 0.447-0.255 0.894-0.703 1.086l-3.896 2.427c-1.533 0.83-2.427 2.427-2.427 4.088v2.236h34.874v-2.363c0-1.98-1.086-3.832-2.874-4.727zM8.112 29.509v1.277h-6.962v-1.022c0-1.277 0.703-2.427 1.852-3.066l3.896-2.427c0.766-0.447 1.277-1.214 1.277-2.108v-2.108l-0.192-0.192c0 0-1.533-1.469-2.044-3.449l-0.064-0.256-0.192-0.128c-0.255-0.192-0.447-0.447-0.447-0.766v-1.98c0-0.192 0.128-0.447 0.383-0.703l0.192-0.192v-3.13c0-0.192 0.319-4.088 5.238-4.088 1.405 0 2.555 0.319 3.513 0.958v2.81c-0.383 0.447-0.575 0.958-0.575 1.533v2.299c0 0.192 0 0.319 0.064 0.511 0 0.064 0.064 0.128 0.064 0.192 0.064 0.128 0.064 0.192 0.128 0.319 0 0 0 0 0 0 0.128 0.319 0.383 0.575 0.639 0.83 0 0 0 0 0 0 0.064 0.128 0.064 0.255 0.128 0.383l0.064 0.128c0 0 0 0.064 0 0.064 0 0.064 0.064 0.128 0.064 0.192 0.064 0.128 0.064 0.192 0.128 0.319 0 0.064 0.064 0.064 0.064 0.128 0.064 0.128 0.064 0.255 0.128 0.383 0 0 0 0.064 0.064 0.064l0.064 0.064c0 0.064 0 0.064 0.064 0.128 0.064 0.128 0.128 0.256 0.192 0.383 0 0 0 0.064 0 0.064 0.064 0.064 0.064 0.128 0.128 0.192 0.064 0.128 0.128 0.256 0.192 0.319 0 0.064 0.064 0.128 0.064 0.128 0.064 0.128 0.192 0.256 0.256 0.383 0 0 0.064 0.064 0.064 0.064 0.128 0.192 0.256 0.383 0.383 0.511 0 0.064 0.064 0.064 0.064 0.128 0 0 0 0.064 0.064 0.064v1.916c0 0.575-0.319 1.086-0.83 1.341l-1.533 0.83h-0.255l-0.128 0.256-3.449 1.852c-1.661 0.894-2.747 2.683-2.747 4.599zM33.725 30.85h-24.399v-1.277c0-1.469 0.83-2.874 2.108-3.577l5.174-2.81c0.894-0.447 1.405-1.405 1.405-2.363v-2.363l-0.128-0.192c0 0-0.064-0.064-0.128-0.128 0 0 0 0 0 0 0-0.064-0.064-0.064-0.128-0.128 0 0 0 0 0 0-0.064-0.128-0.192-0.256-0.319-0.447 0 0 0 0 0 0-0.064-0.064-0.128-0.192-0.192-0.319 0 0 0 0 0 0-0.128-0.192-0.256-0.447-0.383-0.766 0 0 0 0 0 0-0.064-0.128-0.128-0.319-0.192-0.447v0c0 0 0-0.064 0-0.064v0c-0.064-0.064-0.064-0.128-0.128-0.255 0 0 0-0.064-0.064-0.064 0-0.064-0.064-0.128-0.064-0.255-0.064-0.128-0.128-0.319-0.192-0.511l-0.064-0.128c0 0 0 0 0-0.064-0.064-0.192-0.128-0.383-0.128-0.575l-0.064-0.255-0.192-0.128c-0.319-0.192-0.511-0.575-0.511-0.958v-2.299c0-0.319 0.128-0.639 0.383-0.83l0.192-0.192v-3.832c0-0.447 0-1.725 0.958-2.747 0.958-1.086 2.619-1.661 4.918-1.661s3.896 0.575 4.854 1.661c1.15 1.277 0.958 2.938 0.958 2.938v3.705l0.192 0.192c0.256 0.255 0.383 0.511 0.383 0.83v2.236c0 0.511-0.319 0.958-0.83 1.086l-0.319 0.128-0.064 0.319c-0.383 1.214-0.958 2.299-1.661 3.321-0.192 0.256-0.319 0.447-0.511 0.639l-0.128 0.192v2.427c0 1.022 0.575 1.98 1.469 2.427l5.557 2.747c1.405 0.703 2.236 2.108 2.236 3.641v1.15z\"></path></svg>"
+      }
+    },
+    "categoryIcon": {
+      "type": "object",
+      "default": {
+        "title": "folder",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>folder</title>\n<path d=\"M30.661 11.867h-1.861v-3.343c0-0.804-0.654-1.457-1.457-1.457h-13.202l-2.667-3.733h-10.018c-0.803 0-1.457 0.654-1.457 1.457v23.3h0.003c-0.003 0.3 0.091 0.594 0.278 0.84 0.261 0.341 0.657 0.537 1.086 0.537h23.871c0.617 0 1.159-0.415 1.307-0.967l5.454-14.954v-0.094c0-0.918-0.563-1.585-1.339-1.585zM1.067 4.79c0-0.215 0.175-0.39 0.39-0.39h9.468l2.667 3.733h13.75c0.215 0 0.39 0.175 0.39 0.39v3.343h-20.943c-0.077 0-0.153 0.006-0.227 0.019-0.519 0.087-0.95 0.466-1.079 0.947l-4.417 12.046v-20.089zM25.53 28.178c-0.035 0.131-0.155 0.222-0.291 0.222h-23.871c-0.13 0-0.205-0.074-0.239-0.118s-0.085-0.137-0.066-0.218l5.435-14.908c0.035-0.131 0.155-0.222 0.291-0.222h23.872c0.203 0 0.254 0.291 0.268 0.437l-5.399 14.807z\"></path></svg>"
+      }
+    },
+    "commentIcon": {
+      "type": "object",
+      "default": {
+        "title": "comment",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>comment</title>\n<path d=\"M28.8 1.067h-25.6c-1.734 0-3.2 1.466-3.2 3.2v17.6c0 1.734 1.466 3.2 3.2 3.2h4.267v5.333c0 0.22 0.135 0.418 0.341 0.498 0.063 0.024 0.128 0.036 0.193 0.036 0.147 0 0.292-0.061 0.395-0.174l5.174-5.692h15.231c1.734 0 3.2-1.466 3.2-3.2v-17.6c0-1.734-1.466-3.2-3.2-3.2zM30.933 21.867c0 1.156-0.977 2.133-2.133 2.133h-14.305l1.909-2.219c0.192-0.223 0.167-0.56-0.057-0.752s-0.561-0.166-0.753 0.057l-2.666 3.099-4.396 4.836v-4.487c0-0.294-0.239-0.533-0.533-0.533h-4.8c-1.156 0-2.133-0.977-2.133-2.133v-17.6c0-1.156 0.977-2.133 2.133-2.133h25.6c1.156 0 2.133 0.977 2.133 2.133v17.6z\"></path></svg>"
+      }
+    },
+    "showAuthorAvatar": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitBlogPostsBtnText": {
+      "type": "string",
+      "default": "Learn more"
+    },
+    "gkitBlogPostsShowBtnIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitBlogPostsBtnIcon": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnIconAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "gkitBlogPostsBtnAlignDesktop": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignTablet": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignMobile": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignTabletLandscape": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignMobileLandscape": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignLaptop": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "gkitBlogPostsBtnAlignWideScreen": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "wrapperBackgroundNormal": {
+      "type": "object"
+    },
+    "wrapperBackgroundHover": {
+      "type": "object"
+    },
+    "wrapperBoxShadowNormal": {
+      "type": "object"
+    },
+    "wrapperBoxShadowHover": {
+      "type": "object"
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": "flex-start"
+    },
+    "wrapperBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusTablet": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusMobile": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverDesktop": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverTablet": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverMobile": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverTabletLandscape": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverMobileLandscape": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverLaptop": {
+      "type": "object"
+    },
+    "wrapperBorderRadiusHoverWideScreen": {
+      "type": "object"
+    },
+    "wrapperPaddingDesktop": {
+      "type": "object"
+    },
+    "wrapperPaddingTablet": {
+      "type": "object"
+    },
+    "wrapperPaddingMobile": {
+      "type": "object"
+    },
+    "wrapperPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "wrapperPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "wrapperPaddingLaptop": {
+      "type": "object"
+    },
+    "wrapperPaddingWideScreen": {
+      "type": "object"
+    },
+    "wrapperMarginDesktop": {
+      "type": "object"
+    },
+    "wrapperMarginTablet": {
+      "type": "object"
+    },
+    "wrapperMarginMobile": {
+      "type": "object"
+    },
+    "wrapperMarginTabletLandscape": {
+      "type": "object"
+    },
+    "wrapperMarginMobileLandscape": {
+      "type": "object"
+    },
+    "wrapperMarginLaptop": {
+      "type": "object"
+    },
+    "wrapperMarginWideScreen": {
+      "type": "object"
+    },
+    "contentPaddingDesktop": {
+      "type": "object"
+    },
+    "contentPaddingTablet": {
+      "type": "object"
+    },
+    "contentPaddingMobile": {
+      "type": "object"
+    },
+    "contentPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "contentPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "contentPaddingLaptop": {
+      "type": "object"
+    },
+    "contentPaddingWideScreen": {
+      "type": "object"
+    },
+    "containerBorder": {
+      "type": "object"
+    },
+    "containerBorderHover": {
+      "type": "object"
+    },
+    "containerBackgroundColor": {
+      "type": "string"
+    },
+    "containerBackgroundColorHover": {
+      "type": "string"
+    },
+    "contentBoxShadow": {
+      "type": "object"
+    },
+    "contentBoxShadowHover": {
+      "type": "object"
+    },
+    "contentBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "contentBorderRadiusTablet": {
+      "type": "object"
+    },
+    "contentBorderRadiusMobile": {
+      "type": "object"
+    },
+    "contentBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "contentBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "contentBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "contentBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverDesktop": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverTablet": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverMobile": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverTabletLandscape": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverMobileLandscape": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverLaptop": {
+      "type": "object"
+    },
+    "contentBorderRadiusHoverWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsContentBorder": {
+      "type": "object"
+    },
+    "gkitBlogPostsContentBorderHoverColor": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFeatureImgWidthWideScreen": {
+      "type": "object"
+    },
+    "useHeightWidthSwitcher": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitBlogImgMaxWidthDesktop": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthTablet": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthMobile": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthLaptop": {
+      "type": "object"
+    },
+    "gkitBlogImgMaxWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthDesktop": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthTablet": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthMobile": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthLaptop": {
+      "type": "object"
+    },
+    "gkitBlogImgWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightDesktop": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightTablet": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightMobile": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightLaptop": {
+      "type": "object"
+    },
+    "gkitBlogImgHeightWideScreen": {
+      "type": "object"
+    },
+    "featuredImageBoxShadow": {
+      "type": "object"
+    },
+    "featuredImageBorder": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusTablet": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusMobile": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "featuredImageBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "featuredImagePaddingDesktop": {
+      "type": "object"
+    },
+    "featuredImagePaddingTablet": {
+      "type": "object"
+    },
+    "featuredImagePaddingMobile": {
+      "type": "object"
+    },
+    "featuredImagePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "featuredImagePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "featuredImagePaddingLaptop": {
+      "type": "object"
+    },
+    "featuredImagePaddingWideScreen": {
+      "type": "object"
+    },
+    "showOverlay": {
+      "type": "boolean",
+      "default": false
+    },
+    "blogPostBackgroundOverlay": {
+      "type": "object"
+    },
+    "blogPostBackgroundHoverOverlay": {
+      "type": "object"
+    },
+    "featuredImageMarginDesktop": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "30px",
+        "left": "0px"
+      }
+    },
+    "featuredImageMarginTablet": {
+      "type": "object"
+    },
+    "featuredImageMarginMobile": {
+      "type": "object"
+    },
+    "featuredImageMarginTabletLandscape": {
+      "type": "object"
+    },
+    "featuredImageMarginMobileLandscape": {
+      "type": "object"
+    },
+    "featuredImageMarginLaptop": {
+      "type": "object"
+    },
+    "featuredImageMarginWideScreen": {
+      "type": "object"
+    },
+    "metaTypography": {
+      "type": "object"
+    },
+    "metaAlignmentDesktop": {
+      "type": "string"
+    },
+    "metaAlignmentTablet": {
+      "type": "string"
+    },
+    "metaAlignmentMobile": {
+      "type": "string"
+    },
+    "metaAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "metaAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "metaAlignmentLaptop": {
+      "type": "string"
+    },
+    "metaAlignmentWideScreen": {
+      "type": "string"
+    },
+    "metaContainerMarginDesktop": {
+      "type": "object"
+    },
+    "metaContainerMarginTablet": {
+      "type": "object"
+    },
+    "metaContainerMarginMobile": {
+      "type": "object"
+    },
+    "metaContainerMarginTabletLandscape": {
+      "type": "object"
+    },
+    "metaContainerMarginMobileLandscape": {
+      "type": "object"
+    },
+    "metaContainerMarginLaptop": {
+      "type": "object"
+    },
+    "metaContainerMarginWideScreen": {
+      "type": "object"
+    },
+    "metaItemMarginDesktop": {
+      "type": "object"
+    },
+    "metaItemMarginTablet": {
+      "type": "object"
+    },
+    "metaItemMarginMobile": {
+      "type": "object"
+    },
+    "metaItemMarginTabletLandscape": {
+      "type": "object"
+    },
+    "metaItemMarginMobileLandscape": {
+      "type": "object"
+    },
+    "metaItemMarginLaptop": {
+      "type": "object"
+    },
+    "metaItemMarginWideScreen": {
+      "type": "object"
+    },
+    "metaItemPadding": {
+      "type": "object"
+    },
+    "metaItemIconSpacing": {
+      "type": "object"
+    },
+    "metaItemIconSize": {
+      "type": "object"
+    },
+    "metaTextColorNormal": {
+      "type": "string",
+      "default": "#a3a3a3"
+    },
+    "metaIconColorNormal": {
+      "type": "string"
+    },
+    "metaBackgroundColorNormal": {
+      "type": "object"
+    },
+    "metaBorderNormal": {
+      "type": "object"
+    },
+    "metaBorderRadiusNormal": {
+      "type": "object"
+    },
+    "metaBoxShadowNormal": {
+      "type": "object"
+    },
+    "metaTextShadowNormal": {
+      "type": "object"
+    },
+    "metaTextColorHover": {
+      "type": "string"
+    },
+    "metaIconColorHover": {
+      "type": "string"
+    },
+    "metaBackgroundColorHover": {
+      "type": "string"
+    },
+    "metaBorderHover": {
+      "type": "object"
+    },
+    "metaBorderRadiusHover": {
+      "type": "object"
+    },
+    "metaBoxShadowHover": {
+      "type": "object"
+    },
+    "metaTextShadowHover": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateHeightWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateWidthWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateLeftPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTopPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBottomPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateStyle2LeftPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTypographyGroup": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsFloatingDateMonthTypographyGroup": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateMonthColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsFloatingDateBgColorGroup": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDatePaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderGroup": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateShadowGroup": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingDateTriangleBackgroundColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsFloatingDateTriangleSize": {
+      "type": "object",
+      "default": {
+        "size": 5,
+        "unit": "px"
+      }
+    },
+    "gkitBlogPostsFloatingDateTrianglePositionLeft": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 0
+      }
+    },
+    "gkitBlogPostsFloatingDateTrianglePositionTop": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": -10
+      }
+    },
+    "gkitBlogPostsFloatingDateTrianglePositionAlignment": {
+      "type": "string",
+      "default": "triangle-left"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTopPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryLeftPositionWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryTypography": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsFloatingCategoryBgColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "4px",
+        "right": "8px",
+        "bottom": "4px",
+        "left": "8px"
+      }
+    },
+    "gkitBlogPostsFloatingCategoryPaddingTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsFloatingCategoryMarginRightWideScreen": {
+      "type": "object"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "titleColorNormal": {
+      "type": "string"
+    },
+    "titleTextShadowNormal": {
+      "type": "object"
+    },
+    "titleTextShadowHover": {
+      "type": "object"
+    },
+    "titleColorHover": {
+      "type": "string"
+    },
+    "titleAlignmentDesktop": {
+      "type": "string"
+    },
+    "titleAlignmentTablet": {
+      "type": "string"
+    },
+    "titleAlignmentMobile": {
+      "type": "string"
+    },
+    "titleAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "titleAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "titleAlignmentLaptop": {
+      "type": "string"
+    },
+    "titleAlignmentWideScreen": {
+      "type": "string"
+    },
+    "titleContainerMarginDesktop": {
+      "type": "object"
+    },
+    "titleContainerMarginTablet": {
+      "type": "object"
+    },
+    "titleContainerMarginMobile": {
+      "type": "object"
+    },
+    "titleContainerMarginTabletLandscape": {
+      "type": "object"
+    },
+    "titleContainerMarginMobileLandscape": {
+      "type": "object"
+    },
+    "titleContainerMarginLaptop": {
+      "type": "object"
+    },
+    "titleContainerMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsTitleSeparator": {
+      "type": "boolean",
+      "default": true
+    },
+    "gkitBlogPostsTitleSeparatorColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsTitleSeparatorWidth": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 5
+      }
+    },
+    "gkitBlogPostsTitleSeparatorHeight": {
+      "type": "object",
+      "default": {
+        "unit": "px",
+        "size": 3
+      }
+    },
+    "gkitBlogPostsTitleSeparatorMargin": {
+      "type": "object"
+    },
+    "contentColor": {
+      "type": "string"
+    },
+    "contentColorHover": {
+      "type": "string"
+    },
+    "contentTypography": {
+      "type": "object"
+    },
+    "contentTextShadow": {
+      "type": "object"
+    },
+    "contentAlignmentDesktop": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentTablet": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentMobile": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentTabletLandscape": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentMobileLandscape": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentLaptop": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlignmentWideScreen": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentContainerMarginDesktop": {
+      "type": "object"
+    },
+    "contentContainerMarginTablet": {
+      "type": "object"
+    },
+    "contentContainerMarginMobile": {
+      "type": "object"
+    },
+    "contentContainerMarginTabletLandscape": {
+      "type": "object"
+    },
+    "contentContainerMarginMobileLandscape": {
+      "type": "object"
+    },
+    "contentContainerMarginLaptop": {
+      "type": "object"
+    },
+    "contentContainerMarginWideScreen": {
+      "type": "object"
+    },
+    "showContentHighlightBorder": {
+      "type": "boolean",
+      "default": false
+    },
+    "highlightBorderHeight": {
+      "type": "object",
+      "default": {
+        "size": 100,
+        "unit": "px"
+      }
+    },
+    "highlightBorderWidth": {
+      "type": "object",
+      "default": {
+        "size": 2,
+        "unit": "px"
+      }
+    },
+    "highlightBorderBottomPosition": {
+      "type": "object",
+      "default": {
+        "size": 50,
+        "unit": "%"
+      }
+    },
+    "highlightBorderRightPosition": {
+      "type": "object",
+      "default": {
+        "size": 0,
+        "unit": "%"
+      }
+    },
+    "highlightBorderBackgroundcolorNormal": {
+      "type": "string"
+    },
+    "highlightBorderBackgroundcolorHover": {
+      "type": "string"
+    },
+    "authorImageWidth": {
+      "type": "object",
+      "default": {
+        "size": 30,
+        "unit": "px"
+      }
+    },
+    "authorImageHeight": {
+      "type": "object",
+      "default": {
+        "size": 30,
+        "unit": "px"
+      }
+    },
+    "authorImageBoxShadow": {
+      "type": "object"
+    },
+    "authorImageBorder": {
+      "type": "object"
+    },
+    "authorImageMargin": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusTablet": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusMobile": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "authorImageBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnMarginWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnTypography": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnTextColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsBtnBgColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsBtnBorder": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnHoverColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsBtnHoverBgColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsBtnBorderHoverColor": {
+      "type": "string"
+    },
+    "gkitBlogPostsBtnBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBoxShadow": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnBoxShadowHover": {
+      "type": "object"
+    },
+    "gkitBlogPostsBtnSpacing": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

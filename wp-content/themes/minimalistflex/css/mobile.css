@@ -1,0 +1,20 @@
+@media screen and (max-width: 782px) {
+    .minimalistflex-content {
+        width: 67%;
+    }
+
+    .minimalistflex-sidebar {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .minimalistflex-content,
+    .minimalistflex-sidebar {
+        width: 100%;
+    }
+
+    .minimalistflex-master {
+        flex-wrap: wrap;
+    }
+}

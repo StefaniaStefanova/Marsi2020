@@ -1,0 +1,25 @@
+.gkit-typography{
+	margin: 15px 0 !important;
+	.components-toggle-group-control{
+		&:focus-within{
+			border-color: rgb(117, 117, 117);
+			box-shadow: none;
+		}
+	}
+
+	.components-toggle-group-control-option-base{
+		svg{
+			width: 24px;
+			height: 24px;
+			display: block;
+			fill: #397FE9;
+		}
+	}
+
+	.components-base-control{
+		margin-bottom: calc(12px);
+		.components-base-control__label{
+			margin-bottom: 5px;
+		}
+	}
+}

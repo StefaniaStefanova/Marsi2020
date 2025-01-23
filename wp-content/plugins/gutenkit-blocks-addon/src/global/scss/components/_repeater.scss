@@ -1,0 +1,61 @@
+.gkit-repeater {
+    .gkit-repeater__item {
+        position: relative;
+        margin: 10px 0;
+
+        .repeater-action-btns {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0px;
+            max-height: 45px;
+
+            .gkit-repeater__item__action-button {
+                border-left: 1px solid $gkit-border-color;
+                height: 100%;
+
+                &:focus:not(:disabled) {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .gkit-repeater__item__panel {
+            border: 1px solid $gkit-border-color;
+
+            .components-panel__body-title {
+                .components-button {
+                    padding: 14px 48px 14px 16px;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                svg {
+                    display: none;
+                }
+            }
+
+            &.is-opened {
+                .components-button {
+                    &:not(.components-circular-option-picker__clear, .gkit-icon-picker-remove-icon){
+                        border-bottom: 1px solid $gkit-border-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__add-button {
+        margin-left: 72px;
+        margin-bottom: 10px;
+        padding: 7px 19px 7px 12px !important;
+        background: $gkit-background-secondary !important;
+
+        &:focus:not(:disabled) {
+            box-shadow: none !important;
+        }
+    }
+}

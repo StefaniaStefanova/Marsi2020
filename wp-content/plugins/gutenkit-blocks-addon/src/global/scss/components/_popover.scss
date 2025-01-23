@@ -1,0 +1,66 @@
+.gutenkit-popover {
+    &>span {
+        @include gutenkit-control-title;
+    }
+
+    button {
+        height: 25px;
+        &:focus {
+            box-shadow: none !important;
+        }
+        &:hover{
+            border-color: $primary-color;
+            svg{
+                color: $primary-color;
+            }
+        } 
+    }
+
+    &__button {
+        svg {
+			color: #1d2327;
+            width: 20px;
+        }
+        &-reset { 
+            position: absolute;
+            right: 36px;
+            svg {
+                width: 16px !important;
+            }
+        }
+        &-toggle {
+            border: 1px solid #ebebeb;
+            min-width: 25px !important;
+            padding: 0px !important;
+        }
+        &-open {
+            border-color: $primary-color;
+            svg{
+                color: $primary-color;
+            }
+        }
+        &--active {
+            border-color: $primary-color;
+            svg{
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__content {
+        
+        .components-popover__content {
+            width: 260px;
+            padding: 20px;
+            overflow: hidden !important;
+            margin: {
+                top: 5px;
+                bottom: 5px;
+            }
+
+            .components-base-control__label {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

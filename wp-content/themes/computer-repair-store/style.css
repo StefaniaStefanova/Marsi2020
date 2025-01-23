@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/*
+Theme Name: Computer Repair Store
+Author: TheMagnifico52
+Theme URI: https://www.themagnifico.net/products/free-computer-wordpress-theme
+Author URI: https://www.themagnifico.net/
+Description: The Computer Repair Store WordPress theme is a comprehensive and user-friendly solution designed specifically for computer repair shops, IT service providers, and technology professionals. With its extensive features and customizable options, this theme empowers users to create a professional online presence for their computer repair businesses. This theme is an excellent choice for computer repair store owners who want to establish a strong online presence and attract potential customers. IT service providers can also benefit from this theme, as it enables them to showcase their expertise in computer repair, software installation, hardware upgrades, and more. The Computer Repair Store WordPress theme offers a range of customization options, allowing users to personalize their website to reflect their brand identity and target audience. The theme also provides pre-designed templates for services, testimonials, pricing tables, and contact forms, making it effortless to present essential information and engage with customers. With its intuitive interface, the Computer Repair Store WordPress theme makes it easy for users to manage and update their website. Users can add new services, update pricing information, create blog posts to share industry news and tips, and integrate social media profiles to engage with their audience. The theme also supports e-commerce functionality, allowing users to sell computer parts, accessories, or offer online booking for repair services.
+Version: 0.5.2
+Tested up to: 6.6
+Requires PHP: 7.2
+Requires at least: 5.0
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: computer-repair-services
+Text Domain: computer-repair-store
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, news, photography, portfolio
+
+Computer Repair Store WordPress Theme has been created by TheMagnifico52(themagnifico.net), 2023.
+Computer Repair Store WordPress Theme is released under the terms of GNU GPL
+*/
+
+
+h3.product-title a:hover, .slider-inner-box h1 a:hover, .article-box:hover .meta-info-box a , .main-header .contact-info p a:hover, .navbar-brand a:hover, .social-link a:hover,p.call-box a:hover,.main-header p a:hover,.sidebar ul li a:hover,.article-box a,.slider-box-btn a:hover,.main-navigation .menu > li > a:hover,.call-outer p.call-box,.support-box i,.navbar-brand p ,a,.contact-info span,.contact-info i,.social-link span,.woocommerce-message::before, .woocommerce-info::before,p.price, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: #e74c3c;
+}
+.all-categories button,#button,.sidebar .tagcloud a:hover,.btn-primary,.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover,.comment-respond input#submit,.pro-button a, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.sidebar input[type="submit"]:hover,.sidebar button[type="submit"]:hover,.sidebar h5,.sidebar button[type="submit"],.image-text p,.main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,.woocommerce-account .woocommerce-MyAccount-navigation ul li{
+    background: #e74c3c;
+}
+.meta-info-box a, a:hover,.widget a:hover, .widget a:focus,.social-link a ,.contact-info p, .article-box:hover h3 a, .article-box:hover a.btn-text{
+    color: #132a36;
+}
+.btn-primary,.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover,.woocommerce-message, .woocommerce-info{
+    border-color: #e74c3c;
+}
+#button:hover, #button:active,.pro-button a:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.sidebar input[type="submit"], .sidebar button[type="submit"],#colophon,.navigation_header,#top-slider .owl-nav i,.main-navigation .sub-menu,.woocommerce .woocommerce-ordering select{
+    background: #132a36;
+}
+.sidebar section {
+    padding: 10px;
+}
+.main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus {
+    background: #e74c3c;
+}
+#site-navigation .menu ul li a:hover {
+    color: #e74c3c;
+}
+#site-navigation .menu ul.sub-menu li a:hover{
+    color: #fff;
+}
+.navbar-brand a:hover{
+    color: ;
+}
+.slider-box img{
+    opacity: 1;
+}
+.slider-box-btn a{
+    background: #fed700;
+    color: #132a36;
+    display: inline-block;
+}
+.article-box{
+    border: 1px solid #ecf0f0;
+    background: #f7f7f7;
+    box-shadow: none;
+}
+.section-content h4 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #132a36;
+    font-weight: 900;
+    text-align: center;
+}
+.product-image img {
+    width: 100%;
+    border-radius: 30px;
+}
+h3.product-title a {
+    font-size: 16px;
+    line-height: 22px;
+    color: #132a36;
+    font-weight: 500;
+}
+h3.product-title {
+    line-height: 25px;
+}
+p.price {
+    font-size: 17px;
+    line-height: 24px;
+    color: #132a36;
+    font-weight: 700;
+}
+.addtocart{
+    position: relative;
+}
+.addtocart a{
+    font-size: 0px;
+}
+.addtocart a:before {
+    content: "\f004";
+    position: absolute;
+    color: #132a36;
+    right: 18px;
+    top: -18px;
+    left: 0px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 18px;
+}
+.addtocart a.added_to_cart.wc-forward:before {
+    content: "\f004";
+    position: absolute;
+    right: 18px;
+    top: -18px;
+    color: #e74c3c;
+    font-weight: 700;
+    left: 0px;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 18px;
+}
+.product-box{
+    padding: 10px;
+    border-radius: 30px;
+    background: #f7f7f7;
+    border: 1px solid #ecf0f0;
+}
+.product-image a.product-btn {
+    display: none;
+}
+.product-box:hover .product-image a.product-btn {
+    display: block;
+    position: absolute;
+    top: 33%;
+    background: #fed700;
+    width: 36%;
+    margin: 0 auto;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 13px;
+    color: #132a36;
+    font-weight: 700;
+}
+
+.all-categories button {
+    border: none;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 600;
+}
+.home_product_cat {
+    position: absolute;
+    background: #fff;
+    display: none;
+    z-index: 999;
+    width: 100%;
+}
+.all-categories {
+    position: relative;
+}
+.home_product_cat h4 {
+    font-size: 16px;
+    border-bottom: solid 1px #efefef;
+    padding: 10px 15px;
+    margin-bottom: 0;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover{
+    background: #e74c3c;
+    color: #ffffff;
+}
+#colophon a:hover{
+    color: #e74c3c;
+}
+@media screen and (max-width: 575px){
+    .slider-inner-box {
+        right: 3%;
+        left: 3%;
+    }
+    .slider-box-btn{
+        margin-top: 15px !important;
+    }
+    .slider-inner-box h1 a {
+        font-size: 30px;
+    }
+    .stick_header{
+        position: static !important;
+    }
+    .latest-services .section-content {
+        width: 100%;
+    }
+    p.call-box{
+        text-align: center;
+        padding: 15px 0 10px 0;
+    }
+    #top-slider .owl-nav i {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    .admin-bar .socialmedia.stick_header {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .phone-text {
+       text-align: left;
+    }
+    .slider-inner-box {
+        right: 10%;
+        left: 10%;
+    }
+    .main-navigation .menu > li{
+        display: block;
+    }
+    .main-navigation .menu > li > a{
+        color: #fff;
+    }
+    .main-navigation .sub-menu{
+        background: transparent;
+    }
+    .toggle-nav.mobile-menu {
+        text-align: center;
+    }
+    .toggle-nav i {
+        color: #e74c3c;
+    }
+    .sidenav .closebtn{
+        background: #e74c3c;
+    }
+    .main-navigation .menu > li > a:hover, #site-navigation .menu ul li a:hover {
+        color: #e74c3c;
+        background: transparent;
+    }
+    #site-navigation .menu ul.sub-menu li a:hover{
+    color: #e74c3c;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px){
+    .slider-inner-box {
+        right: 18%;
+        left: 18%;
+    }
+}

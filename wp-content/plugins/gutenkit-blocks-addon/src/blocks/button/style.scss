@@ -1,0 +1,32 @@
+@import '../../styles/variable';
+
+.gkit-btn-wraper {
+    .gkit-btn {
+        &:hover {
+            background-color: darken($color: $color-primary, $amount: 15);
+
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: inherit;
+            transition: all 0.4s ease;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-size: 102% 102%;
+            opacity: 0;
+        }
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

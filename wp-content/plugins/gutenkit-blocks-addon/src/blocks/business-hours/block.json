@@ -1,0 +1,173 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gutenkit/business-hours",
+	"version": "1.0.0",
+	"title": "Business Hours",
+	"category": "gutenkit",
+	"icon": "menu-alt3",
+	"keywords": [
+		"ekit",
+		"business hours",
+		"opening hours",
+		"hours",
+		"opening times",
+		"times",
+		"currently open",
+		"watch"
+	],
+	"description": "Business hours block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"gkitBusinessOpendayList": {
+			"type": "array",
+			"default": [
+				{
+					"gkitBusinessDay": "Saturday",
+					"gkitBusinessTime": "Close",
+					"gkitHighlightThisDay": true,
+					"gkitSingleBusinessDayColor": "#fa2d2d",
+					"gkitSingleBusinessTimeColor": "#fa2d2d"
+				},
+				{
+					"gkitBusinessDay": "Sunday",
+					"gkitBusinessTime": "Close",
+					"gkitHighlightThisDay": true,
+					"gkitSingleBusinessDayColor": "#fa2d2d",
+					"gkitSingleBusinessTimeColor": "#fa2d2d"
+				},
+				{
+					"gkitBusinessDay": "Monday",
+					"gkitBusinessTime": "10:00 AM to 7:00 PM",
+					"gkitHighlightThisDay": false
+				},
+				{
+					"gkitBusinessDay": "Tuesday",
+					"gkitBusinessTime": "10:00 AM to 7:00 PM",
+					"gkitHighlightThisDay": false
+				},
+				{
+					"gkitBusinessDay": "Wednesday",
+					"gkitBusinessTime": "10:00 AM to 7:00 PM",
+					"gkitHighlightThisDay": false
+				},
+				{
+					"gkitBusinessDay": "Thursday",
+					"gkitBusinessTime": "10:00 AM to 7:00 PM",
+					"gkitHighlightThisDay": false
+				},
+				{
+					"gkitBusinessDay": "Friday",
+					"gkitBusinessTime": "10:00 AM to 7:00 PM",
+					"gkitHighlightThisDay": false
+				}
+			],
+			"excludeCopy": true
+		},
+		"gkitBusinessItemMarginDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemMarginTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemMarginMobile": {
+			"type": "object"
+		},
+		"gkitBusinessItemPaddingDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemPaddingTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemPaddingMobile": {
+			"type": "object"
+		},
+		"gkitBusinessItemBackground": {
+			"type": "object"
+		},
+		"gkitBusinessItemItemRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemItemRadiusTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemItemRadiusMobile": {
+			"type": "object"
+		},
+		"gkitBusinessItemBorder": {
+			"type": "object"
+		},
+		"gkitBusinessDayColor": {
+			"type": "string"
+		},
+		"gkitBusinessDayTypography": {
+			"type": "object"
+		},
+		"gkitBusinessDayBackground": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayRadiusTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayRadiusMobile": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayPaddingDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayPaddingTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemDayPaddingMobile": {
+			"type": "object"
+		},
+		"gkitBusinessTimeColor": {
+			"type": "string"
+		},
+		"gkitBusinessTimeTypography": {
+			"type": "object"
+		},
+		"gkitBusinessTimeBackground": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimeRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimeRadiusTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimeRadiusMobile": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimePaddingDesktop": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimePaddingTablet": {
+			"type": "object"
+		},
+		"gkitBusinessItemTimePaddingMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

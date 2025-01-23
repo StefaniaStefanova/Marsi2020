@@ -1,0 +1,857 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/advanced-tab",
+  "version": "1.0.0",
+  "title": "Advanced Tab",
+  "category": "gutenkit",
+  "keywords": [
+    "gkit",
+    "vertical tabs",
+    "tab",
+    "horizontal tabs",
+    "accordion",
+    "advanced tab",
+    "advanced block"
+  ],
+  "allowedBlocks": [
+    "gutenkit/advanced-tab-item"
+  ],
+  "description": "Advanced Tab Block for Gutenkit",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "activeIndex": {
+      "type": "number",
+      "default": 0
+    },
+    "tabContents": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Wordpress",
+          "subTitle": "Mete Join",
+          "isTabOpen": false,
+          "addIcon": true,
+          "icon": {
+            "title": "earth",
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>earth</title>\n<path d=\"M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM29.435 10.818c-0.312-0.562-1.095-0.829-2.12-1.177-1.099-0.374-1.488-1.504-1.937-2.812-0.39-1.136-0.794-2.309-1.752-3.039 2.622 1.643 4.679 4.106 5.81 7.028zM24.945 16.305c0.121 1.084 0.246 2.205-1.099 3.715-0.363 0.408-0.576 0.976-0.802 1.578-0.522 1.393-1.015 2.71-3.114 2.729-0.059-0.071-0.226-0.335-0.374-1.173-0.136-0.772-0.215-1.769-0.299-2.825-0.128-1.62-0.273-3.456-0.673-4.979-0.512-1.948-1.371-3.098-2.626-3.517-0.548-0.183-1.107-0.272-1.709-0.272-0.444 0-0.848 0.048-1.204 0.089-0.277 0.033-0.539 0.064-0.761 0.064 0 0-0 0-0 0-0.375 0-0.799 0-1.321-1.197-0.751-1.72-0.197-4.477 2.006-5.931 1.208-0.797 2.042-1.137 2.787-1.137 0.595 0 1.237 0.207 2.148 0.692 1.076 0.573 1.918 0.646 2.532 0.646 0.243 0 0.464-0.013 0.678-0.026 0.179-0.011 0.348-0.021 0.504-0.021 0.352 0 0.637 0.046 0.971 0.274 0.616 0.421 0.936 1.35 1.273 2.333 0.512 1.491 1.093 3.181 2.936 3.807 0.248 0.084 0.674 0.229 0.976 0.355-0.26 0.269-0.696 0.658-1.122 1.039-0.275 0.246-0.587 0.524-0.933 0.839-0.999 0.91-0.88 1.976-0.775 2.915zM1.602 15.877c0.172 0.031 0.359 0.067 0.55 0.108 0.899 0.192 1.32 0.365 1.504 0.462-0.085 0.165-0.256 0.408-0.369 0.569-0.396 0.562-0.889 1.261-0.701 2.031 0.126 0.519 0.020 1.157-0.164 1.746-0.531-1.5-0.821-3.113-0.821-4.793 0-0.041 0.001-0.082 0.002-0.123zM16 30.4c-5.481 0-10.255-3.078-12.688-7.596 0.419-0.799 1.197-2.564 0.834-4.111 0.025-0.155 0.289-0.53 0.448-0.756 0.434-0.615 0.973-1.381 0.573-2.192-0.28-0.569-1.030-0.954-2.506-1.287-0.342-0.077-0.675-0.14-0.958-0.188 0.857-7.128 6.941-12.671 14.296-12.671 2.524 0 4.898 0.654 6.963 1.799-0.51-0.223-0.974-0.258-1.344-0.258-0.204 0-0.405 0.012-0.599 0.023-0.19 0.011-0.387 0.023-0.583 0.023-0.454 0-1.021-0.054-1.78-0.458-1.158-0.617-2.025-0.88-2.9-0.88-1.082 0-2.179 0.419-3.669 1.402-1.287 0.849-2.257 2.149-2.731 3.66-0.462 1.474-0.412 2.982 0.139 4.246 0.651 1.492 1.511 2.157 2.788 2.157 0 0 0 0 0 0 0.315 0 0.623-0.036 0.948-0.075 0.328-0.039 0.666-0.079 1.016-0.079 0.433 0 0.815 0.060 1.202 0.189 0.703 0.235 1.221 1.022 1.585 2.406s0.503 3.145 0.626 4.698c0.102 1.295 0.199 2.519 0.412 3.441 0.129 0.56 0.297 0.986 0.512 1.301 0.321 0.471 0.782 0.73 1.298 0.73 1.415 0 2.545-0.456 3.358-1.355 0.677-0.748 1.023-1.671 1.3-2.412 0.164-0.438 0.333-0.89 0.498-1.075 1.819-2.043 1.631-3.727 1.494-4.956-0.101-0.903-0.103-1.223 0.263-1.556 0.34-0.309 0.648-0.585 0.92-0.828 0.58-0.518 1-0.892 1.294-1.213 0.202-0.221 0.675-0.737 0.544-1.384-0.001-0.006-0.003-0.011-0.004-0.017 0.549 1.522 0.849 3.162 0.849 4.87 0 7.94-6.46 14.4-14.4 14.4z\"></path>\n</svg>\n"
+          }
+        },
+        {
+          "title": "Prestashop",
+          "subTitle": "Bete Is Good",
+          "isTabOpen": false,
+          "addIcon": true,
+          "icon": {
+            "title": "earth",
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>earth</title>\n<path d=\"M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM29.435 10.818c-0.312-0.562-1.095-0.829-2.12-1.177-1.099-0.374-1.488-1.504-1.937-2.812-0.39-1.136-0.794-2.309-1.752-3.039 2.622 1.643 4.679 4.106 5.81 7.028zM24.945 16.305c0.121 1.084 0.246 2.205-1.099 3.715-0.363 0.408-0.576 0.976-0.802 1.578-0.522 1.393-1.015 2.71-3.114 2.729-0.059-0.071-0.226-0.335-0.374-1.173-0.136-0.772-0.215-1.769-0.299-2.825-0.128-1.62-0.273-3.456-0.673-4.979-0.512-1.948-1.371-3.098-2.626-3.517-0.548-0.183-1.107-0.272-1.709-0.272-0.444 0-0.848 0.048-1.204 0.089-0.277 0.033-0.539 0.064-0.761 0.064 0 0-0 0-0 0-0.375 0-0.799 0-1.321-1.197-0.751-1.72-0.197-4.477 2.006-5.931 1.208-0.797 2.042-1.137 2.787-1.137 0.595 0 1.237 0.207 2.148 0.692 1.076 0.573 1.918 0.646 2.532 0.646 0.243 0 0.464-0.013 0.678-0.026 0.179-0.011 0.348-0.021 0.504-0.021 0.352 0 0.637 0.046 0.971 0.274 0.616 0.421 0.936 1.35 1.273 2.333 0.512 1.491 1.093 3.181 2.936 3.807 0.248 0.084 0.674 0.229 0.976 0.355-0.26 0.269-0.696 0.658-1.122 1.039-0.275 0.246-0.587 0.524-0.933 0.839-0.999 0.91-0.88 1.976-0.775 2.915zM1.602 15.877c0.172 0.031 0.359 0.067 0.55 0.108 0.899 0.192 1.32 0.365 1.504 0.462-0.085 0.165-0.256 0.408-0.369 0.569-0.396 0.562-0.889 1.261-0.701 2.031 0.126 0.519 0.020 1.157-0.164 1.746-0.531-1.5-0.821-3.113-0.821-4.793 0-0.041 0.001-0.082 0.002-0.123zM16 30.4c-5.481 0-10.255-3.078-12.688-7.596 0.419-0.799 1.197-2.564 0.834-4.111 0.025-0.155 0.289-0.53 0.448-0.756 0.434-0.615 0.973-1.381 0.573-2.192-0.28-0.569-1.030-0.954-2.506-1.287-0.342-0.077-0.675-0.14-0.958-0.188 0.857-7.128 6.941-12.671 14.296-12.671 2.524 0 4.898 0.654 6.963 1.799-0.51-0.223-0.974-0.258-1.344-0.258-0.204 0-0.405 0.012-0.599 0.023-0.19 0.011-0.387 0.023-0.583 0.023-0.454 0-1.021-0.054-1.78-0.458-1.158-0.617-2.025-0.88-2.9-0.88-1.082 0-2.179 0.419-3.669 1.402-1.287 0.849-2.257 2.149-2.731 3.66-0.462 1.474-0.412 2.982 0.139 4.246 0.651 1.492 1.511 2.157 2.788 2.157 0 0 0 0 0 0 0.315 0 0.623-0.036 0.948-0.075 0.328-0.039 0.666-0.079 1.016-0.079 0.433 0 0.815 0.060 1.202 0.189 0.703 0.235 1.221 1.022 1.585 2.406s0.503 3.145 0.626 4.698c0.102 1.295 0.199 2.519 0.412 3.441 0.129 0.56 0.297 0.986 0.512 1.301 0.321 0.471 0.782 0.73 1.298 0.73 1.415 0 2.545-0.456 3.358-1.355 0.677-0.748 1.023-1.671 1.3-2.412 0.164-0.438 0.333-0.89 0.498-1.075 1.819-2.043 1.631-3.727 1.494-4.956-0.101-0.903-0.103-1.223 0.263-1.556 0.34-0.309 0.648-0.585 0.92-0.828 0.58-0.518 1-0.892 1.294-1.213 0.202-0.221 0.675-0.737 0.544-1.384-0.001-0.006-0.003-0.011-0.004-0.017 0.549 1.522 0.849 3.162 0.849 4.87 0 7.94-6.46 14.4-14.4 14.4z\"></path>\n</svg>\n"
+          }
+        },
+        {
+          "title": "Joomla",
+          "subTitle": "Bete No More Is Good",
+          "isTabOpen": false,
+          "addIcon": true,
+          "icon": {
+            "title": "earth",
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>earth</title>\n<path d=\"M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM29.435 10.818c-0.312-0.562-1.095-0.829-2.12-1.177-1.099-0.374-1.488-1.504-1.937-2.812-0.39-1.136-0.794-2.309-1.752-3.039 2.622 1.643 4.679 4.106 5.81 7.028zM24.945 16.305c0.121 1.084 0.246 2.205-1.099 3.715-0.363 0.408-0.576 0.976-0.802 1.578-0.522 1.393-1.015 2.71-3.114 2.729-0.059-0.071-0.226-0.335-0.374-1.173-0.136-0.772-0.215-1.769-0.299-2.825-0.128-1.62-0.273-3.456-0.673-4.979-0.512-1.948-1.371-3.098-2.626-3.517-0.548-0.183-1.107-0.272-1.709-0.272-0.444 0-0.848 0.048-1.204 0.089-0.277 0.033-0.539 0.064-0.761 0.064 0 0-0 0-0 0-0.375 0-0.799 0-1.321-1.197-0.751-1.72-0.197-4.477 2.006-5.931 1.208-0.797 2.042-1.137 2.787-1.137 0.595 0 1.237 0.207 2.148 0.692 1.076 0.573 1.918 0.646 2.532 0.646 0.243 0 0.464-0.013 0.678-0.026 0.179-0.011 0.348-0.021 0.504-0.021 0.352 0 0.637 0.046 0.971 0.274 0.616 0.421 0.936 1.35 1.273 2.333 0.512 1.491 1.093 3.181 2.936 3.807 0.248 0.084 0.674 0.229 0.976 0.355-0.26 0.269-0.696 0.658-1.122 1.039-0.275 0.246-0.587 0.524-0.933 0.839-0.999 0.91-0.88 1.976-0.775 2.915zM1.602 15.877c0.172 0.031 0.359 0.067 0.55 0.108 0.899 0.192 1.32 0.365 1.504 0.462-0.085 0.165-0.256 0.408-0.369 0.569-0.396 0.562-0.889 1.261-0.701 2.031 0.126 0.519 0.020 1.157-0.164 1.746-0.531-1.5-0.821-3.113-0.821-4.793 0-0.041 0.001-0.082 0.002-0.123zM16 30.4c-5.481 0-10.255-3.078-12.688-7.596 0.419-0.799 1.197-2.564 0.834-4.111 0.025-0.155 0.289-0.53 0.448-0.756 0.434-0.615 0.973-1.381 0.573-2.192-0.28-0.569-1.030-0.954-2.506-1.287-0.342-0.077-0.675-0.14-0.958-0.188 0.857-7.128 6.941-12.671 14.296-12.671 2.524 0 4.898 0.654 6.963 1.799-0.51-0.223-0.974-0.258-1.344-0.258-0.204 0-0.405 0.012-0.599 0.023-0.19 0.011-0.387 0.023-0.583 0.023-0.454 0-1.021-0.054-1.78-0.458-1.158-0.617-2.025-0.88-2.9-0.88-1.082 0-2.179 0.419-3.669 1.402-1.287 0.849-2.257 2.149-2.731 3.66-0.462 1.474-0.412 2.982 0.139 4.246 0.651 1.492 1.511 2.157 2.788 2.157 0 0 0 0 0 0 0.315 0 0.623-0.036 0.948-0.075 0.328-0.039 0.666-0.079 1.016-0.079 0.433 0 0.815 0.060 1.202 0.189 0.703 0.235 1.221 1.022 1.585 2.406s0.503 3.145 0.626 4.698c0.102 1.295 0.199 2.519 0.412 3.441 0.129 0.56 0.297 0.986 0.512 1.301 0.321 0.471 0.782 0.73 1.298 0.73 1.415 0 2.545-0.456 3.358-1.355 0.677-0.748 1.023-1.671 1.3-2.412 0.164-0.438 0.333-0.89 0.498-1.075 1.819-2.043 1.631-3.727 1.494-4.956-0.101-0.903-0.103-1.223 0.263-1.556 0.34-0.309 0.648-0.585 0.92-0.828 0.58-0.518 1-0.892 1.294-1.213 0.202-0.221 0.675-0.737 0.544-1.384-0.001-0.006-0.003-0.011-0.004-0.017 0.549 1.522 0.849 3.162 0.849 4.87 0 7.94-6.46 14.4-14.4 14.4z\"></path>\n</svg>\n"
+          }
+        }
+      ]
+    },
+    "title": {
+      "type": "string",
+      "default": "Title"
+    },
+    "subTitle": {
+      "type": "string",
+      "default": "Sub Title"
+    },
+    "eventType": {
+      "type": "string",
+      "default": "click"
+    },
+    "style": {
+      "type": "string",
+      "default": "border_bottom"
+    },
+    "gkitAdvTabBgTransitionDesktop": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionTablet": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionMobile": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionTabletLandscape": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionMobileLandscape": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionLaptop": {
+      "type": "object"
+    },
+    "gkitAdvTabBgTransitionWideScreen": {
+      "type": "object"
+    },
+    "enableCaret": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableFullWidth": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableURLHash": {
+      "type": "boolean",
+      "default": false
+    },
+    "navDirectionDesktop": {
+      "type": "string",
+      "default": "column"
+    },
+    "navDirectionTablet": {
+      "type": "string"
+    },
+    "navDirectionMobile": {
+      "type": "string"
+    },
+    "navDirectionTabletLandscape": {
+      "type": "string"
+    },
+    "navDirectionMobileLandscape": {
+      "type": "string"
+    },
+    "navDirectionLaptop": {
+      "type": "string"
+    },
+    "navDirectionWideScreen": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsDesktop": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsTablet": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsMobile": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsTabletLandscape": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsMobileLandscape": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsLaptop": {
+      "type": "string"
+    },
+    "navWrapperAlignItemsWideScreen": {
+      "type": "string"
+    },
+    "navBackground": {
+      "type": "object"
+    },
+    "navBorder": {
+      "type": "object"
+    },
+    "navBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "navPaddingDesktop": {
+      "type": "object"
+    },
+    "navPaddingTablet": {
+      "type": "object"
+    },
+    "navPaddingMobile": {
+      "type": "object"
+    },
+    "navPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "navPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "navPaddingLaptop": {
+      "type": "object"
+    },
+    "navPaddingWideScreen": {
+      "type": "object"
+    },
+    "navMarginDesktop": {
+      "type": "object"
+    },
+    "navMarginTablet": {
+      "type": "object"
+    },
+    "navMarginMobile": {
+      "type": "object"
+    },
+    "navMarginTabletLandscape": {
+      "type": "object"
+    },
+    "navMarginMobileLandscape": {
+      "type": "object"
+    },
+    "navMarginLaptop": {
+      "type": "object"
+    },
+    "navMarginWideScreen": {
+      "type": "object"
+    },
+    "navBoxShadow": {
+      "type": "object"
+    },
+    "iconSizeDesktop": {
+      "type": "object"
+    },
+    "iconSizeTablet": {
+      "type": "object"
+    },
+    "iconSizeMobile": {
+      "type": "object"
+    },
+    "iconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "iconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "iconSizeLaptop": {
+      "type": "object"
+    },
+    "iconSizeWideScreen": {
+      "type": "object"
+    },
+    "navItemPaddingDesktop": {
+      "type": "object"
+    },
+    "navItemPaddingTablet": {
+      "type": "object"
+    },
+    "navItemPaddingMobile": {
+      "type": "object"
+    },
+    "navItemPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "navItemPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "navItemPaddingLaptop": {
+      "type": "object"
+    },
+    "navItemPaddingWideScreen": {
+      "type": "object"
+    },
+    "navItemGapDesktop": {
+      "type": "object"
+    },
+    "navItemGapTablet": {
+      "type": "object"
+    },
+    "navItemGapMobile": {
+      "type": "object"
+    },
+    "navItemGapTabletLandscape": {
+      "type": "object"
+    },
+    "navItemGapMobileLandscape": {
+      "type": "object"
+    },
+    "navItemGapLaptop": {
+      "type": "object"
+    },
+    "navItemGapWideScreen": {
+      "type": "object"
+    },
+    "navItemBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navItemBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navItemBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navItemBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navItemBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navItemBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navItemBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navItemActiveBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navItemHoverBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "subTitleColor": {
+      "type": "string"
+    },
+    "subTitleHoverColor": {
+      "type": "string"
+    },
+    "subTitleActiveColor": {
+      "type": "string"
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "navItemBackground": {
+      "type": "object"
+    },
+    "navItemBoxShadow": {
+      "type": "object"
+    },
+    "navItemBorder": {
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "#2575fc"
+      }
+    },
+    "titleActiveColor": {
+      "type": "string"
+    },
+    "iconActiveColor": {
+      "type": "string"
+    },
+    "navItemActiveBackground": {
+      "type": "object"
+    },
+    "navItemActiveBoxShadow": {
+      "type": "object"
+    },
+    "navItemActiveBorder": {
+      "type": "object"
+    },
+    "titleHoverColor": {
+      "type": "string"
+    },
+    "iconHoverColor": {
+      "type": "string"
+    },
+    "navItemHoverBackground": {
+      "type": "object"
+    },
+    "navItemHoverBoxShadow": {
+      "type": "object"
+    },
+    "navItemHoverBorder": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthDesktop": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthDesktop": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthTablet": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusTablet": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthTablet": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthMobile": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthTabletLandscape": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthMobileLandscape": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthLaptop": {
+      "type": "object"
+    },
+    "navItemFirstChildBorderWidthWideScreen": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusMobile": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthMobile": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthTabletLandscape": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthMobileLandscape": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthLaptop": {
+      "type": "object"
+    },
+    "navItemLaststChildBorderWidthWideScreen": {
+      "type": "object"
+    },
+    "bodyBackground": {
+      "type": "object"
+    },
+    "bodyPaddingDesktop": {
+      "type": "object"
+    },
+    "bodyPaddingTablet": {
+      "type": "object"
+    },
+    "bodyPaddingMobile": {
+      "type": "object"
+    },
+    "bodyPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "bodyPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "bodyPaddingLaptop": {
+      "type": "object"
+    },
+    "bodyPaddingWideScreen": {
+      "type": "object"
+    },
+    "contentAlignDesktop": {
+      "type": "string"
+    },
+    "contentAlignTablet": {
+      "type": "string"
+    },
+    "contentAlignMobile": {
+      "type": "string"
+    },
+    "contentAlignTabletLandscape": {
+      "type": "string"
+    },
+    "contentAlignMobileLandscape": {
+      "type": "string"
+    },
+    "contentAlignLaptop": {
+      "type": "string"
+    },
+    "contentAlignWideScreen": {
+      "type": "string"
+    },
+    "contentJustifyDesktop": {
+      "type": "string"
+    },
+    "contentJustifyTablet": {
+      "type": "string"
+    },
+    "contentJustifyMobile": {
+      "type": "string"
+    },
+    "contentJustifyTabletLandscape": {
+      "type": "string"
+    },
+    "contentJustifyMobileLandscape": {
+      "type": "string"
+    },
+    "contentJustifyLaptop": {
+      "type": "string"
+    },
+    "contentJustifyWideScreen": {
+      "type": "string"
+    },
+    "bodyBorder": {
+      "type": "object"
+    },
+    "bodyBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "bodyBorderRadiusTablet": {
+      "type": "object"
+    },
+    "bodyBorderRadiusMobile": {
+      "type": "object"
+    },
+    "bodyBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "bodyBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "bodyBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "bodyBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "bodyBoxShadow": {
+      "type": "object"
+    },
+    "bodyOverflow": {
+      "type": "string",
+      "default": "hidden"
+    },
+    "itemPosition": {
+      "type": "string",
+      "default": "row"
+    },
+    "itemJustifyDesktop": {
+      "type": "string"
+    },
+    "itemJustifyTablet": {
+      "type": "string"
+    },
+    "itemJustifyMobile": {
+      "type": "string"
+    },
+    "itemJustifyTabletLandscape": {
+      "type": "string"
+    },
+    "itemJustifyMobileLandscape": {
+      "type": "string"
+    },
+    "itemJustifyLaptop": {
+      "type": "string"
+    },
+    "itemJustifyWideScreen": {
+      "type": "string"
+    },
+    "iconSpacingDesktop": {
+      "type": "object"
+    },
+    "iconSpacingTablet": {
+      "type": "object"
+    },
+    "iconSpacingMobile": {
+      "type": "object"
+    },
+    "iconSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "iconSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "iconSpacingLaptop": {
+      "type": "object"
+    },
+    "iconSpacingWideScreen": {
+      "type": "object"
+    },
+    "navJustifyDesktop": {
+      "type": "string"
+    },
+    "navJustifyTablet": {
+      "type": "string"
+    },
+    "navJustifyMobile": {
+      "type": "string"
+    },
+    "navJustifyTabletLandscape": {
+      "type": "string"
+    },
+    "navJustifyMobileLandscape": {
+      "type": "string"
+    },
+    "navJustifyLaptop": {
+      "type": "string"
+    },
+    "navJustifyWideScreen": {
+      "type": "string"
+    },
+    "navItemAlignDesktop": {
+      "type": "string"
+    },
+    "navItemAlignTablet": {
+      "type": "string"
+    },
+    "navItemAlignMobile": {
+      "type": "string"
+    },
+    "navItemAlignTabletLandscape": {
+      "type": "string"
+    },
+    "navItemAlignMobileLandscape": {
+      "type": "string"
+    },
+    "navItemAlignLaptop": {
+      "type": "string"
+    },
+    "navItemAlignWideScreen": {
+      "type": "string"
+    },
+    "subTitleAlignDesktop": {
+      "type": "string"
+    },
+    "subTitleAlignTablet": {
+      "type": "string"
+    },
+    "subTitleAlignMobile": {
+      "type": "string"
+    },
+    "subTitleAlignTabletLandscape": {
+      "type": "string"
+    },
+    "subTitleAlignMobileLandscape": {
+      "type": "string"
+    },
+    "subTitleAlignLaptop": {
+      "type": "string"
+    },
+    "subTitleAlignWideScreen": {
+      "type": "string"
+    },
+    "navItemTypographyGroup": {
+      "type": "object"
+    },
+    "subTitleTypographyGroup": {
+      "type": "object"
+    },
+    "navWidthVerticalDesktop": {
+      "type": "object",
+      "default": {
+        "unit": "%",
+        "size": 30
+      }
+    },
+    "navWidthVerticalTablet": {
+      "type": "object"
+    },
+    "navWidthVerticalMobile": {
+      "type": "object"
+    },
+    "navWidthVerticalTabletLandscape": {
+      "type": "object"
+    },
+    "navWidthVerticalMobileLandscape": {
+      "type": "object"
+    },
+    "navWidthVerticalLaptop": {
+      "type": "object"
+    },
+    "navWidthVerticalWideScreen": {
+      "type": "object"
+    },
+    "makeFluid": {
+      "type": "boolean",
+      "default": false
+    },
+    "caretWidthDesktop": {
+      "type": "object"
+    },
+    "caretWidthTablet": {
+      "type": "object"
+    },
+    "caretWidthMobile": {
+      "type": "object"
+    },
+    "caretWidthTabletLandscape": {
+      "type": "object"
+    },
+    "caretWidthMobileLandscape": {
+      "type": "object"
+    },
+    "caretWidthLaptop": {
+      "type": "object"
+    },
+    "caretWidthWideScreen": {
+      "type": "object"
+    },
+    "caretHeightDesktop": {
+      "type": "object"
+    },
+    "caretHeightTablet": {
+      "type": "object"
+    },
+    "caretHeightMobile": {
+      "type": "object"
+    },
+    "caretHeightTabletLandscape": {
+      "type": "object"
+    },
+    "caretHeightMobileLandscape": {
+      "type": "object"
+    },
+    "caretHeightLaptop": {
+      "type": "object"
+    },
+    "caretHeightWideScreen": {
+      "type": "object"
+    },
+    "caretBackground": {
+      "type": "object"
+    },
+    "caretBottomPositionDesktop": {
+      "type": "object"
+    },
+    "caretBottomPositionTablet": {
+      "type": "object"
+    },
+    "caretBottomPositionMobile": {
+      "type": "object"
+    },
+    "caretBottomPositionTabletLandscape": {
+      "type": "object"
+    },
+    "caretBottomPositionMobileLandscape": {
+      "type": "object"
+    },
+    "caretBottomPositionLaptop": {
+      "type": "object"
+    },
+    "caretBottomPositionWideScreen": {
+      "type": "object"
+    },
+    "caretLeftPositionDesktop": {
+      "type": "object"
+    },
+    "caretLeftPositionTablet": {
+      "type": "object"
+    },
+    "caretLeftPositionMobile": {
+      "type": "object"
+    },
+    "caretLeftPositionTabletLandscape": {
+      "type": "object"
+    },
+    "caretLeftPositionMobileLandscape": {
+      "type": "object"
+    },
+    "caretLeftPositionLaptop": {
+      "type": "object"
+    },
+    "caretLeftPositionWideScreen": {
+      "type": "object"
+    },
+    "caretColor": {
+      "type": "string"
+    },
+    "caretFillColor": {
+      "type": "string"
+    }
+  },
+  "providesContext": {
+    "gutenkit/tab-activeIndex": "activeIndex"
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js"
+}

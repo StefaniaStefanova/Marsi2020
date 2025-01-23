@@ -1,0 +1,58 @@
+.gkit-tabs-container {
+	.gkit-control-type-media {
+		.gkit-control__media {
+			position: relative;
+			width: 100%;
+	
+			&-select {
+				margin-top: 10px;
+	
+				label {
+					@include gutenkit-control-title;
+				}
+			}
+	
+			&-add {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				aspect-ratio: 21/9;
+				height: 100%;
+				background-color: #d5dadf;
+				background-size: cover;
+				background-position: center;
+				cursor: pointer;
+				z-index: 1;
+		
+				&::after {
+					content: "Choose Media";
+					position: absolute;
+					bottom: 0px;
+					background: #f1f1f8;
+					padding: 6px;
+					width: 100%;
+					text-align: center;
+				}
+			}
+	
+			&-delete {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				z-index: 1;
+				height: 22px;
+				width: 22px;
+				border-radius: 3px;
+				background: transparent;
+				z-index: 0;
+		
+				&.has-icon {
+					padding: 0;
+					min-width: 22px;
+					background: #ffffff;
+					z-index: 9999;
+				}
+			}
+		}	
+	}	
+} 

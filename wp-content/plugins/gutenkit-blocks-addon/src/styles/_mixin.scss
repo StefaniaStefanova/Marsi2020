@@ -1,0 +1,65 @@
+/*
+	---Device Names---
+	1.desktop
+	2.tablet
+	3.mobile
+*/
+@mixin responsive($device){
+	@if $device == 'desktop'{
+		@media (min-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $device == 'tablet' {
+		@media (max-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $device == 'mobile' {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+}
+
+@mixin transition($property: all, $duration: 0.4s, $ease: ease) {
+	transition: $property $duration $ease;
+}
+
+@mixin gutenkit-control-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4F4F4F;
+    text-transform: capitalize;
+}
+
+@mixin gkit-hidden {
+    background: repeating-linear-gradient(125deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 2px, transparent 9px);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+@mixin gkit-hidden-before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+}
+
+@mixin gkit-css-filter-range-style(){
+	.gutenkit-range__slider{
+		.components-range-control__root {
+			.e1epgpqk10 {
+				@content;
+			}
+		}
+	}
+}

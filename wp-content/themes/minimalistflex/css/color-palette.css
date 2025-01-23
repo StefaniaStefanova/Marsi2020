@@ -1,0 +1,49 @@
+.palettes {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.palette {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border: solid 1px #c3c4c7;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+
+.palette-clear {
+    border: dashed 1px #c3c4c7;
+}
+
+.palette > button {
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: inherit;
+    padding: 9px 0;
+    line-height: 1.6;
+}
+
+.palette > button:hover {
+    background-color: #ffffff3f;
+}
+
+.palette-clear > button:hover {
+    background-color: #fff;
+}
+
+#minimalistflex-palette-galatic,
+#minimalistflex-palette-dark {
+    color: #fff;
+}
+

@@ -1,0 +1,1156 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/pricing-table",
+  "version": "1.0.0",
+  "title": "Pricing Table",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "price",
+    "pricing",
+    "table",
+    "package",
+    "plan"
+  ],
+  "description": "Pricing table block for gutenberg.",
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "titleSize": {
+      "type": "string",
+      "default": "h3"
+    },
+    "titleText": {
+      "type": "string",
+      "default": "Starter"
+    },
+    "subTitleText": {
+      "type": "string",
+      "default": "A small river named Duden flows by their place and supplies"
+    },
+    "htmlTag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "currency": {
+      "type": "string",
+      "default": "$"
+    },
+    "price": {
+      "type": "string",
+      "default": "5.99"
+    },
+    "duration": {
+      "type": "string",
+      "default": "month"
+    },
+    "featuresStyle": {
+      "type": "string",
+      "default": "paragraph"
+    },
+    "featuresText": {
+      "type": "string",
+      "default": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+    },
+    "featuresItems": {
+      "type": "array",
+      "default": [
+        {
+          "key": "1",
+          "featuresTitle": "15 Email Account",
+          "featuresInfoText": "",
+          "addFeatureIcon": false,
+          "featuresIcon": {
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>check</title>\n<path d=\"M31.512 6.162l-1.706-1.706c-0.488-0.487-1.219-0.487-1.706 0h-0.125l-16.331 16.925c-0.244 0.244-0.606 0.244-0.85 0l-6.7-7.188-0.119-0.119c-0.487-0.488-1.219-0.488-1.706 0l-1.706 1.706c-0.244 0.244-0.362 0.606-0.362 0.85s0.119 0.613 0.362 0.856l0.256 0.369 9.5 10.238c0.244 0.244 0.481 0.369 0.85 0.369 0.363 0 0.606-0.125 0.85-0.369l19.494-20.225c0.488-0.487 0.488-1.219 0-1.706z\"></path>\n</svg>\n"
+          },
+          "featureIconColor": "#55b559"
+        },
+        {
+          "key": "2",
+          "featuresTitle": "15 Email Account",
+          "featuresInfoText": "",
+          "addFeatureIcon": false,
+          "featuresIcon": {
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>check</title>\n<path d=\"M31.512 6.162l-1.706-1.706c-0.488-0.487-1.219-0.487-1.706 0h-0.125l-16.331 16.925c-0.244 0.244-0.606 0.244-0.85 0l-6.7-7.188-0.119-0.119c-0.487-0.488-1.219-0.488-1.706 0l-1.706 1.706c-0.244 0.244-0.362 0.606-0.362 0.85s0.119 0.613 0.362 0.856l0.256 0.369 9.5 10.238c0.244 0.244 0.481 0.369 0.85 0.369 0.363 0 0.606-0.125 0.85-0.369l19.494-20.225c0.488-0.487 0.488-1.219 0-1.706z\"></path>\n</svg>\n"
+          },
+          "featureIconColor": "#55b559"
+        },
+        {
+          "key": "3",
+          "featuresTitle": "15 Email Account",
+          "featuresInfoText": "",
+          "addFeatureIcon": false,
+          "featuresIcon": {
+            "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>check</title>\n<path d=\"M31.512 6.162l-1.706-1.706c-0.488-0.487-1.219-0.487-1.706 0h-0.125l-16.331 16.925c-0.244 0.244-0.606 0.244-0.85 0l-6.7-7.188-0.119-0.119c-0.487-0.488-1.219-0.488-1.706 0l-1.706 1.706c-0.244 0.244-0.362 0.606-0.362 0.85s0.119 0.613 0.362 0.856l0.256 0.369 9.5 10.238c0.244 0.244 0.481 0.369 0.85 0.369 0.363 0 0.606-0.125 0.85-0.369l19.494-20.225c0.488-0.487 0.488-1.219 0-1.706z\"></path>\n</svg>\n"
+          },
+          "featureIconColor": "#55b559"
+        }
+      ]
+    },
+    "icons": {
+      "type": "string",
+      "default": "fa-solid fa-angle-down"
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Learn more"
+    },
+    "buttonUrl": {
+      "type": "object",
+      "default": {
+        "url": "#"
+      }
+    },
+    "buttonIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "customClass": {
+      "type": "string",
+      "default": ""
+    },
+    "customId": {
+      "type": "string"
+    },
+    "iconPosStyle": {
+      "type": "string",
+      "default": "right"
+    },
+    "btnIcon": {
+      "type": "object",
+      "default": {
+        "title": "arrow-right-1",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>arrow-right-1</title>\n<path d=\"M30.966 16.234l-9.6-9.6c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l8.234 8.234h-26.069c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h26.069l-8.234 8.234c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.6-9.6c0.312-0.312 0.312-0.819 0-1.131z\"></path>\n</svg>\n"
+      }
+    },
+    "headerIcon": {
+      "type": "object",
+      "default": {
+        "title": "amazon",
+        "src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path d=\"M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z\"/></svg>"
+      }
+    },
+    "pricingTableButtonSpacingDesktop": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingTablet": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingMobile": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingLaptop": {
+      "type": "object"
+    },
+    "pricingTableButtonSpacingWideScreen": {
+      "type": "object"
+    },
+    "buttonTypography": {
+      "type": "object"
+    },
+    "priceBtnIconSizeDesktop": {
+      "type": "object",
+      "default": {
+        "size": 16,
+        "unit": "px"
+      }
+    },
+    "priceBtnIconSizeTablet": {
+      "type": "object"
+    },
+    "priceBtnIconSizeMobile": {
+      "type": "object"
+    },
+    "priceBtnIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "priceBtnIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "priceBtnIconSizeLaptop": {
+      "type": "object"
+    },
+    "priceBtnIconSizeWideScreen": {
+      "type": "object"
+    },
+    "priceBtnSizeDesktop": {
+      "type": "object"
+    },
+    "priceBtnSizeTablet": {
+      "type": "object"
+    },
+    "priceBtnSizeMobile": {
+      "type": "object"
+    },
+    "priceBtnSizeTabletLandscape": {
+      "type": "object"
+    },
+    "priceBtnSizeMobileLandscape": {
+      "type": "object"
+    },
+    "priceBtnSizeLaptop": {
+      "type": "object"
+    },
+    "priceBtnSizeWideScreen": {
+      "type": "object"
+    },
+    "buttonAlignmentDesktop": {
+      "type": "string"
+    },
+    "buttonAlignmentTablet": {
+      "type": "string"
+    },
+    "buttonAlignmentMobile": {
+      "type": "string"
+    },
+    "buttonAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "buttonAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "buttonAlignmentLaptop": {
+      "type": "string"
+    },
+    "buttonAlignmentWideScreen": {
+      "type": "string"
+    },
+    "buttonTextColor": {
+      "type": "string"
+    },
+    "buttonHoverTextColor": {
+      "type": "string"
+    },
+    "buttonBgColor": {
+      "type": "object"
+    },
+    "buttonHoverBgColor": {
+      "type": "object"
+    },
+    "buttonPaddingDesktop": {
+      "type": "object"
+    },
+    "buttonPaddingTablet": {
+      "type": "object"
+    },
+    "buttonPaddingMobile": {
+      "type": "object"
+    },
+    "buttonPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "buttonPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "buttonPaddingLaptop": {
+      "type": "object"
+    },
+    "buttonPaddingWideScreen": {
+      "type": "object"
+    },
+    "buttonBorder": {
+      "type": "object"
+    },
+    "buttonHoverBorder": {
+      "type": "object"
+    },
+    "buttonBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "buttonBorderRadiusTablet": {
+      "type": "object"
+    },
+    "buttonBorderRadiusMobile": {
+      "type": "object"
+    },
+    "buttonBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "buttonBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "buttonBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "buttonBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "buttonBoxShadow": {
+      "type": "object"
+    },
+    "buttonBoxShadowHover": {
+      "type": "object"
+    },
+    "titleAlignmentDesktop": {
+      "type": "string"
+    },
+    "titleAlignmentTablet": {
+      "type": "string"
+    },
+    "titleAlignmentMobile": {
+      "type": "string"
+    },
+    "titleAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "titleAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "titleAlignmentLaptop": {
+      "type": "string"
+    },
+    "titleAlignmentWideScreen": {
+      "type": "string"
+    },
+    "titleTextColor": {
+      "type": "string"
+    },
+    "titleTextHoverColor": {
+      "type": "string"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "titleMarginDesktop": {
+      "type": "object"
+    },
+    "titleMarginTablet": {
+      "type": "object"
+    },
+    "titleMarginMobile": {
+      "type": "object"
+    },
+    "titleMarginTabletLandscape": {
+      "type": "object"
+    },
+    "titleMarginMobileLandscape": {
+      "type": "object"
+    },
+    "titleMarginLaptop": {
+      "type": "object"
+    },
+    "titleMarginWideScreen": {
+      "type": "object"
+    },
+    "titlePaddingDesktop": {
+      "type": "object"
+    },
+    "titlePaddingTablet": {
+      "type": "object"
+    },
+    "titlePaddingMobile": {
+      "type": "object"
+    },
+    "titlePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "titlePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "titlePaddingLaptop": {
+      "type": "object"
+    },
+    "titlePaddingWideScreen": {
+      "type": "object"
+    },
+    "titleBorderColor": {
+      "type": "string"
+    },
+    "titleBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "titleBorderRadiusTablet": {
+      "type": "object"
+    },
+    "titleBorderRadiusMobile": {
+      "type": "object"
+    },
+    "titleBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "titleBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "titleBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "titleBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "subTitleAlignmentDesktop": {
+      "type": "string"
+    },
+    "subTitleAlignmentTablet": {
+      "type": "string"
+    },
+    "subTitleAlignmentMobile": {
+      "type": "string"
+    },
+    "subTitleAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "subTitleAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "subTitleAlignmentLaptop": {
+      "type": "string"
+    },
+    "subTitleAlignmentWideScreen": {
+      "type": "string"
+    },
+    "subTitleTextColor": {
+      "type": "string"
+    },
+    "subTitleTextHoverColor": {
+      "type": "string"
+    },
+    "subTitlePaddingDesktop": {
+      "type": "object"
+    },
+    "subTitlePaddingTablet": {
+      "type": "object"
+    },
+    "subTitlePaddingMobile": {
+      "type": "object"
+    },
+    "subTitlePaddingTabletLandscape": {
+      "type": "object"
+    },
+    "subTitlePaddingMobileLandscape": {
+      "type": "object"
+    },
+    "subTitlePaddingLaptop": {
+      "type": "object"
+    },
+    "subTitlePaddingWideScreen": {
+      "type": "object"
+    },
+    "subTitleBorder": {
+      "type": "object"
+    },
+    "subTitleHoverBorder": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusTablet": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusMobile": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "subTitleBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "subTitleTypography": {
+      "type": "object"
+    },
+    "priceTagContainerDesktop": {
+      "type": "object",
+      "default": {
+        "size": -30,
+        "unit": "px"
+      }
+    },
+    "priceTagContainerTablet": {
+      "type": "object"
+    },
+    "priceTagContainerMobile": {
+      "type": "object"
+    },
+    "priceTagContainerTabletLandscape": {
+      "type": "object"
+    },
+    "priceTagContainerMobileLandscape": {
+      "type": "object"
+    },
+    "priceTagContainerLaptop": {
+      "type": "object"
+    },
+    "priceTagContainerWideScreen": {
+      "type": "object"
+    },
+    "priceTagWidthDesktop": {
+      "type": "object",
+      "default": {
+        "size": 104.7,
+        "unit": "%"
+      }
+    },
+    "priceTagWidthTablet": {
+      "type": "object"
+    },
+    "priceTagWidthMobile": {
+      "type": "object"
+    },
+    "priceTagWidthTabletLandscape": {
+      "type": "object"
+    },
+    "priceTagWidthMobileLandscape": {
+      "type": "object"
+    },
+    "priceTagWidthLaptop": {
+      "type": "object"
+    },
+    "priceTagWidthWideScreen": {
+      "type": "object"
+    },
+    "priceTagPaddingDesktop": {
+      "type": "object"
+    },
+    "priceTagPaddingTablet": {
+      "type": "object"
+    },
+    "priceTagPaddingMobile": {
+      "type": "object"
+    },
+    "priceTagPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "priceTagPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "priceTagPaddingLaptop": {
+      "type": "object"
+    },
+    "priceTagPaddingWideScreen": {
+      "type": "object"
+    },
+    "priceTagMarginDesktop": {
+      "type": "object"
+    },
+    "priceTagMarginTablet": {
+      "type": "object"
+    },
+    "priceTagMarginMobile": {
+      "type": "object"
+    },
+    "priceTagMarginTabletLandscape": {
+      "type": "object"
+    },
+    "priceTagMarginMobileLandscape": {
+      "type": "object"
+    },
+    "priceTagMarginLaptop": {
+      "type": "object"
+    },
+    "priceTagMarginWideScreen": {
+      "type": "object"
+    },
+    "priceTagTypography": {
+      "type": "object",
+      "default": {
+        "size": 48,
+        "unit": "px"
+      }
+    },
+    "priceTagColor": {
+      "type": "string"
+    },
+    "priceTagHoverColor": {
+      "type": "string"
+    },
+    "priceTagDurationTypography": {
+      "type": "object"
+    },
+    "currencyPosition": {
+      "type": "string",
+      "default": "start"
+    },
+    "priceTagPositionDesktop": {
+      "type": "string",
+      "default": "super"
+    },
+    "priceTagPositionTablet": {
+      "type": "string"
+    },
+    "priceTagPositionMobile": {
+      "type": "string"
+    },
+    "priceTagPositionTabletLandscape": {
+      "type": "string"
+    },
+    "priceTagPositionMobileLandscape": {
+      "type": "string"
+    },
+    "priceTagPositionLaptop": {
+      "type": "string"
+    },
+    "priceTagPositionWideScreen": {
+      "type": "string"
+    },
+    "currencySignAlignmentDesktop": {
+      "type": "string",
+      "default": "super"
+    },
+    "currencySignAlignmentTablet": {
+      "type": "string"
+    },
+    "currencySignAlignmentMobile": {
+      "type": "string"
+    },
+    "currencySignAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "currencySignAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "currencySignAlignmentLaptop": {
+      "type": "string"
+    },
+    "currencySignAlignmentWideScreen": {
+      "type": "string"
+    },
+    "currencySymbolTypography": {
+      "type": "object"
+    },
+    "currencySymbolTextColor": {
+      "type": "string"
+    },
+    "currencySymbolTextHoverColor": {
+      "type": "string"
+    },
+    "currencySymbolBgColor": {
+      "type": "object"
+    },
+    "currencySymbolHoverBgColor": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusTablet": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusMobile": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "priceTagBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "priceTagBoxShadow": {
+      "type": "object"
+    },
+    "pricingContainerAlignmentDesktop": {
+      "type": "string",
+      "default": "center"
+    },
+    "pricingContainerAlignmentTablet": {
+      "type": "string"
+    },
+    "pricingContainerAlignmentMobile": {
+      "type": "string"
+    },
+    "pricingContainerAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "pricingContainerAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "pricingContainerAlignmentLaptop": {
+      "type": "string"
+    },
+    "pricingContainerAlignmentWideScreen": {
+      "type": "string"
+    },
+    "pricingContainerGapBetweenDesktop": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenTablet": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenMobile": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenTabletLandscape": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenMobileLandscape": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenLaptop": {
+      "type": "object"
+    },
+    "pricingContainerGapBetweenWideScreen": {
+      "type": "object"
+    },
+    "headerIconColor": {
+      "type": "string"
+    },
+    "headerIconBgColor": {
+      "type": "string"
+    },
+    "headerIconBorder": {
+      "type": "object"
+    },
+    "headerIconBorderRadius": {
+      "type": "object"
+    },
+    "headerIconHoverColor": {
+      "type": "string"
+    },
+    "headerIconHoverBgColor": {
+      "type": "string"
+    },
+    "headerIconHoverBorder": {
+      "type": "object"
+    },
+    "headerIconHoverBorderRadius": {
+      "type": "object"
+    },
+    "headerIconSizeDesktop": {
+      "type": "object"
+    },
+    "headerIconSizeTablet": {
+      "type": "object"
+    },
+    "headerIconSizeMobile": {
+      "type": "object"
+    },
+    "headerIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "headerIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "headerIconSizeLaptop": {
+      "type": "object"
+    },
+    "headerIconSizeWideScreen": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignDesktop": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignTablet": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignMobile": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignTabletLandscape": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignMobileLandscape": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignLaptop": {
+      "type": "object"
+    },
+    "headerIconVerticalAlignWideScreen": {
+      "type": "object"
+    },
+    "useHeightWidthIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "headerIconHeightDesktop": {
+      "type": "object"
+    },
+    "headerIconHeightTablet": {
+      "type": "object"
+    },
+    "headerIconHeightMobile": {
+      "type": "object"
+    },
+    "headerIconHeightTabletLandscape": {
+      "type": "object"
+    },
+    "headerIconHeightMobileLandscape": {
+      "type": "object"
+    },
+    "headerIconHeightLaptop": {
+      "type": "object"
+    },
+    "headerIconHeightWideScreen": {
+      "type": "object"
+    },
+    "headerIconWidthDesktop": {
+      "type": "object"
+    },
+    "headerIconWidthTablet": {
+      "type": "object"
+    },
+    "headerIconWidthMobile": {
+      "type": "object"
+    },
+    "headerIconWidthTabletLandscape": {
+      "type": "object"
+    },
+    "headerIconWidthMobileLandscape": {
+      "type": "object"
+    },
+    "headerIconWidthLaptop": {
+      "type": "object"
+    },
+    "headerIconWidthWideScreen": {
+      "type": "object"
+    },
+    "headerImageWidthDesktop": {
+      "type": "object"
+    },
+    "headerImageWidthTablet": {
+      "type": "object"
+    },
+    "headerImageWidthMobile": {
+      "type": "object"
+    },
+    "headerImageWidthTabletLandscape": {
+      "type": "object"
+    },
+    "headerImageWidthMobileLandscape": {
+      "type": "object"
+    },
+    "headerImageWidthLaptop": {
+      "type": "object"
+    },
+    "headerImageWidthWideScreen": {
+      "type": "object"
+    },
+    "headerIconLineHeightDesktop": {
+      "type": "object"
+    },
+    "headerIconLineHeightTablet": {
+      "type": "object"
+    },
+    "headerIconLineHeightMobile": {
+      "type": "object"
+    },
+    "headerIconLineHeightTabletLandscape": {
+      "type": "object"
+    },
+    "headerIconLineHeightMobileLandscape": {
+      "type": "object"
+    },
+    "headerIconLineHeightLaptop": {
+      "type": "object"
+    },
+    "headerIconLineHeightWideScreen": {
+      "type": "object"
+    },
+    "headerImageBorder": {
+      "type": "object"
+    },
+    "headerImageBorderRadius": {
+      "type": "object"
+    },
+    "headerImageBoxShadow": {
+      "type": "object"
+    },
+    "headerImageHoverBorder": {
+      "type": "object"
+    },
+    "headerImageHoverBorderRadius": {
+      "type": "object"
+    },
+    "headerImageHoverBoxShadow": {
+      "type": "object"
+    },
+    "headerImageMarginDesktop": {
+      "type": "object"
+    },
+    "headerImageMarginTablet": {
+      "type": "object"
+    },
+    "headerImageMarginMobile": {
+      "type": "object"
+    },
+    "headerImageMarginTabletLandscape": {
+      "type": "object"
+    },
+    "headerImageMarginMobileLandscape": {
+      "type": "object"
+    },
+    "headerImageMarginLaptop": {
+      "type": "object"
+    },
+    "headerImageMarginWideScreen": {
+      "type": "object"
+    },
+    "pricingContainerColor": {
+      "type": "object"
+    },
+    "featuresAlignmentDesktop": {
+      "type": "string"
+    },
+    "featuresAlignmentTablet": {
+      "type": "string",
+      "default": "center"
+    },
+    "featuresAlignmentMobile": {
+      "type": "string",
+      "default": "center"
+    },
+    "featuresAlignmentTabletLandscape": {
+      "type": "string"
+    },
+    "featuresAlignmentMobileLandscape": {
+      "type": "string"
+    },
+    "featuresAlignmentLaptop": {
+      "type": "string"
+    },
+    "featuresAlignmentWideScreen": {
+      "type": "string"
+    },
+    "featureTypography": {
+      "type": "object"
+    },
+    "featureTextColor": {
+      "type": "string"
+    },
+    "featureTextHoverColor": {
+      "type": "string"
+    },
+    "featuresBorderColor": {
+      "type": "string"
+    },
+    "featureListGapDesktop": {
+      "type": "object"
+    },
+    "featureListGapTablet": {
+      "type": "object"
+    },
+    "featureListGapMobile": {
+      "type": "object"
+    },
+    "featureListGapTabletLandscape": {
+      "type": "object"
+    },
+    "featureListGapMobileLandscape": {
+      "type": "object"
+    },
+    "featureListGapLaptop": {
+      "type": "object"
+    },
+    "featureListGapWideScreen": {
+      "type": "object"
+    },
+    "featuresMarginDesktop": {
+      "type": "object"
+    },
+    "featuresMarginTablet": {
+      "type": "object"
+    },
+    "featuresMarginMobile": {
+      "type": "object"
+    },
+    "featuresMarginTabletLandscape": {
+      "type": "object"
+    },
+    "featuresMarginMobileLandscape": {
+      "type": "object"
+    },
+    "featuresMarginLaptop": {
+      "type": "object"
+    },
+    "featuresMarginWideScreen": {
+      "type": "object"
+    },
+    "featuresPaddingDesktop": {
+      "type": "object"
+    },
+    "featuresPaddingTablet": {
+      "type": "object"
+    },
+    "featuresPaddingMobile": {
+      "type": "object"
+    },
+    "featuresPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "featuresPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "featuresPaddingLaptop": {
+      "type": "object"
+    },
+    "featuresPaddingWideScreen": {
+      "type": "object"
+    },
+    "featuresSpacingDesktop": {
+      "type": "object",
+      "default": {
+        "size": 5,
+        "unit": "px"
+      }
+    },
+    "featuresSpacingTablet": {
+      "type": "object"
+    },
+    "featuresSpacingMobile": {
+      "type": "object"
+    },
+    "featuresSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "featuresSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "featuresSpacingLaptop": {
+      "type": "object"
+    },
+    "featuresSpacingWideScreen": {
+      "type": "object"
+    },
+    "featuresBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "featuresBorderRadiusTablet": {
+      "type": "object"
+    },
+    "featuresBorderRadiusMobile": {
+      "type": "object"
+    },
+    "featuresBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "featuresBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "featuresBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "featuresBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "headerIconOrImage": {
+      "type": "string",
+      "default": "none"
+    },
+    "headerImage": {
+      "type": "object",
+      "default": {
+        "type": "image"
+      }
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "featureIconSizeDesktop": {
+      "type": "object",
+      "default": {
+        "size": 12,
+        "unit": "px"
+      }
+    },
+    "featureIconSizeTablet": {
+      "type": "object"
+    },
+    "featureIconSizeMobile": {
+      "type": "object"
+    },
+    "featureIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "featureIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "featureIconSizeLaptop": {
+      "type": "object"
+    },
+    "featureIconSizeWideScreen": {
+      "type": "object"
+    },
+    "titleBorder": {
+      "type": "object"
+    },
+    "titleHoverBorder": {
+      "type": "object"
+    },
+    "SubTitleBorder": {
+      "type": "object"
+    },
+    "priceTagBorder": {
+      "type": "object"
+    },
+    "priceTagHoverBorder": {
+      "type": "object"
+    },
+    "featuresBorder": {
+      "type": "object"
+    },
+    "featuresHoverBorder": {
+      "type": "object"
+    },
+    "customOrdering": {
+      "type": "boolean",
+      "default": false
+    },
+    "orderItems": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "class": "gkit-pricing-header",
+          "name": "Header"
+        },
+        {
+          "id": 2,
+          "class": "gkit-pricing-price-wraper",
+          "name": "Price Tag"
+        },
+        {
+          "id": 3,
+          "class": "gkit-pricing-content",
+          "name": "Features"
+        },
+        {
+          "id": 4,
+          "class": "gkit-pricing-btn-wraper",
+          "name": "Button"
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

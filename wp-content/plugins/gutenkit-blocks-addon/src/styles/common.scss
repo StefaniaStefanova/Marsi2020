@@ -1,0 +1,63 @@
+.wp-site-blocks {
+    [class*='wp-block-gutenkit-'] {
+        box-sizing: border-box;
+        
+        img:not([draggable]) {
+            max-width: 100%;
+            height: auto;
+        }
+
+        & * {
+            box-sizing: border-box;
+        }
+
+        .gkit-btn {
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 15px 30px;
+            color: #fff;
+			fill: #fff;
+            position: relative;
+            display: inline-block;
+            line-height: 1;
+            user-select: none;
+            white-space: nowrap;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #2575fc;
+            transition: all 0.4s ease;
+			text-decoration: none;
+		}
+
+		.gkit-icon {
+			width: 1em;
+			height: 1em;
+		}
+
+		&:not(.wp-block-gutenkit-container, .wp-block-gutenkit-nav-menu-item, .wp-block-gutenkit-nav-menu-submenu){
+			width: 100%;
+		}
+	}
+
+	a:where(:not(.wp-element-button)):focus {
+		text-decoration: none !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.wp-site-blocks .gkit-hide-tablet {
+		display: none;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 3200px) {
+	.wp-site-blocks .gkit-hide-desktop {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.wp-site-blocks .gkit-hide-mobile {
+		display: none;
+	}
+}

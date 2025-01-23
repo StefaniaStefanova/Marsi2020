@@ -1,0 +1,53 @@
+/*
+ * This file is used to style the editor.
+ */
+
+:root :where(body) {
+    line-height: 2em;
+    margin: 0 10%;
+}
+
+tt,
+kbd,
+code,
+pre {
+    font-family: Hack, 'Courier New', Courier, monospace;
+    background-color: #111 !important;
+    color: #fff !important;
+    border-radius: 2px;
+    padding: 5px 10px;
+    overflow-x: auto;
+}
+
+code:has(br) {
+    display: inline-block;
+}
+
+blockquote,
+address {
+    border-left: solid 3px #ffd900;
+    padding-left: 1em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+table thead,
+table tbody tr:not(:last-child) {
+    border-bottom: solid 1px #000;
+}
+
+table thead,
+table tbody tr:nth-child(2n) {
+    background-color: color-mix(
+        in srgb,
+        #f0f0f0,
+        transparent 25%
+    )
+}

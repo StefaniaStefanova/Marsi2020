@@ -1,0 +1,31 @@
+:root {
+    counter-reset: headings;
+}
+
+.singular-main h2 {
+    position: relative;
+    counter-increment: headings;
+}
+
+.singular-main h2::before {
+    content: counter(headings);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    background-color: var(--minimalistflex-tint);
+    color: var(--minimalistflex-contrast);
+    margin-right: 12px;
+}
+
+.singular-main h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 2em);
+    height: 4px;
+    background: linear-gradient(90deg, var(--minimalistflex-tint), var(--minimalistflex-tint-alt));
+}

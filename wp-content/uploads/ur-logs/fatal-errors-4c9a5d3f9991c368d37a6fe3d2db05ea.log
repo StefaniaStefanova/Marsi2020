@@ -1,0 +1,115 @@
+2024-09-25T08:47:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-10-02T08:47:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-10-09T09:17:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-10-11T08:03:29+00:00 CRITICAL Uncaught Error: Call to undefined function Gutenkit\Admin\Api\exec() in /home/marsok/public_html/wp-content/plugins/gutenkit-blocks-addon/includes/Admin/Api/ActivePluginData.php:97
+Stack trace:
+#0 /home/marsok/public_html/wp-includes/rest-api/class-wp-rest-server.php(1230): Gutenkit\Admin\Api\ActivePluginData->install_and_activate_plugin_from_external(Object(WP_REST_Request))
+#1 /home/marsok/public_html/wp-includes/rest-api/class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/gutenkit/v1/in...', Array, NULL)
+#2 /home/marsok/public_html/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /home/marsok/public_html/wp-includes/rest-api.php(420): WP_REST_Server->serve_request('/gutenkit/v1/in...')
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#5 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/marsok/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#8 /home/marsok/public_html/wp-includes/class-wp.php(813): WP->parse_request('')
+#9 /home/marsok/public_html/wp-includes/functions.php(1336): WP->main('')
+#10 /home/marsok/public_html/wp-blog-header.php(16): wp()
+#11 /home/marsok/public_html/index.php(17): require('/home/marsok/pu...')
+#12 {main}
+  thrown in /home/marsok/public_html/wp-content/plugins/gutenkit-blocks-addon/includes/Admin/Api/ActivePluginData.php on line 97
+
+2024-10-16T09:17:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-10-23T12:17:03+03:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-11-06T10:47:05+02:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:50
+Stack trace:
+#0 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#3 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#7 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 50
+
+2024-11-13T11:17:03+02:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:156
+Stack trace:
+#0 /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#5 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 156
+
+2024-11-20T12:05:03+02:00 CRITICAL Uncaught Error: Call to undefined function get_core_updates() in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php:156
+Stack trace:
+#0 /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php(47): WP_Debug_Data::get_wp_core()
+#1 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(244): WP_Debug_Data::debug_data()
+#2 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(269): Advanced_Import_Tracking->get_data()
+#3 /home/marsok/public_html/wp-content/plugins/advanced-import/admin/class-advanced-import-tracking.php(307): Advanced_Import_Tracking->setup_data()
+#4 /home/marsok/public_html/wp-includes/class-wp-hook.php(324): Advanced_Import_Tracking->do_post()
+#5 /home/marsok/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 /home/marsok/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/marsok/public_html/wp-cron.php(191): do_action_ref_array('advanced_import...', Array)
+#8 {main}
+  thrown in /home/marsok/public_html/wp-admin/includes/class-wp-debug-data.php on line 156
+

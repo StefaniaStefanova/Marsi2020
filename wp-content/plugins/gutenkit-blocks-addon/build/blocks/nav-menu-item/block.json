@@ -1,0 +1,177 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/nav-menu-item",
+  "version": "1.0.0",
+  "title": "Nav Menu Item",
+  "category": "gutenkit",
+  "description": "Nav menu item block for gutenberg.",
+  "allowedBlocks": [
+    "gutenkit/nav-menu-submenu"
+  ],
+  "parent": [
+    "gutenkit/nav-menu",
+    "gutenkit/nav-menu-submenu"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "gkitMenuItemCustomLinkLabel": {
+      "type": "string",
+      "excludeCopy": true
+    },
+    "gkitMenuItemCustomLink": {
+      "type": "object",
+      "excludeCopy": true
+    },
+    "gkitAddSubMenu": {
+      "type": "boolean",
+      "default": false
+    },
+    "gkitSubMenuType": {
+      "type": "string",
+      "default": "dropdown"
+    },
+    "gkitSubMenuIndicator": {
+      "type": "object",
+      "default": {
+        "title": "chevron-down",
+        "src": "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\n<title>chevron-down</title>\n<path d=\"M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z\"></path>\n</svg>\n"
+      }
+    },
+    "gkitSubMenuIndicatorIconSizeDesktop": {
+      "type": "object",
+      "default": {
+        "size": 15,
+        "unit": "px"
+      }
+    },
+    "gkitSubMenuIndicatorIconSizeTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorIconSizeMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorIconSizeTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorIconSizeMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorIconSizeLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorIconSizeWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderDesktop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "5px",
+        "right": "5px",
+        "bottom": "5px",
+        "left": "5px"
+      }
+    },
+    "gkitSubMenuIndicatorPaddingTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorPaddingWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusDesktop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorBorderRadiusWideScreen": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingDesktop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingTablet": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingMobile": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingTabletLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingMobileLandscape": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingLaptop": {
+      "type": "object"
+    },
+    "gkitSubMenuIndicatorLeftSpacingWideScreen": {
+      "type": "object"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./frontend.js"
+}

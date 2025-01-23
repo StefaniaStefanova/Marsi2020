@@ -1,0 +1,31 @@
+.wp-block-gutenkit-faq {
+	.gkit-faq {
+		position: relative;
+		overflow: hidden;
+
+		&-item{
+			&-header {
+				background-color: #f5f5f5;
+				padding: 21px;
+			}
+
+			&-header{
+				font-size: 16px;
+			}
+
+			&-title {
+				font-size: inherit;
+				line-height: inherit;
+				font-weight: inherit;
+				font-style: inherit;
+				color: inherit;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			&-body{
+				padding: 21px;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/advanced-accordion-item",
+  "version": "1.0.0",
+  "title": "Advanced Accordion Item",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "accordion",
+    "faq",
+    "faq schema",
+    "gutenkit"
+  ],
+  "description": "Advanced accordion item for gutenkit.",
+  "parent": [
+    "gutenkit/advanced-accordion"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "title": {
+      "type": "string",
+      "default": "How to Change my Photo from Admin Dashboard?"
+    },
+    "parentBlockAttributes": {
+      "type": "object"
+    },
+    "defaultOpen": {
+      "type": "boolean",
+      "default": false
+    },
+    "background": {
+      "type": "object"
+    },
+    "curveBackground": {
+      "type": "string"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "iconColor": {
+      "type": "string"
+    },
+    "curveStrokeColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "gutenkit-blocks-addon",
+  "editorScript": "file:./index.js"
+}

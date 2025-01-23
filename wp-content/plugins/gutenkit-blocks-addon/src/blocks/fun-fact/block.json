@@ -1,0 +1,298 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenkit/fun-fact",
+	"version": "1.0.0",
+	"title": "Fun Fact",
+	"category": "gutenkit",
+	"keywords": [
+		"gkit",
+		"gutenkit",
+		"fun",
+		"factor",
+		"animation",
+		"info",
+		"number",
+		"animated"
+	],
+	"description": "Fun fact block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"addIcon": {
+			"type": "boolean",
+			"default": true
+		},
+		"icon": {
+			"type": "object",
+			"default": {
+				"label": "Amazon",
+				"title": "amazon",
+				"type": "brands",
+				"src": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path d=\"M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.8c0 80-84.2 68-84.2 17.2 0-47.2 50.5-56.7 84.2-57.8v40.6zm136 163.5c-7.7 10-70 67-174.5 67S34.2 408.5 9.7 379c-6.8-7.7 1-11.3 5.5-8.3C88.5 415.2 203 488.5 387.7 401c7.5-3.7 13.3 2 5.5 12zm39.8 2.2c-6.5 15.8-16 26.8-21.2 31-5.5 4.5-9.5 2.7-6.5-3.8s19.3-46.5 12.7-55c-6.5-8.3-37-4.3-48-3.2-10.8 1-13 2-14-.3-2.3-5.7 21.7-15.5 37.5-17.5 15.7-1.8 41-.8 46 5.7 3.7 5.1 0 27.1-6.5 43.1z\"/></svg>"
+			}
+		},
+		"enablePrefix": {
+			"type": "boolean",
+			"default": false
+		},
+		"prefix": {
+			"type": "string",
+			"default": "$"
+		},
+		"enableSuffix": {
+			"type": "boolean",
+			"default": true
+		},
+		"suffix": {
+			"type": "string",
+			"default": "M"
+		},
+		"enableSuper": {
+			"type": "boolean",
+			"default": false
+		},
+		"super": {
+			"type": "string",
+			"default": "+"
+		},
+		"enableHeading": {
+			"type": "boolean",
+			"default": true
+		},
+		"heading": {
+			"type": "string",
+			"default": "This is the heading"
+		},
+		"headerTag": {
+			"type": "string",
+			"default": "h3"
+		},
+		"style": {
+			"type": "string",
+			"default": "static"
+		},
+		"number": {
+			"type": "number",
+			"default": 254
+		},
+		"duration": {
+			"type": "object",
+			"default": {
+				"size": 3500
+			}
+		},
+		"enableHoverBorder": {
+			"type": "boolean",
+			"default": false
+		},
+		"enableVerticalBorder": {
+			"type": "boolean",
+			"default": false
+		},
+		"iconDirection": {
+			"type": "string"
+		},
+		"iconWidthDesktop": {
+			"type": "object"
+		},
+		"iconWidthTablet": {
+			"type": "object"
+		},
+		"iconWidthMobile": {
+			"type": "object"
+		},
+		"iconRotateDesktop": {
+			"type": "object"
+		},
+		"iconRotateTablet": {
+			"type": "object"
+		},
+		"iconRotateMobile": {
+			"type": "object"
+		},
+		"iconPaddingDesktop": {
+			"type": "object"
+		},
+		"iconPaddingTablet": {
+			"type": "object"
+		},
+		"iconPaddingMobile": {
+			"type": "object"
+		},
+		"iconMarginDesktop": {
+			"type": "object"
+		},
+		"iconMarginTablet": {
+			"type": "object"
+		},
+		"iconMarginMobile": {
+			"type": "object"
+		},
+		"iconBoxShadow": {
+			"type": "object"
+		},
+		"iconColor": {
+			"type": "string"
+		},
+		"iconBackground": {
+			"type": "object"
+		},
+		"iconBorder": {
+			"type": "object"
+		},
+		"iconBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"iconBorderRadiusTablet": {
+			"type": "object"
+		},
+		"iconBorderRadiusMobile": {
+			"type": "object"
+		},
+		"iconHoverColor": {
+			"type": "string"
+		},
+		"iconHoverBorderColor": {
+			"type": "string"
+		},
+		"iconHoverBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"iconHoverBorderRadiusTablet": {
+			"type": "object"
+		},
+		"iconHoverBorderRadiusMobile": {
+			"type": "object"
+		},
+		"titlePaddingDesktop": {
+			"type": "object"
+		},
+		"titlePaddingTablet": {
+			"type": "object"
+		},
+		"titlePaddingMobile": {
+			"type": "object"
+		},
+		"iconHoverBackground": {
+			"type": "object"
+		},
+		"contentAlignDesktop": {
+			"type": "object"
+		},
+		"contentAlignTablet": {
+			"type": "object"
+		},
+		"contentAlignMobile": {
+			"type": "object"
+		},
+		"contentMarginDesktop": {
+			"type": "object"
+		},
+		"contentMarginTablet": {
+			"type": "object"
+		},
+		"contentMarginMobile": {
+			"type": "object"
+		},
+		"numberColor": {
+			"type": "string"
+		},
+		"numberTypography": {
+			"type": "object"
+		},
+		"numberBottomSpaceDesktop": {
+			"type": "object"
+		},
+		"numberBottomSpaceTablet": {
+			"type": "object"
+		},
+		"numberBottomSpaceMobile": {
+			"type": "object"
+		},
+		"numberRightSpaceDesktop": {
+			"type": "object"
+		},
+		"numberRightSpaceTablet": {
+			"type": "object"
+		},
+		"numberRightSpaceMobile": {
+			"type": "object"
+		},
+		"titleColor": {
+			"type": "string"
+		},
+		"titleTypography": {
+			"type": "object"
+		},
+		"superColor": {
+			"type": "string"
+		},
+		"superTypography": {
+			"type": "object"
+		},
+		"superTopPostionDesktop": {
+			"type": "object"
+		},
+		"superTopPostionTablet": {
+			"type": "object"
+		},
+		"superTopPostionMobile": {
+			"type": "object"
+		},
+		"superHorizontalPostionDesktop": {
+			"type": "object"
+		},
+		"superHorizontalPostionTablet": {
+			"type": "object"
+		},
+		"superHorizontalPostionMobile": {
+			"type": "object"
+		},
+		"hoverBorderDirection": {
+			"type": "string",
+			"default": "right"
+		},
+		"hoverBorderColor": {
+			"type": "string"
+		},
+		"hoverBorderHeight": {
+			"type": "object"
+		},
+		"verticalBorderDirection": {
+			"type": "string"
+		},
+		"verticalBorderAlignment": {
+			"type": "string"
+		},
+		"verticalBorderColor": {
+			"type": "string"
+		},
+		"verticalBorderHeight": {
+			"type": "object"
+		},
+		"verticalBorderWidth": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": [ "file:./style-index.css", "gutenkit-odometer" ],
+	"viewScript": "file:./frontend.js",
+	"script": [ "gutenkit-odometer" ]
+}

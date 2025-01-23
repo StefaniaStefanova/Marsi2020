@@ -1,0 +1,163 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenkit/faq",
+	"version": "1.0.0",
+	"title": "FAQ",
+	"category": "gutenkit",
+	"keywords": ["gkit", "faq", "faq schema"],
+	"description": "Faq block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type": "string"
+		},
+		"blockClass": {
+			"type": "string"
+		},
+		"blocksCSS": {
+			"type": "object"
+		},
+		"gkitFaqContents": {
+			"type": "array",
+			"default": [
+				{
+					"gkitFaqTitle": "How to Change my Photo from Admin Dashboard?",
+					"gkitFaqContent": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
+				},
+				{
+					"gkitFaqTitle": "How long do I get support?",
+					"gkitFaqContent": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line"
+				},
+				{
+					"gkitFaqTitle": "Do I need to renew my license?",
+					"gkitFaqContent": "Marks and devious Semikoli but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+				}
+			],
+			"excludeCopy": true
+		},
+		"gkitFaqTitleColor": {
+			"type": "string"
+		},
+		"gkitFaqTitleTypographyGroup": {
+			"type": "object"
+		},
+		"gkitFaqTitleBackgroundGroup": {
+			"type": "object"
+		},
+		"gkitFaqTitleBorderGroup": {
+			"type": "object"
+		},
+		"gkitFaqBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitFaqBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitFaqBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitFaqTitlePaddingDesktop": {
+			"type": "object",
+			"default": {
+				"top": "21px",
+				"right": "40px",
+				"bottom": "21px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqTitlePaddingTablet": {
+			"type": "object",
+			"default": {
+				"top": "21px",
+				"right": "40px",
+				"bottom": "21px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqTitlePaddingMobile": {
+			"type": "object",
+			"default": {
+				"top": "21px",
+				"right": "40px",
+				"bottom": "21px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqTitleMarginDesktop": {
+			"type": "object"
+		},
+		"gkitFaqTitleMarginTablet": {
+			"type": "object"
+		},
+		"gkitFaqTitleMarginMobile": {
+			"type": "object"
+		},
+		"gkitFaqContentColor": {
+			"type": "string"
+		},
+		"gkitFaqContentTypographyGroup": {
+			"type": "object"
+		},
+		"gkitFaqContentBackgroundGroup": {
+			"type": "object"
+		},
+		"gkitFaqContentBorderGroup": {
+			"type": "object"
+		},
+		"gkitFaqContentBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"gkitFaqContentBorderRadiusTablet": {
+			"type": "object"
+		},
+		"gkitFaqContentBorderRadiusMobile": {
+			"type": "object"
+		},
+		"gkitFaqContentPaddingDesktop": {
+			"type": "object",
+			"default": {
+				"top": "30px",
+				"right": "40px",
+				"bottom": "30px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqContentPaddingTablet": {
+			"type": "object",
+			"default": {
+				"top": "30px",
+				"right": "40px",
+				"bottom": "30px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqContentPaddingMobile": {
+			"type": "object",
+			"default": {
+				"top": "30px",
+				"right": "40px",
+				"bottom": "30px",
+				"left": "40px"
+			}
+		},
+		"gkitFaqContentMarginDesktop": {
+			"type": "object"
+		},
+		"gkitFaqContentMarginTablet": {
+			"type": "object"
+		},
+		"gkitFaqContentMarginMobile": {
+			"type": "object"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

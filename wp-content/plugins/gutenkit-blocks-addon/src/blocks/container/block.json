@@ -1,0 +1,213 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenkit/container",
+	"version": "1.0.0",
+	"title": "Container",
+	"category": "gutenkit",
+	"description": "Container block for gutenberg.",
+	"example": {
+		"preview": true
+	},
+	"attributes": {
+		"blockID": {
+			"type":"string"
+		},
+		"blockClass": {
+			"type":"string"
+		},
+		"blocksCSS":{
+			"type": "object"
+		},
+		"containerWidth": {
+			"type": "string",
+			"default": "alignfull"
+		},
+		"customWidthDesktop": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "%"
+			}
+		},
+		"customWidthTablet": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "%"
+			}
+		},
+		"customWidthMobile": {
+			"type": "object",
+			"default": {
+				"size": 60,
+				"unit": "%"
+			}
+		},
+		"contentWidth": {
+			"type": "string",
+			"default": "full-width"
+		},
+		"contentBoxWidthDesktop": {
+			"type": "object"
+		},
+		"contentBoxWidthTablet": {
+			"type": "object"
+		},
+		"contentBoxWidthMobile": {
+			"type": "object"
+		},
+		"minHeightDesktop": {
+			"type": "object"
+		},
+		"minHeightTablet": {
+			"type": "object"
+		},
+		"minHeightMobile": {
+			"type": "object"
+		},
+		"directionDesktop": {
+			"type": "string"
+		},
+		"directionTablet": {
+			"type": "string"
+		},
+		"directionMobile": {
+			"type": "string",
+			"default": "column"
+		},
+		"justifyContentDesktop": {
+			"type": "string",
+			"default": "center"
+		},
+		"justifyContentTablet": {
+			"type": "string",
+			"default": "center"
+		},
+		"justifyContentMobile": {
+			"type": "string",
+			"default": "center"
+		},
+		"alignItemsDesktop": {
+			"type": "string",
+			"default": "center"
+		},
+		"alignItemsTablet": {
+			"type": "string",
+			"default": "center"
+		},
+		"alignItemsMobile": {
+			"type": "string",
+			"default": "center"
+		},
+		"gapBetweenDesktop": {
+			"type": "object"
+		},
+		"gapBetweenTablet": {
+			"type": "object"
+		},
+		"gapBetweenMobile": {
+			"type": "object"
+		},
+		"wrapDesktop": {
+			"type": "string"
+		},
+		"wrapTablet": {
+			"type": "string"
+		},
+		"wrapMobile": {
+			"type": "string"
+		},
+		"overflow": {
+			"type": "string"
+		},
+		"htmlTag": {
+			"type": "string",
+			"default": "div"
+		},
+		"htmlTagLink": {
+			"type": "string"
+		},
+		"border": {
+			"type": "object"
+		},
+		"containerBorderRadiusDesktop": {
+			"type": "object"
+		},
+		"containerBorderRadiusTablet": {
+			"type": "object"
+		},
+		"containerBorderRadiusMobile": {
+			"type": "object"
+		},
+		"conatinerBoxShadow":{
+			"type": "object"
+		},
+		"borderHover": {
+			"type": "object"
+		},
+		"containerBorderRadiusHoverDesktop": {
+			"type": "object"
+		},
+		"containerBorderRadiusHoverTablet": {
+			"type": "object"
+		},
+		"containerBorderRadiusHoverMobile": {
+			"type": "object"
+		},
+		"containerBoxShadowHover":{
+			"type": "object"
+		},
+		"containerBackground": {
+			"type": "object"
+		},
+		"showContainerOverlay": {
+			"type": "boolean",
+			"default": false
+		},
+		"containerBackgroundOverlay": {
+			"type": "object",
+			"default": {
+				"opacity": {
+					"size": "0.5"
+				}
+			}
+		},
+		"containerBackgroundHover": {
+			"type": "object"
+		},
+		"containerBackgroundHoverOverlay": {
+			"type": "object",
+			"default": {
+				"opacity": {
+					"size": "0.5"
+				}
+			}
+		},
+		"containerOverlayHoverTransitionDuration":{
+			"type": "object",
+			"default": {
+				"size": "0.3"
+			}
+		},
+		"motionEffects": {
+			"type": "object"
+		},
+		"variationSeleted":{
+			"type": "boolean",
+			"default": false
+		},
+		"containerFlexShrink": {
+			"type": "number",
+			"default": 1
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenkit",
+	"editorScript": "file:./index.js",
+	"editorStyle": ["file:./index.css", "gutenkit-animate"],
+	"style": ["file:./style-index.css", "gutenkit-animate"],
+	"viewScript": "file:./frontend.js"
+}

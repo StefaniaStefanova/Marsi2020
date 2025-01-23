@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gutenkit/faq-item",
+  "version": "1.0.0",
+  "title": "Faq Item",
+  "category": "gutenkit",
+  "icon": "menu-alt3",
+  "keywords": [
+    "gkit",
+    "faq",
+    "faq schema"
+  ],
+  "description": "Faq Item for gutenkit.",
+  "parent": [
+    "gutenkit/faq"
+  ],
+  "example": {
+    "preview": true
+  },
+  "attributes": {
+    "blockID": {
+      "type": "string"
+    },
+    "blockClass": {
+      "type": "string"
+    },
+    "blocksCSS": {
+      "type": "object"
+    },
+    "parentBlockAttributes": {
+      "type": "object"
+    },
+    "gkitFaqTitle": {
+      "type": "string",
+      "default": "How to Change my Photo from Admin Dashboard?"
+    },
+    "gkitFaqContent": {
+      "type": "string",
+      "default": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true
+  },
+  "textdomain": "gutenkit-blocks-addon-pro",
+  "editorScript": "file:./index.js",
+  "editorStyle": [
+    "file:./index.css"
+  ]
+}
