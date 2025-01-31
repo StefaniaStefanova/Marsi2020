@@ -1,0 +1,5 @@
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\ExampleApiTests\net8.0\ExampleApiTests.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\ExampleApiTests\net8.0\ExampleApiTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\ExampleApiTests\net8.0\ExampleApiTests.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\ExampleApiTests\net8.0\ExampleApiTests.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\ExampleApiTests\net8.0\ExampleApiTests.csproj.CoreCompileInputs.cache

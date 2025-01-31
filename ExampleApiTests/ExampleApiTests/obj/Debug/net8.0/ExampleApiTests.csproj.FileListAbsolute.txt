@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\bin\Debug\net8.0\ExampleApiTests.deps.json
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\bin\Debug\net8.0\ExampleApiTests.dll
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\bin\Debug\net8.0\ExampleApiTests.pdb
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.dll
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\refint\ExampleApiTests.dll
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ExampleApiTests.pdb
+C:\Users\Admin\source\repos\ExampleApiTests\ExampleApiTests\obj\Debug\net8.0\ref\ExampleApiTests.dll
